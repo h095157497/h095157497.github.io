@@ -179,6 +179,7 @@ section{padding-block:clamp(3.4rem,7vw,6.2rem)}
   .c-ig{grid-column:span 7}.c-tt{grid-column:span 5}
   .c-pin{grid-column:span 5}.c-mu{grid-column:span 7}
   .c-vm{grid-column:span 4}.c-qr{grid-column:span 8}
+  .c-abzar{grid-column:span 12}
   .c-5{grid-column:span 5}.c-7{grid-column:span 7}
 }
 .card{position:relative;display:flex;flex-direction:column;gap:.65rem;border-radius:var(--r2);padding:1.7rem;background:var(--panel);border:1px solid var(--line);overflow:hidden;text-decoration:none;color:inherit;transition:transform .35s,border-color .35s,box-shadow .35s}
@@ -266,7 +267,7 @@ footer nav a{color:var(--mut);text-decoration:none;display:block;padding:.5rem 0
 footer nav a:hover{color:#fff}
 .f-bot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.8rem;border-top:1px solid var(--line);margin-top:2.6rem;padding-top:1.5rem;color:#847aa6;font-size:.84rem}
 .f-bot span[lang="en"]{font-family:"Space Grotesk"}
-/* ---------- tools panels ---------- */
+/* ---------- tools panels (/abzar) ---------- */
 .tpanel{position:relative;border-radius:var(--r2);border:1px solid var(--line);background:var(--panel);padding:clamp(1.3rem,3vw,1.9rem)}
 .tpanel h2{font-size:1.2rem;font-weight:900;margin:0 0 .35rem;display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
 .tpanel .pd{color:var(--mut);font-size:.93rem;margin:0 0 1.15rem}
