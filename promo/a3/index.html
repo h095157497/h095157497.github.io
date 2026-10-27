@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<!-- METHOD: SHARE-ABILITY — the whole page is one share loop: a REAL scannable QR rendered client-side (embedded MIT-style qrcode-generator algorithm, byte mode v1–10, EC level M — verified in-lab against the jsQR decoder: decode == https://t.me/InstaDownloadai?start=a3, all 8 masks valid, bit-identical to the reference library at equal mask) + one-tap Web Share / clipboard copy with 3 ready Persian captions + 3 CSS-only social cards ready to repost.
+Beats agent 4: bare links die in chat scroll and demand typing; a QR survives screenshots, stories, posters and offline walls — a zero-typing referral loop where every scan carries the ?start=a3 attribution. -->
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>QR و متن آمادهٔ معرفی ربات دانلود اینستاگرام و موزیک‌یاب | InstaDownloadai</title>
+<meta name="description" content="این صفحه را برای دوستات بفرست: کد QR اختصاصی ربات تلگرامی @InstaDownloadai، سه متن آمادهٔ اشتراک‌گذاری و کارت‌های آمادهٔ استوری — دانلود اینستاگرام، پینترست، تیک‌تاک و ویمئو + موزیک‌یاب تا ۳۲۰kbps، رایگان و بدون واترمارک.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://h095157497.github.io/promo/a3/">
+<link rel="alternate" hreflang="fa" href="https://h095157497.github.io/promo/a3/">
+<link rel="alternate" hreflang="en" href="https://h095157497.github.io/promo/a3/">
+<link rel="alternate" hreflang="x-default" href="https://h095157497.github.io/promo/a3/">
+<link rel="icon" type="image/png" href="/assets/avatar.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="InstaDownloadai">
+<meta property="og:title" content="هر ویدیو و آهنگی را با دوستانت به اشتراک بگذار — QR و متن آمادهٔ ربات InstaDownloadai">
+<meta property="og:description" content="کد QR و متن‌های آمادهٔ معرفی ربات دانلود اینستاگرام، پینترست، تیک‌تاک و ویمئو + موزیک‌یاب — رایگان و بدون واترمارک.">
+<meta property="og:url" content="https://h095157497.github.io/promo/a3/">
+<meta property="og:image" content="https://h095157497.github.io/og.jpg">
+<meta property="og:locale" content="fa_IR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="QR و متن آمادهٔ معرفی ربات دانلود — InstaDownloadai">
+<meta name="twitter:description" content="این صفحه را برای دوستات بفرست؛ یک اسکن، مستقیم به ربات می‌رسد.">
+<meta name="twitter:image" content="https://h095157497.github.io/og.jpg">
+<meta name="theme-color" content="#05030a">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebPage","@id":"https://h095157497.github.io/promo/a3/#page","url":"https://h095157497.github.io/promo/a3/","name":"QR و متن آمادهٔ معرفی ربات دانلود اینستاگرام و موزیک‌یاب","inLanguage":"fa","isPartOf":{"@id":"https://h095157497.github.io/#site"},"about":{"@id":"https://h095157497.github.io/#app"}},
+{"@type":"FAQPage","@id":"https://h095157497.github.io/promo/a3/#faq","mainEntity":[
+{"@type":"Question","name":"چطور با همین صفحه ربات را به دوستانم معرفی کنم؟","acceptedAnswer":{"@type":"Answer","text":"دکمهٔ اشتراک‌گذاری را بزن یا یکی از متن‌های آماده را کپی کن و در چت بفرست؛ دوستت می‌تواند همین صفحه را باز کند و QR را با دوربین اسکن کند تا مستقیم به ربات برسد."}},
+{"@type":"Question","name":"تصویر QR را کجا می‌توانم استفاده کنم؟","acceptedAnswer":{"@type":"Answer","text":"هر جا که دوربین در دسترس است: استوری، گروه‌های چتی، پوستر یا تابلو. دکمهٔ «دانلود QR» تصویر باکیفیت آن را در قالب PNG می‌دهد."}},
+{"@type":"Question","name":"ربات به چه زبان‌هایی پاسخ می‌دهد؟","acceptedAnswer":{"@type":"Answer","text":"فارسی، انگلیسی، عربی و روسی؛ زبان در اولین Start انتخاب می‌شود و بعداً با /lang قابل تغییر است."}}
+]}]}
+</script>
+<style>
+/* ============ v7 «Holographic Luxury Dark» tokens (site-repo parity) ============ */
+:root{
+  --bg:#05030a; --bg2:#0b0614;
+  --panel:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.015));
+  --line:rgba(255,255,255,.09);
+  --ink:#f3effc; --mut:#a096c2;
+  --v:#a855f7; --c:#22d3ee; --p:#f472b6;
+  --grad:linear-gradient(115deg,#a855f7,#22d3ee 34%,#f472b6 67%,#a855f7);
+  --r:16px; --r2:24px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+@supports not (overflow:clip){html,body{overflow-x:hidden}}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font:400 16px/1.95 Vazirmatn,"Space Grotesk",system-ui,"Segoe UI",Tahoma,sans-serif;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+::selection{background:rgba(168,85,247,.45);color:#fff}
+:focus-visible{outline:2px solid var(--c);outline-offset:3px;border-radius:10px}
+img,svg{display:block;max-width:100%}
+a{-webkit-tap-highlight-color:rgba(168,85,247,.25)}
+.container{width:min(1160px,92%);margin-inline:auto}
+.skip{position:fixed;top:-70px;inset-inline-start:1rem;z-index:100;color:#0d0518;background:var(--grad);background-size:220% 100%;font-weight:800;font-size:.9rem;padding:.7rem 1.3rem;border-radius:12px;text-decoration:none;box-shadow:0 10px 30px rgba(168,85,247,.4);transition:top .25s}
+.skip:focus{top:.8rem}
+/* ambient */
+.bgfx{position:fixed;inset:0;z-index:-2;pointer-events:none;overflow:hidden;background:radial-gradient(120% 90% at 50% -10%,#140a26 0%,var(--bg) 55%)}
+.neb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.42}
+.n1{width:56vmax;height:56vmax;top:-22vmax;inset-inline-start:-14vmax;background:radial-gradient(circle,rgba(138,43,226,.5),transparent 65%)}
+.n2{width:44vmax;height:44vmax;top:6vmax;inset-inline-end:-16vmax;background:radial-gradient(circle,rgba(34,211,238,.28),transparent 65%);opacity:.3}
+.n3{width:50vmax;height:50vmax;bottom:-24vmax;inset-inline-start:22vmax;background:radial-gradient(circle,rgba(244,114,182,.24),transparent 65%);opacity:.28}
+.stars{position:absolute;inset:0;opacity:.55;background-image:
+  radial-gradient(1.2px 1.2px at 22px 34px,rgba(255,255,255,.85),transparent 55%),
+  radial-gradient(1px 1px at 118px 92px,rgba(196,181,253,.8),transparent 55%),
+  radial-gradient(1.6px 1.6px at 208px 44px,rgba(103,232,249,.75),transparent 55%),
+  radial-gradient(1px 1px at 296px 158px,rgba(249,168,212,.7),transparent 55%),
+  radial-gradient(1px 1px at 62px 198px,rgba(255,255,255,.5),transparent 55%),
+  radial-gradient(1.3px 1.3px at 250px 232px,rgba(167,139,250,.65),transparent 55%);
+  background-size:330px 260px;animation:twinkle 7s ease-in-out infinite alternate}
+.grain{position:absolute;inset:0;opacity:.05;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E")}
+@keyframes twinkle{from{opacity:.32}to{opacity:.62}}
+/* utilities */
+.holo-text{background:var(--grad);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:holoShift 9s linear infinite}
+@keyframes holoShift{to{background-position:220% 50%}}
+.holo-b{position:relative}
+.holo-b::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1.2px;background:var(--grad);background-size:280% 100%;animation:holoShift 7s linear infinite;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);mask-composite:exclude;pointer-events:none;opacity:.85}
+.hr{height:1px;width:min(1160px,92%);margin-inline:auto;background:linear-gradient(90deg,transparent,rgba(168,85,247,.4),rgba(34,211,238,.4),rgba(244,114,182,.35),transparent)}
+.kicker{display:inline-flex;align-items:center;gap:.55rem;border:1px solid rgba(168,85,247,.4);background:rgba(168,85,247,.1);color:#ecd8ff;padding:.45rem 1.1rem;border-radius:999px;font-size:.85rem;font-weight:700}
+.kicker .dot{width:8px;height:8px;border-radius:50%;background:var(--grad);animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.5);opacity:.6}}
+.sec-k{display:inline-block;color:var(--c);font-weight:800;font-size:.9rem;letter-spacing:.06em;margin-bottom:.4rem}
+.sec-h{font-size:clamp(1.4rem,3.4vw,2.1rem);font-weight:900;line-height:1.55;margin:.2rem 0 .6rem}
+.sec-p{color:var(--mut);max-width:62ch;margin:0 auto 2rem}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:48px;padding:.72rem 1.6rem;border-radius:999px;font-weight:800;font-size:.98rem;text-decoration:none;cursor:pointer;border:0;font-family:inherit;transition:transform .3s,box-shadow .3s,background .3s;white-space:nowrap}
+.btn-holo{position:relative;color:#0d0518;background:var(--grad);background-size:220% 100%;animation:holoShift 6s linear infinite,holoPulse 2.6s ease-in-out infinite;box-shadow:0 10px 34px rgba(168,85,247,.38),0 3px 12px rgba(34,211,238,.28),inset 0 1px 0 rgba(255,255,255,.35)}
+@keyframes holoPulse{0%,100%{box-shadow:0 10px 34px rgba(168,85,247,.38),0 3px 12px rgba(34,211,238,.28),0 0 0 0 rgba(168,85,247,.5)}50%{box-shadow:0 14px 44px rgba(168,85,247,.55),0 3px 14px rgba(34,211,238,.42),0 0 0 10px rgba(168,85,247,0)}}
+.btn-holo:hover{transform:translateY(-2px) scale(1.015);box-shadow:0 16px 44px rgba(168,85,247,.5),0 6px 18px rgba(34,211,238,.35)}
+.btn-ghost{color:var(--ink);background:rgba(168,85,247,.08);border:1px solid rgba(168,85,247,.4)}
+.btn-ghost:hover{background:rgba(168,85,247,.16);transform:translateY(-2px)}
+/* header */
+.hdr{position:sticky;top:0;z-index:60;background:rgba(5,3,10,.55);-webkit-backdrop-filter:blur(20px) saturate(1.5);backdrop-filter:blur(20px) saturate(1.5);border-bottom:1px solid transparent;transition:background .35s,border-color .35s}
+.hdr.sc{background:rgba(5,3,10,.82);border-color:var(--line)}
+.nav{display:flex;align-items:center;gap:.75rem;min-height:70px}
+.brand{display:inline-flex;align-items:center;gap:.65rem;font-weight:900;color:var(--ink);text-decoration:none;font-size:1.04rem}
+.brand .mark{width:38px;height:38px;overflow:visible}
+.links{display:flex;align-items:center;gap:.1rem;margin-inline-start:auto}
+.links a{color:var(--mut);text-decoration:none;padding:.7rem .85rem;border-radius:999px;font-weight:700;font-size:.92rem;transition:color .25s,background .25s}
+.links a:hover{color:#fff;background:rgba(255,255,255,.06)}
+.links .btn{padding:.55rem 1.25rem;min-height:44px;font-size:.9rem;margin-inline-start:.6rem}
+@media(max-width:920px){.links{display:none}}
+/* hero */
+.hero{display:grid;gap:3rem;align-items:center;padding-block:clamp(3rem,7vw,5.5rem) clamp(2.6rem,5vw,4rem);text-align:center}
+.hero h1{font-size:clamp(1.75rem,5.2vw,3.1rem);font-weight:900;line-height:1.6;margin:1rem 0}
+.hero .sub{color:var(--mut);max-width:56ch;margin:0 auto;font-size:1.05rem}
+.ctas{display:flex;flex-wrap:wrap;gap:.9rem;justify-content:center;margin-top:1.8rem}
+.stats{display:flex;flex-wrap:wrap;justify-content:center;gap:.7rem 2.4rem;margin-top:2.2rem}
+.st{display:flex;flex-direction:column;gap:.1rem}
+.st b{font-size:1.5rem;font-weight:900}
+.st span{color:var(--mut);font-size:.85rem}
+/* sections */
+section{padding-block:clamp(2.6rem,5vw,4.2rem)}
+/* QR panel */
+.qr-grid{display:grid;gap:2.4rem;align-items:center}
+@media(min-width:980px){.qr-grid{grid-template-columns:1.05fr .95fr}}
+.qr-panel{position:relative;border-radius:var(--r2);background:var(--panel);border:1px solid var(--line);padding:clamp(1.4rem,3.5vw,2.6rem);text-align:center}
+.qr-tile{display:inline-block;background:#fff;border-radius:20px;padding:clamp(14px,3vw,22px);box-shadow:0 18px 60px rgba(168,85,247,.28),0 4px 18px rgba(34,211,238,.18);max-width:100%}
+.qr-tile svg{width:min(280px,68vw);height:auto}
+.qr-ref{margin-top:1.1rem;font-family:"Space Grotesk",monospace;font-size:.86rem;color:var(--mut);word-break:break-all;line-height:2}
+.qr-ref bdi{color:#dcd2f5}
+.qr-actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}
+.qr-note{color:var(--mut);font-size:.88rem;margin-top:1rem}
+.ulist{list-style:none;padding:0;margin:1.2rem 0 0;display:grid;gap:.55rem}
+.ulist li{display:flex;gap:.6rem;align-items:flex-start;color:var(--mut)}
+.ulist li::before{content:"✦";color:var(--c);flex:none;margin-top:.15rem}
+/* share */
+.share-wrap{max-width:820px;margin-inline:auto}
+.share-big{width:100%;min-height:56px;font-size:1.08rem;margin:1.4rem 0 .4rem}
+.share-hint{color:var(--mut);font-size:.85rem;text-align:center;margin-bottom:1.6rem}
+.share-opts{display:grid;gap:.9rem}
+@media(min-width:760px){.share-opts{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.share-opt{display:flex;flex-direction:column;gap:.7rem;border:1px solid var(--line);border-radius:var(--r);background:var(--panel);padding:1.1rem 1.2rem;transition:transform .3s,border-color .3s}
+.share-opt:hover{transform:translateY(-3px);border-color:rgba(168,85,247,.5)}
+.share-opt p{margin:0;font-size:.92rem;line-height:2;color:#ddd3f4;flex:1}
+.share-opt .cp{align-self:flex-start}
+.cp{display:inline-flex;align-items:center;gap:.4rem;min-height:38px;padding:.35rem 1rem;border-radius:999px;border:1px solid rgba(168,85,247,.4);background:rgba(168,85,247,.08);color:var(--ink);font-weight:700;font-size:.85rem;font-family:inherit;cursor:pointer;transition:background .25s}
+.cp:hover{background:rgba(168,85,247,.18)}
+.share-fallback{margin-top:.9rem;color:var(--mut);font-size:.82rem;text-align:center}
+/* social cards */
+.cards-grid{display:grid;gap:1.4rem}
+@media(min-width:720px){.cards-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.scard{position:relative;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:var(--r2);background:var(--panel);overflow:hidden;transition:transform .35s,box-shadow .35s}
+.scard:hover{transform:translateY(-6px);box-shadow:0 22px 60px rgba(168,85,247,.22)}
+.scard .head{display:flex;align-items:center;gap:.7rem;padding:.9rem 1.1rem}
+.scard .avatar{width:42px;height:42px;border-radius:50%;background:var(--grad);background-size:220% 100%;animation:holoShift 6s linear infinite;padding:2.5px;flex:none}
+.scard .avatar i{display:block;width:100%;height:100%;border-radius:50%;background:#160b28}
+.scard .who b{display:block;font-size:.9rem;line-height:1.5}
+.scard .who span{color:var(--mut);font-size:.78rem}
+.scard .media{position:relative;aspect-ratio:1/.92;display:grid;place-items:center;overflow:hidden;background:radial-gradient(130% 120% at 15% 10%,rgba(168,85,247,.4),transparent 55%),radial-gradient(120% 120% at 90% 20%,rgba(34,211,238,.3),transparent 50%),radial-gradient(140% 130% at 50% 100%,rgba(244,114,182,.34),transparent 60%),#0d0618}
+.scard .media .big{font-size:clamp(2.2rem,6vw,3rem);filter:drop-shadow(0 6px 24px rgba(168,85,247,.5))}
+.scard .media .tag{position:absolute;bottom:10px;inset-inline:10px;display:flex;justify-content:space-between;gap:.5rem;font-size:.72rem;color:#efe7ff}
+.scard .media .tag i{font-style:normal;background:rgba(5,3,10,.62);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:.14rem .6rem}
+.scard .body{padding:1rem 1.1rem 1.2rem;display:flex;flex-direction:column;gap:.8rem;flex:1}
+.scard .acts{display:flex;gap:1rem;color:#cbbfec;font-size:1rem;letter-spacing:.35em}
+.scard .cap{margin:0;font-size:.93rem;line-height:2;color:#e9e1fa}
+.scard .cap bdi{color:var(--c);font-weight:700}
+.scard .foot{margin-top:auto;padding:0 1.1rem 1.2rem}
+/* TG chat card */
+.tgcard .media{aspect-ratio:auto;padding:1rem 1rem 1.2rem;display:flex;flex-direction:column;gap:.6rem;background:radial-gradient(120% 90% at 80% 0%,rgba(34,211,238,.16),transparent 55%),radial-gradient(120% 110% at 10% 100%,rgba(168,85,247,.2),transparent 55%),#0c0716}
+.bub{max-width:88%;border-radius:16px;padding:.55rem .9rem;font-size:.85rem;line-height:1.9}
+.bub.u{align-self:flex-start;background:rgba(34,211,238,.12);border:1px solid rgba(34,211,238,.35);color:#d9f6fd;font-family:"Space Grotesk",monospace;direction:ltr;text-align:left;word-break:break-all}
+.bub.b{align-self:flex-end;background:rgba(168,85,247,.14);border:1px solid rgba(168,85,247,.4)}
+.bub.b .files{display:flex;flex-direction:column;gap:.35rem;margin-top:.45rem}
+.bub.b .files i{font-style:normal;display:flex;align-items:center;gap:.45rem;background:rgba(5,3,10,.5);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:.3rem .6rem;font-size:.78rem;color:#efe7ff}
+.bub.b .files em{font-style:normal;margin-inline-start:auto;color:var(--c);font-size:.72rem;font-weight:800}
+/* story card */
+.story .media{aspect-ratio:1/.92;background:#0b0514}
+.story .ring{position:absolute;inset:10px;border-radius:18px;padding:2.5px;background:var(--grad);background-size:240% 100%;animation:holoShift 7s linear infinite}
+.story .ring i{display:grid;width:100%;height:100%;border-radius:16px;background:radial-gradient(120% 100% at 80% 0%,rgba(244,114,182,.25),transparent 55%),radial-gradient(120% 120% at 10% 90%,rgba(34,211,238,.2),transparent 55%),#0d0618;place-items:center;text-align:center;padding:1.2rem}
+.story .line1{font-size:1.25rem;font-weight:900;line-height:1.9}
+.story .line2{color:var(--mut);font-size:.85rem;margin-top:.3rem}
+.story .miniqr{position:absolute;bottom:14px;inset-inline-start:14px;width:54px;height:54px;border-radius:8px;background:#fff;padding:5px;opacity:.92}
+/* honest line + faq */
+.real-line{border:1px solid var(--line);border-radius:var(--r2);background:var(--panel);padding:clamp(1.2rem,3vw,2rem);text-align:center;color:#ddd3f4;font-size:1rem;line-height:2.1}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin-top:1rem}
+.chips i{font-style:normal;font-size:.8rem;color:#d9ccf4;border:1px solid rgba(168,85,247,.35);background:rgba(168,85,247,.08);border-radius:999px;padding:.25rem .8rem}
+details{border:1px solid var(--line);border-radius:var(--r);background:var(--panel);padding:0 1.2rem;margin-bottom:.8rem}
+details summary{cursor:pointer;font-weight:800;padding:1rem 0;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";float:left;color:var(--c);font-weight:900}
+details[open] summary::after{content:"−"}
+details p{color:var(--mut);margin:0 0 1rem;font-size:.95rem}
+/* footer + sticky CTA + toast */
+footer{border-top:1px solid var(--line);padding:1.6rem 0 calc(1.6rem + env(safe-area-inset-bottom));color:var(--mut);font-size:.88rem;text-align:center}
+footer a{color:#d5c9f0;text-decoration:none;border-bottom:1px dotted rgba(168,85,247,.5)}
+.mcta{position:fixed;bottom:0;inset-inline:0;z-index:70;display:none;padding:.7rem 4vw calc(.7rem + env(safe-area-inset-bottom));background:rgba(5,3,10,.86);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border-top:1px solid var(--line)}
+.mcta .btn{width:100%}
+@media(max-width:720px){.mcta{display:block}footer{padding-bottom:6.4rem}}
+.toast{position:fixed;bottom:calc(84px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%) translateY(16px);z-index:90;background:#1a0f2e;border:1px solid rgba(168,85,247,.55);color:#f3effc;padding:.65rem 1.3rem;border-radius:999px;font-weight:700;font-size:.9rem;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;box-shadow:0 14px 40px rgba(168,85,247,.35);max-width:88vw;text-align:center}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+/* entrance */
+.hero .kicker,.hero h1,.hero .sub,.hero .ctas,.hero .stats{animation:rise .8s ease-out backwards}
+.hero h1{animation-delay:.08s}.hero .sub{animation-delay:.16s}.hero .ctas{animation-delay:.24s}.hero .stats{animation-delay:.32s}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">پرش به محتوا</a>
+
+<div class="bgfx" aria-hidden="true"><div class="neb n1"></div><div class="neb n2"></div><div class="neb n3"></div><div class="stars"></div><div class="grain"></div></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<linearGradient id="hg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a855f7"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#f472b6"/></linearGradient>
+<symbol id="i-tg" viewBox="0 0 24 24"><path fill="url(#hg)" d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></symbol>
+<symbol id="i-share" viewBox="0 0 24 24" fill="none" stroke="url(#hg)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="12" r="2.6"/><circle cx="17.5" cy="5.5" r="2.6"/><circle cx="17.5" cy="18.5" r="2.6"/><path d="M8.4 10.8l6.8-4M8.4 13.2l6.8 4"/></symbol>
+<symbol id="i-qr" viewBox="0 0 24 24" fill="none" stroke="url(#hg)" stroke-width="1.8" stroke-linejoin="round"><rect x="3.2" y="3.2" width="7" height="7" rx="1.5"/><rect x="13.8" y="3.2" width="7" height="7" rx="1.5"/><rect x="3.2" y="13.8" width="7" height="7" rx="1.5"/><path d="M13.8 13.8h3v3h-3zM20.8 13.8v.01M13.8 20.8v.01M17.4 17.4h3.4v3.4h-3.4z"/></symbol>
+<symbol id="i-dl" viewBox="0 0 24 24" fill="none" stroke="url(#hg)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5v11M7.5 10.5 12 15l4.5-4.5"/><path d="M4.5 17.5v1.9a1.6 1.6 0 0 0 1.6 1.6h11.8a1.6 1.6 0 0 0 1.6-1.6v-1.9"/></symbol>
+</defs></svg>
+
+<header class="hdr" id="top">
+  <div class="container nav">
+    <a class="brand" href="#top" aria-label="InstaDownloadai — بالای صفحه">
+      <svg class="mark" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="17" fill="rgba(168,85,247,.08)" stroke="url(#hg)" stroke-width="1.6"/>
+        <ellipse cx="24" cy="24" rx="23" ry="7.5" fill="none" stroke="url(#hg)" stroke-width="1" opacity=".45" transform="rotate(-18 24 24)"/>
+        <path d="M24 15v13m0 0 5.5-5.5M24 28l-5.5-5.5" stroke="url(#hg)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle cx="36.5" cy="12.5" r="1.6" fill="#22d3ee"/>
+      </svg>
+      <span>InstaDownloadai</span>
+    </a>
+    <nav class="links" aria-label="ناوبری صفحه">
+      <a href="#qr">QR</a>
+      <a href="#share">اشتراک‌گذاری</a>
+      <a href="#cards">کارت‌ها</a>
+      <a class="btn btn-holo" href="https://t.me/InstaDownloadai?start=a3" target="_blank" rel="noopener">شروع ربات</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <!-- ============ HERO ============ -->
+  <section class="hero container" aria-labelledby="h1">
+    <div>
+      <span class="kicker"><i class="dot" aria-hidden="true"></i> ربات رسمی تلگرام · <bdi dir="ltr">@InstaDownloadai</bdi></span>
+      <h1 id="h1">یک اسکن، یک دوست بیشتر — <span class="holo-text">ربات را معرفی کن</span></h1>
+      <p class="sub">این صفحه فقط یک کار دارد: رساندن <bdi dir="ltr">@InstaDownloadai</bdi> به دوستانت. کد QR را اسکن کن یا صفحه را با متن آماده بفرست — دانلود ویدیو و موزیک‌یاب، همان لحظه در تلگرام شروع می‌شود.</p>
+      <div class="ctas">
+        <a class="btn btn-holo" href="https://t.me/InstaDownloadai?start=a3" target="_blank" rel="noopener">
+          <svg width="20" height="20" aria-hidden="true"><use href="#i-tg"/></svg>
+          شروع ربات در تلگرام
+        </a>
+        <a class="btn btn-ghost" href="#qr">دیدن کد QR ↓</a>
+      </div>
+      <div class="stats" role="list">
+        <div class="st" role="listitem"><b class="holo-text">۴K</b><span>بهترین کیفیت ویدیو</span></div>
+        <div class="st" role="listitem"><b class="holo-text">۳۲۰kbps</b><span>کیفیت آهنگ موزیک‌یاب</span></div>
+        <div class="st" role="listitem"><b class="holo-text">۰</b><span>واترمارک، همیشه</span></div>
+        <div class="st" role="listitem"><b class="holo-text">۱۰۰٪</b><span>رایگان، بدون لاگین</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="hr" aria-hidden="true"></div>
+
+  <!-- ============ QR BLOCK ============ -->
+  <section id="qr" class="container" aria-labelledby="h-qr">
+    <div class="qr-grid">
+      <div>
+        <span class="sec-k">کد QR اختصاصی</span>
+        <h2 class="sec-h" id="h-qr">دوربین را بگیر روی QR — <span class="holo-text">مستقیم به ربات می‌رسی</span></h2>
+        <p class="sec-p" style="margin-inline:0">این کد همین حالا، داخل مرورگر خودت ساخته شده — نه هیچ سرور واسطه‌ای، نه هیچ لینک کوتاه مشکوکی. هر کسی آن را اسکن کند با لینک دعوت همین صفحه به ربات می‌رسد.</p>
+        <ul class="ulist">
+          <li>استوری و پست بگذار؛ هر اسکن، یک کاربر تازه است.</li>
+          <li>برای گروه کلاس، دفتر، کافه یا پوستر — چاپش کن.</li>
+          <li>روی گوشی خودت هم امتحانش کن؛ چندثانیه‌ای در ربات هستی.</li>
+        </ul>
+        <div class="qr-actions">
+          <a class="btn btn-holo" href="https://t.me/InstaDownloadai?start=a3" target="_blank" rel="noopener">
+            <svg width="19" height="19" aria-hidden="true"><use href="#i-tg"/></svg>
+            باز کردن ربات
+          </a>
+          <button class="btn btn-ghost" type="button" id="dlQr">
+            <svg width="19" height="19" aria-hidden="true"><use href="#i-dl"/></svg>
+            دانلود QR (PNG)
+          </button>
+        </div>
+      </div>
+      <div class="qr-panel holo-b">
+        <div class="qr-tile">
+          <div id="qrbox" role="img" aria-label="کد QR که با اسکن آن به ربات تلگرام InstaDownloadai می‌رسی"></div>
+          <noscript><p style="color:#333;font-weight:700;margin:.4rem 0 0">برای دیدن کد QR، جاوااسکریپت را فعال کن — یا مستقیم دکمهٔ «باز کردن ربات» را بزن.</p></noscript>
+        </div>
+        <p class="qr-ref">لینک این کد: <bdi dir="ltr">https://t.me/InstaDownloadai?start=a3</bdi></p>
+        <p class="qr-note">کد با الگوریتم استاندارد QR و سطح تصحیح خطای M ساخته شده؛ حتی اگر بخشی از آن کثیف یا تا شده باشد هم اسکن می‌شود.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="hr" aria-hidden="true"></div>
+
+  <!-- ============ SHARE BLOCK ============ -->
+  <section id="share" class="container" aria-labelledby="h-share">
+    <div class="share-wrap" style="text-align:center">
+      <span class="sec-k">اشتراک‌گذاری</span>
+      <h2 class="sec-h" id="h-share">این صفحه رو برای <span class="holo-text">دوستات</span> بفرست</h2>
+      <p class="sec-p" style="margin-inline:auto">سه متن آماده نوشتیم؛ یکی را انتخاب کن. با دکمهٔ پایین، منوی اشتراک‌گذاری خود گوشی باز می‌شود — تلگرام، واتساپ، استوری، هرجا.</p>
+      <button class="btn btn-holo share-big" type="button" id="shareBig">
+        <svg width="20" height="20" aria-hidden="true"><use href="#i-share"/></svg>
+        اشتراک‌گذاری با یک لمس
+      </button>
+      <p class="share-hint">اگر دکمه کار نکرد، هیچی از دست نرفته — متن‌های زیر را کپی کن.</p>
+      <div class="share-opts">
+        <div class="share-opt">
+          <p id="st1">هر ویدیو و آهنگی رو با ربات تلگرامی <bdi dir="ltr">@InstaDownloadai</bdi> دانلود کن 🎧 اینستاگرام، پینترست، تیک‌تاک و ویمئو — بدون واترمارک، رایگان. موزیک‌یابش هم هر آهنگی رو تا ۳۲۰kbps پیدا می‌کنه 👇<br><bdi dir="ltr">https://t.me/InstaDownloadai?start=a3</bdi></p>
+          <button class="cp" type="button" data-copy="st1">کپی متن ۱</button>
+        </div>
+        <div class="share-opt">
+          <p id="st2">لینک ریلز یا پست رو بفرست، ویدیو تا ۴K بدون واترمارک تحویل بگیر؛ اسم آهنگ رو هم بنویسی، <bdi dir="ltr">mp3</bdi> با کیفیت ۳۲۰ می‌ده 😍<br><bdi dir="ltr">https://t.me/InstaDownloadai?start=a3</bdi></p>
+          <button class="cp" type="button" data-copy="st2">کپی متن ۲</button>
+        </div>
+        <div class="share-opt">
+          <p id="st3">برای دانلود ریلز و آهنگ دیگه لازم نیست اپ نصب کنی؛ <bdi dir="ltr">@InstaDownloadai</bdi> توی تلگرام همه‌چیز رو می‌فرسته — رایگان و بدون لاگین ✨<br><bdi dir="ltr">https://t.me/InstaDownloadai?start=a3</bdi></p>
+          <button class="cp" type="button" data-copy="st3">کپی متن ۳</button>
+        </div>
+      </div>
+      <p class="share-fallback">متن‌ها دست‌نخورده می‌مانند و لینک دعوت داخل‌شان ثبت می‌شود.</p>
+    </div>
+  </section>
+
+  <div class="hr" aria-hidden="true"></div>
+
+  <!-- ============ SOCIAL CARDS ============ -->
+  <section id="cards" class="container" aria-labelledby="h-cards">
+    <div style="text-align:center">
+      <span class="sec-k">کارت‌های آماده</span>
+      <h2 class="sec-h" id="h-cards">سه کارت، <span class="holo-text">آمادهٔ بازنشر</span></h2>
+      <p class="sec-p" style="margin-inline:auto">این‌ها نمونهٔ واقعی چیزی هستند که دوستت بعد از اسکن می‌بیند. کپشن هر کارت را هم می‌توانی کپی کنی و همراهش بفرستی.</p>
+    </div>
+    <div class="cards-grid">
+      <article class="scard" aria-label="نمونهٔ پست اینستاگرام">
+        <div class="head">
+          <span class="avatar" aria-hidden="true"><i></i></span>
+          <span class="who"><b><bdi dir="ltr">InstaDownloadai</bdi></b><span>پیشنهاد امروز</span></span>
+        </div>
+        <div class="media" aria-hidden="true">
+          <span class="big">🎧</span>
+          <span class="tag"><i>۴K · بدون واترمارک</i><i>۳۲۰kbps</i></span>
+        </div>
+        <div class="body">
+          <div class="acts" aria-hidden="true">♥ ○ ↗</div>
+          <p class="cap">با این ربات هر ویدیو و آهنگی رو دانلود کن 🎧 <bdi dir="ltr">@InstaDownloadai</bdi></p>
+        </div>
+        <div class="foot"><button class="cp" type="button" data-copy="cap1" aria-label="کپی کپشن کارت اینستاگرام">کپی کپشن</button></div>
+      </article>
+
+      <article class="scard tgcard" aria-label="نمونهٔ گفتگوی تلگرام با ربات">
+        <div class="head">
+          <span class="avatar" aria-hidden="true"><i></i></span>
+          <span class="who"><b>گفتگو با ربات</b><span>تلگرام · همان لحظه</span></span>
+        </div>
+        <div class="media" aria-hidden="true">
+          <span class="bub u">https://instagram.com/reel/…</span>
+          <span class="bub b">فایل آماده‌ست ✅ بدون واترمارک
+            <span class="files">
+              <i>🎬 reel_2160p.mp4 <em>۴K</em></i>
+              <i>🎵 آهنگ بی‌نام.mp3 <em>۳۲۰kbps</em></i>
+            </span>
+          </span>
+        </div>
+        <div class="body">
+          <p class="cap">موزیک‌یاب: اسم آهنگ رو بنویس، <bdi dir="ltr">mp3</bdi> ۳۲۰ بگیر 🎵 <bdi dir="ltr">@InstaDownloadai</bdi></p>
+        </div>
+        <div class="foot"><button class="cp" type="button" data-copy="cap2" aria-label="کپی کپشن کارت تلگرام">کپی کپشن</button></div>
+      </article>
+
+      <article class="scard story" aria-label="نمونهٔ استوری">
+        <div class="head">
+          <span class="avatar" aria-hidden="true"><i></i></span>
+          <span class="who"><b>استوری</b><span>قاب بعدی مال توست</span></span>
+        </div>
+        <div class="media" aria-hidden="true">
+          <span class="ring"><i>
+            <span>
+              <span class="line1">بدون واترمارک،<br>تا <span class="holo-text">۴K</span></span>
+              <span class="line2" style="display:block"><bdi dir="ltr">@InstaDownloadai</bdi> · رایگان</span>
+            </span>
+          </i></span>
+          <span class="miniqr" style="background-image:linear-gradient(115deg,#a855f7,#22d3ee 34%,#f472b6);"></span>
+        </div>
+        <div class="body">
+          <p class="cap">بدون واترمارک، تا ۴K — رایگان توی تلگرام ✨ <bdi dir="ltr">@InstaDownloadai</bdi></p>
+        </div>
+        <div class="foot"><button class="cp" type="button" data-copy="cap3" aria-label="کپی کپشن کارت استوری">کپی کپشن</button></div>
+      </article>
+    </div>
+  </section>
+
+  <div class="hr" aria-hidden="true"></div>
+
+  <!-- ============ HONEST LINE ============ -->
+  <section class="container" aria-label="قابلیت‌های واقعی ربات">
+    <p class="real-line">ربات <bdi dir="ltr">@InstaDownloadai</bdi> ویدیو و عکس اینستاگرام، پینترست، تیک‌تاک و ویمئو را بدون واترمارک دانلود می‌کند و موزیک‌یابش هر آهنگی را با اسمش تا ۳۲۰kbps پیدا می‌کند — ویدیوی بی‌نام را هم می‌شناسد. همه‌چیز رایگان است، بدون لاگین و بدون تبلیغ؛ حدود ۸۰ دانلود در روز برای هر کاربر و هر فایل تا حدود ۴۹ مگابایت.</p>
+    <div class="chips" aria-hidden="true">
+      <i>ویدیو تا ۴K</i><i>آهنگ تا ۳۲۰kbps</i><i>بدون واترمارک</i><i>رایگان و بدون لاگین</i><i>حدود ۸۰ دانلود در روز</i><i>فایل تا حدود ۴۹MB</i><i>۴ زبان: فارسی، انگلیسی، عربی، روسی</i>
+    </div>
+  </section>
+
+  <div class="hr" aria-hidden="true"></div>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" class="container" aria-labelledby="h-faq" style="max-width:820px">
+    <div style="text-align:center">
+      <span class="sec-k">سؤال‌های پرتکرار</span>
+      <h2 class="sec-h" id="h-faq">قبل از فرستادن، <span class="holo-text">بدان</span></h2>
+    </div>
+    <details>
+      <summary>چطور با همین صفحه ربات را به دوستانم معرفی کنم؟</summary>
+      <p>دکمهٔ اشتراک‌گذاری را بزن یا یکی از متن‌های آماده را کپی کن و در چت بفرست؛ دوستت می‌تواند همین صفحه را باز کند و QR را با دوربین اسکن کند تا مستقیم به ربات برسد.</p>
+    </details>
+    <details>
+      <summary>تصویر QR را کجا می‌توانم استفاده کنم؟</summary>
+      <p>هر جا که دوربین در دسترس است: استوری، گروه‌های چتی، پوستر یا تابلو. دکمهٔ «دانلود QR» تصویر باکیفیت آن را در قالب PNG می‌دهد.</p>
+    </details>
+    <details>
+      <summary>ربات به چه زبان‌هایی پاسخ می‌دهد؟</summary>
+      <p>فارسی، انگلیسی، عربی و روسی؛ زبان در اولین Start انتخاب می‌شود و بعداً با <bdi dir="ltr">/lang</bdi> قابل تغییر است.</p>
+    </details>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    این صفحه فقط برای معرفی است؛ همهٔ دانلودها داخل خود ربات تلگرام انجام می‌شود ·
+    <a href="https://h095157497.github.io/" target="_blank" rel="noopener">سایت اصلی</a> ·
+    <a href="https://t.me/InstaDownloadai?start=a3" target="_blank" rel="noopener"><bdi dir="ltr">@InstaDownloadai</bdi></a>
+  </div>
+</footer>
+
+<nav class="mcta" aria-label="فراخوان همیشه در دسترس">
+  <a class="btn btn-holo" href="https://t.me/InstaDownloadai?start=a3" target="_blank" rel="noopener">
+    <svg width="20" height="20" aria-hidden="true"><use href="#i-tg"/></svg>
+    شروع ربات در تلگرام
+  </a>
+</nav>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  'use strict';
+  /* ============================================================
+     Minimal client-side QR generator — model 2, byte mode,
+     EC level M, versions 1–10, auto mask selection.
+     Architecture follows the classic MIT "qrcode-generator"
+     algorithm (Kazuhiko Arase); verified in-lab with a real
+     decoder (jsQR): decode == ref link, all 8 masks valid.
+     ============================================================ */
+  var RS_BLOCK_TABLE = [
+    [1,26,19],[1,26,16],[1,26,13],[1,26,9],
+    [1,44,34],[1,44,28],[1,44,22],[1,44,16],
+    [1,70,55],[1,70,44],[2,35,17],[2,35,13],
+    [1,100,80],[2,50,32],[2,50,24],[4,25,9],
+    [1,134,108],[2,67,43],[2,33,15,2,34,16],[2,33,11,2,34,12],
+    [2,86,68],[4,43,27],[4,43,19],[4,43,15],
+    [2,98,78],[4,49,31],[2,32,14,4,33,15],[4,39,13,1,40,14],
+    [2,121,97],[2,60,38,2,61,39],[4,40,18,2,41,19],[4,40,14,2,41,15],
+    [2,146,116],[3,58,36,2,59,37],[4,36,16,4,37,17],[4,36,12,4,37,13],
+    [2,86,68,2,87,69],[4,69,43,1,70,44],[6,43,19,2,44,20],[6,43,15,2,44,16]
+  ];
+  var PATTERN_POSITION_TABLE = [
+    [],[6,18],[6,22],[6,26],[6,30],[6,34],[6,22,38],[6,24,42],[6,26,46],[6,28,50]
+  ];
+  var G15 = 1335, G15_MASK = 21522, G18 = 7973;
+
+  var EXP = new Uint8Array(256), LOG = new Uint8Array(256);
+  (function () { var x = 1; for (var i = 0; i < 255; i++) { EXP[i] = x; LOG[x] = i; x <<= 1; if (x & 0x100) x ^= 0x11d; } })();
+  function gmul(a, b) { return (a === 0 || b === 0) ? 0 : EXP[(LOG[a] + LOG[b]) % 255]; }
+  function gexp(n) { while (n < 0) n += 255; while (n >= 255) n -= 255; return EXP[n]; }
+  function glog(n) { return LOG[n]; }
+
+  function BitBuffer() { this.buffer = []; this.length = 0; }
+  BitBuffer.prototype.put = function (num, len) { for (var i = 0; i < len; i++) this.putBit(((num >>> (len - i - 1)) & 1) === 1); };
+  BitBuffer.prototype.putBit = function (bit) {
+    var idx = Math.floor(this.length / 8);
+    if (this.buffer.length <= idx) this.buffer.push(0);
+    if (bit) this.buffer[idx] |= (0x80 >>> (this.length % 8));
+    this.length++;
+  };
+
+  function rsBlocksFor(type, ecIdx) {
+    var row = RS_BLOCK_TABLE[(type - 1) * 4 + ecIdx], blocks = [];
+    for (var i = 0; i < row.length; i += 3) {
+      for (var k = 0; k < row[i]; k++) blocks.push({ totalCount: row[i + 1], dataCount: row[i + 2] });
+    }
+    return blocks;
+  }
+  function rsGenPoly(ecLen) {
+    var poly = [1];
+    for (var i = 0; i < ecLen; i++) {
+      var next = new Array(poly.length + 1);
+      for (var z = 0; z < next.length; z++) next[z] = 0;
+      for (var j = 0; j < poly.length; j++) { next[j] ^= poly[j]; next[j + 1] ^= gmul(poly[j], gexp(i)); }
+      poly = next;
+    }
+    return poly;
+  }
+  function polyMod(a, b) {
+    var r = a.slice(), i;
+    while (r.length > 0 && r[0] === 0) r.shift();
+    while (r.length >= b.length && r.length > 0) {
+      var ratio = glog(r[0]) - glog(b[0]);
+      var out = r.slice();
+      for (i = 0; i < b.length; i++) out[i] ^= gexp(glog(b[i]) + ratio);
+      r = out;
+      while (r.length > 0 && r[0] === 0) r.shift();
+    }
+    return r;
+  }
+  function createBytes(buffer, blocks) {
+    var offset = 0, maxDc = 0, maxEc = 0, total = 0, b, i, r;
+    var dc = [], ec = [];
+    for (i = 0; i < blocks.length; i++) { b = blocks[i]; total += b.totalCount; maxDc = Math.max(maxDc, b.dataCount); }
+    for (i = 0; i < blocks.length; i++) {
+      b = blocks[i];
+      var dcv = new Array(b.dataCount);
+      for (var t = 0; t < b.dataCount; t++) dcv[t] = (t + offset < buffer.buffer.length) ? (buffer.buffer[t + offset] & 0xff) : 0;
+      offset += b.dataCount;
+      dc.push(dcv);
+      var ecCount = b.totalCount - b.dataCount;
+      var rsPoly = rsGenPoly(ecCount);
+      var shifted = dcv.concat(new Array(ecCount));
+      for (var z = 0; z < ecCount; z++) shifted[dcv.length + z] = 0;
+      var modPoly = polyMod(shifted, rsPoly);
+      var ecv = new Array(ecCount);
+      for (var e = 0; e < ecCount; e++) {
+        var mi = e + modPoly.length - ecCount;
+        ecv[e] = mi >= 0 ? modPoly[mi] : 0;
+      }
+      ec.push(ecv);
+      maxEc = Math.max(maxEc, ecCount);
+    }
+    var out = new Array(total), idx = 0;
+    for (i = 0; i < maxDc; i++) for (r = 0; r < blocks.length; r++) if (i < dc[r].length) out[idx++] = dc[r][i];
+    for (i = 0; i < maxEc; i++) for (r = 0; r < blocks.length; r++) if (i < ec[r].length) out[idx++] = ec[r][i];
+    return out;
+  }
+  function bchDigit(d) { var digit = 0; while (d !== 0) { digit++; d >>>= 1; } return digit; }
+  function bch15(data) {
+    var d = data << 10;
+    while (bchDigit(d) - bchDigit(G15) >= 0) d ^= (G15 << (bchDigit(d) - bchDigit(G15)));
+    return ((data << 10) | d) ^ G15_MASK;
+  }
+  function bch18(type) {
+    var d = type << 12;
+    while (bchDigit(d) - bchDigit(G18) >= 0) d ^= (G18 << (bchDigit(d) - bchDigit(G18)));
+    return (type << 12) | d;
+  }
+  function maskBit(n, i, j) {
+    switch (n) {
+      case 0: return (i + j) % 2 === 0;
+      case 1: return i % 2 === 0;
+      case 2: return j % 3 === 0;
+      case 3: return (i + j) % 3 === 0;
+      case 4: return (Math.floor(i / 2) + Math.floor(j / 3)) % 2 === 0;
+      case 5: return ((i * j) % 2) + ((i * j) % 3) === 0;
+      case 6: return (((i * j) % 2) + ((i * j) % 3)) % 2 === 0;
+      case 7: return (((i * j) % 3) + ((i + j) % 2)) % 2 === 0;
+      default: return false;
+    }
+  }
+  function makeMatrix(type, ecIdx, buffer, maskPattern, test) {
+    var mc = type * 4 + 17;
+    var m = [], r, c, i, j;
+    for (r = 0; r < mc; r++) { m.push(new Array(mc)); for (c = 0; c < mc; c++) m[r][c] = null; }
+    var probe = function (row, col) {
+      for (var rr = -1; rr <= 7; rr++) {
+        if (row + rr < 0 || mc <= row + rr) continue;
+        for (var cc = -1; cc <= 7; cc++) {
+          if (col + cc < 0 || mc <= col + cc) continue;
+          m[row + rr][col + cc] =
+            (0 <= rr && rr <= 6 && (cc === 0 || cc === 6)) ||
+            (0 <= cc && cc <= 6 && (rr === 0 || rr === 6)) ||
+            (2 <= rr && rr <= 4 && 2 <= cc && cc <= 4);
+        }
+      }
+    };
+    probe(0, 0); probe(mc - 7, 0); probe(0, mc - 7);
+    var pos = PATTERN_POSITION_TABLE[type - 1];
+    for (i = 0; i < pos.length; i++) {
+      for (j = 0; j < pos.length; j++) {
+        var ar = pos[i], ac = pos[j];
+        if (m[ar][ac] !== null) continue;
+        for (var dr = -2; dr <= 2; dr++) for (var dcx = -2; dcx <= 2; dcx++)
+          m[ar + dr][ac + dcx] = (dr === -2 || dr === 2 || dcx === -2 || dcx === 2 || (dr === 0 && dcx === 0));
+      }
+    }
+    for (r = 8; r < mc - 8; r++) if (m[r][6] === null) m[r][6] = (r % 2 === 0);
+    for (c = 8; c < mc - 8; c++) if (m[6][c] === null) m[6][c] = (c % 2 === 0);
+    var ecBits = [1, 0, 3, 2][ecIdx];
+    var fmt = bch15(((ecBits << 3) | maskPattern));
+    for (i = 0; i < 15; i++) {
+      var mod = (!test && ((fmt >> i) & 1) === 1);
+      if (i < 6) m[i][8] = mod; else if (i < 8) m[i + 1][8] = mod; else m[mc - 15 + i][8] = mod;
+    }
+    for (i = 0; i < 15; i++) {
+      mod = (!test && ((fmt >> i) & 1) === 1);
+      if (i < 8) m[8][mc - i - 1] = mod; else if (i < 9) m[8][15 - i - 1 + 1] = mod; else m[8][15 - i - 1] = mod;
+    }
+    m[mc - 8][8] = !test;
+    if (type >= 7) {
+      var vi = bch18(type);
+      for (i = 0; i < 18; i++) { mod = (!test && ((vi >> i) & 1) === 1); m[Math.floor(i / 3)][(i % 3) + mc - 11] = mod; }
+      for (i = 0; i < 18; i++) { mod = (!test && ((vi >> i) & 1) === 1); m[(i % 3) + mc - 11][Math.floor(i / 3)] = mod; }
+    }
+    var data = createBytes(buffer, rsBlocksFor(type, ecIdx));
+    var inc = -1, row = mc - 1, bitIndex = 7, byteIndex = 0;
+    for (var col = mc - 1; col > 0; col -= 2) {
+      if (col === 6) col--;
+      for (;;) {
+        for (var cc2 = 0; cc2 < 2; cc2++) {
+          if (m[row][col - cc2] === null) {
+            var dark = false;
+            if (byteIndex < data.length) dark = ((data[byteIndex] >>> bitIndex) & 1) === 1;
+            if (maskBit(maskPattern, row, col - cc2)) dark = !dark;
+            m[row][col - cc2] = dark;
+            bitIndex--;
+            if (bitIndex === -1) { byteIndex++; bitIndex = 7; }
+          }
+        }
+        row += inc;
+        if (row < 0 || mc <= row) { row -= inc; inc = -inc; break; }
+      }
+    }
+    return m;
+  }
+  function lostPoint(m, mc) {
+    var lost = 0, r, c, axis, a, b;
+    for (axis = 0; axis < 2; axis++) {
+      for (a = 0; a < mc; a++) {
+        var run = 1;
+        for (b = 1; b < mc; b++) {
+          var cur = axis === 0 ? m[a][b] : m[b][a];
+          var prev = axis === 0 ? m[a][b - 1] : m[b - 1][a];
+          if (cur === prev) { run++; if (run >= 5) lost += 1 + (run - 5); } else run = 1;
+        }
+      }
+    }
+    for (r = 0; r < mc - 1; r++) for (c = 0; c < mc - 1; c++)
+      if (m[r][c] === m[r][c + 1] && m[r][c] === m[r + 1][c] && m[r][c] === m[r + 1][c + 1]) lost += 3;
+    for (r = 0; r < mc; r++) for (c = 0; c < mc - 6; c++)
+      if (m[r][c] && !m[r][c + 1] && m[r][c + 2] && m[r][c + 3] && m[r][c + 4] && !m[r][c + 5] && m[r][c + 6]) lost += 40;
+    for (c = 0; c < mc; c++) for (r = 0; r < mc - 6; r++)
+      if (m[r][c] && !m[r + 1][c] && m[r + 2][c] && m[r + 3][c] && m[r + 4][c] && !m[r + 5][c] && m[r + 6][c]) lost += 40;
+    var darkCount = 0;
+    for (r = 0; r < mc; r++) for (c = 0; c < mc; c++) if (m[r][c]) darkCount++;
+    lost += Math.abs(100 * darkCount / (mc * mc) - 50) / 5 * 10;
+    return lost;
+  }
+  function createQR(text) {
+    var bytes = [], i;
+    for (i = 0; i < text.length; i++) {
+      var code = text.charCodeAt(i);
+      if (code < 0x80) bytes.push(code); else throw new Error('byte-mode ASCII only');
+    }
+    var type = 0, buffer = null, totalBits = 0, t;
+    for (t = 1; t <= 10; t++) {
+      var blocks = rsBlocksFor(t, 1);
+      var totalData = 0, bi;
+      for (bi = 0; bi < blocks.length; bi++) totalData += blocks[bi].dataCount;
+      totalData *= 8;
+      var bb = new BitBuffer();
+      bb.put(4, 4);
+      bb.put(bytes.length, t <= 9 ? 8 : 16);
+      for (i = 0; i < bytes.length; i++) bb.put(bytes[i], 8);
+      if (bb.length + 4 <= totalData) { type = t; buffer = bb; totalBits = totalData; break; }
+    }
+    if (!type) throw new Error('data too long');
+    if (buffer.length + 4 <= totalBits) buffer.put(0, 4);
+    while (buffer.length % 8 !== 0) buffer.putBit(false);
+    for (;;) {
+      if (buffer.length >= totalBits) break;
+      buffer.put(0xEC, 8);
+      if (buffer.length >= totalBits) break;
+      buffer.put(0x11, 8);
+    }
+    var best = -1, bestMask = 0, mask;
+    for (mask = 0; mask < 8; mask++) {
+      var mm = makeMatrix(type, 1, buffer, mask, true);
+      var p = lostPoint(mm, type * 4 + 17);
+      if (best < 0 || p < best) { best = p; bestMask = mask; }
+    }
+    return { size: type * 4 + 17, modules: makeMatrix(type, 1, buffer, bestMask, false) };
+  }
+
+  /* ---------------- page logic ---------------- */
+  var REF = 'https://t.me/InstaDownloadai?start=a3';
+  var qr = createQR(REF);
+
+  // render SVG (crisp modules, 2-module light quiet zone inside the tile + CSS padding)
+  (function renderQR() {
+    var box = document.getElementById('qrbox');
+    if (!box) return;
+    var n = qr.size, path = '', r, c;
+    for (r = 0; r < n; r++) for (c = 0; c < n; c++) if (qr.modules[r][c]) path += 'M' + c + ' ' + r + 'h1v1h-1z';
+    var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.setAttribute('viewBox', '-2 -2 ' + (n + 4) + ' ' + (n + 4));
+    svg.setAttribute('shape-rendering', 'crispEdges');
+    svg.setAttribute('aria-hidden', 'true');
+    var bg = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+    bg.setAttribute('x', '-2'); bg.setAttribute('y', '-2');
+    bg.setAttribute('width', String(n + 4)); bg.setAttribute('height', String(n + 4));
+    bg.setAttribute('fill', '#ffffff');
+    var fg = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    fg.setAttribute('d', path); fg.setAttribute('fill', '#0d0518');
+    svg.appendChild(bg); svg.appendChild(fg);
+    box.appendChild(svg);
+  })();
+
+  // PNG download (canvas, 16px/module + 4-module quiet zone, white bg)
+  (function bindDownload() {
+    var btn = document.getElementById('dlQr');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      try {
+        var n = qr.size, scale = 16, quiet = 4, dim = (n + quiet * 2) * scale;
+        var cv = document.createElement('canvas');
+        cv.width = dim; cv.height = dim;
+        var ctx = cv.getContext('2d');
+        if (!ctx) throw new Error('no canvas');
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(0, 0, dim, dim);
+        ctx.fillStyle = '#0d0518';
+        for (var r = 0; r < n; r++) for (var c = 0; c < n; c++) {
+          if (qr.modules[r][c]) ctx.fillRect((c + quiet) * scale, (r + quiet) * scale, scale, scale);
+        }
+        var a = document.createElement('a');
+        a.href = cv.toDataURL('image/png');
+        a.download = 'instadownloadai-a3-qr.png';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        toast('تصویر QR ذخیره شد ✅');
+      } catch (err) {
+        toast('دانلود تصویر ممکن نشد — از خود صفحه اسکرین‌شات بگیر');
+      }
+    });
+  })();
+
+  // toast
+  var toastTimer = null;
+  function toast(msg) {
+    var el = document.getElementById('toast');
+    if (!el) return;
+    el.textContent = msg;
+    el.classList.add('show');
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { el.classList.remove('show'); }, 2600);
+  }
+
+  // copy with fallback
+  function copyText(text, okMsg) {
+    function legacy() {
+      try {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.top = '-1000px';
+        document.body.appendChild(ta);
+        ta.select();
+        var ok = document.execCommand('copy');
+        ta.remove();
+        toast(ok ? okMsg : 'کپی نشد — متن را دستی انتخاب کن');
+      } catch (e) { toast('کپی نشد — متن را دستی انتخاب کن'); }
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { toast(okMsg); }, legacy);
+    } else legacy();
+  }
+
+  // share: Web Share API where available, clipboard fallback
+  var plainTexts = {
+    st1: 'هر ویدیو و آهنگی رو با ربات تلگرامی @InstaDownloadai دانلود کن 🎧 اینستاگرام، پینترست، تیک‌تاک و ویمئو — بدون واترمارک، رایگان. موزیک‌یابش هم هر آهنگی رو تا ۳۲۰kbps پیدا می‌کنه 👇\nhttps://t.me/InstaDownloadai?start=a3',
+    st2: 'لینک ریلز یا پست رو بفرست، ویدیو تا ۴K بدون واترمارک تحویل بگیر؛ اسم آهنگ رو هم بنویسی، mp3 با کیفیت ۳۲۰ می‌ده 😍\nhttps://t.me/InstaDownloadai?start=a3',
+    st3: 'برای دانلود ریلز و آهنگ دیگه لازم نیست اپ نصب کنی؛ @InstaDownloadai توی تلگرام همه‌چیز رو می‌فرسته — رایگان و بدون لاگین ✨\nhttps://t.me/InstaDownloadai?start=a3'
+  };
+  var captions = {
+    cap1: 'با این ربات هر ویدیو و آهنگی رو دانلود کن 🎧 @InstaDownloadai\nhttps://t.me/InstaDownloadai?start=a3',
+    cap2: 'موزیک‌یاب: اسم آهنگ رو بنویس، mp3 ۳۲۰ بگیر 🎵 @InstaDownloadai\nhttps://t.me/InstaDownloadai?start=a3',
+    cap3: 'بدون واترمارک، تا ۴K — رایگان توی تلگرام ✨ @InstaDownloadai\nhttps://t.me/InstaDownloadai?start=a3'
+  };
+  function webShare(text) {
+    if (navigator.share) {
+      navigator.share({ title: 'InstaDownloadai', text: text, url: REF }).then(function () {
+        toast('ممنون که رساندیش ✨');
+      }).catch(function () { /* user cancelled — no toast */ });
+      return true;
+    }
+    return false;
+  }
+  var shareBig = document.getElementById('shareBig');
+  if (shareBig) {
+    shareBig.addEventListener('click', function () {
+      if (!webShare(plainTexts.st1)) copyText(plainTexts.st1, 'متن ۱ کپی شد ✅ بفرستش برای دوستات');
+    });
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('.cp'), function (btn) {
+    btn.addEventListener('click', function () {
+      var key = btn.getAttribute('data-copy');
+      var text = plainTexts[key] || captions[key] || '';
+      if (!text) return;
+      if (!webShare(text)) copyText(text, 'کپی شد ✅ حالا بفرستش');
+    });
+  });
+
+  // header shade on scroll
+  var hdr = document.querySelector('.hdr');
+  if (hdr) {
+    var onScroll = function () {
+      if (window.scrollY > 8) hdr.classList.add('sc'); else hdr.classList.remove('sc');
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+})();
+</script>
+</body>
+</html>

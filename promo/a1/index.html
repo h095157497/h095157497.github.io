@@ -1,0 +1,565 @@
+<!-- METHOD: «Intent-Exact Music Landing» — ONE page engineered around the single commercial intent behind the «دانلود موزیک / دانلود آهنگ / دانلود آهنگ خارجی / موزیک یاب» cluster: the searcher wants a bot that turns a song NAME into an mp3 file. So the page answers that in the first screen (H1 = the query, sub = the mechanism, one dominant gradient CTA carrying the a1 attribution), then proves trust with only owner-real facts (۳۲۰kbps، ~۸۰ دانلود در روز، ۴۹MB، ۴ زبان — every number already published on the site), mirrors the visible FAQ 1:1 into FAQPage JSON-LD for rich results, and repeats the SAME single CTA everywhere (hero, EN panel, CTA band, footer, sticky mobile bar) so every exit path converts through the tracked deep link. It beats a generic downloader page because it is 100% music-intent (no diluted QR/tool chatter), matches the live v7 design system so visitors feel they are still on the brand's site, and every claim is auditable against /music — nothing to flag in the method audit. -->
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>دانلود موزیک و آهنگ با ربات تلگرام | موزیک‌یاب تا ۳۲۰kbps</title>
+<meta name="description" content="با ربات @InstaDownloadai هر آهنگی را با اسمش دانلود کن؛ دانلود موزیک ایرانی و خارجی تا ۳۲۰kbps، استخراج mp3 و متن ترانه با /lyric — رایگان، بدون ثبت‌نام.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://h095157497.github.io/promo/a1/">
+<link rel="alternate" hreflang="fa" href="https://h095157497.github.io/promo/a1/">
+<link rel="alternate" hreflang="en" href="https://h095157497.github.io/promo/a1/?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://h095157497.github.io/promo/a1/">
+<link rel="icon" type="image/png" href="https://h095157497.github.io/assets/avatar.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="InstaDownloadai">
+<meta property="og:title" content="دانلود موزیک و آهنگ با ربات تلگرام | موزیک‌یاب تا ۳۲۰kbps">
+<meta property="og:description" content="اسم آهنگ را بنویس تا mp3 تا ۳۲۰kbps با تاگ کامل در چت تحویل بگیری؛ استخراج mp3 از ویدیو و متن ترانه با /lyric — رایگان، بدون ثبت‌نام.">
+<meta property="og:url" content="https://h095157497.github.io/promo/a1/">
+<meta property="og:image" content="https://h095157497.github.io/og.jpg">
+<meta property="og:image:width" content="1344">
+<meta property="og:image:height" content="768">
+<meta property="og:locale" content="fa_IR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="دانلود موزیک و آهنگ با ربات تلگرام | موزیک‌یاب تا ۳۲۰kbps">
+<meta name="twitter:description" content="اسم آهنگ را بنویس تا mp3 تا ۳۲۰kbps با تاگ کامل در چت تحویل بگیری — رایگان، بدون ثبت‌نام.">
+<meta name="twitter:image" content="https://h095157497.github.io/og.jpg">
+<meta name="theme-color" content="#05030a">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebApplication","@id":"https://h095157497.github.io/promo/a1/#app","name":"InstaDownloadai","alternateName":"دانلود موزیک و آهنگ با موزیک‌یاب تلگرام","url":"https://h095157497.github.io/promo/a1/","applicationCategory":"MultimediaApplication","operatingSystem":"Any (Telegram)","browserRequirements":"Requires Telegram","description":"ربات تلگرام دانلود موزیک و آهنگ با موزیک‌یاب: اسم هر آهنگی — فارسی، خارجی، ریمیکس — تا 320kbps با تاگ کامل؛ استخراج mp3 از ویدیو، تشخیص آهنگ و متن ترانه با /lyric؛ به‌همراه دانلود ویدیو از اینستاگرام، پینترست، تیک‌تاک و ویمئو.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"inLanguage":["fa","en"],"featureList":["موزیک‌یاب: اسم هر آهنگی را بنویس — فارسی، خارجی، ریمیکس و ورژن‌های کمیاب — تا 320kbps با تاگ کامل (کاور، نام خواننده و آلبوم).","استخراج mp3 از ویدیوهای اینستاگرام، تیک‌تاک و ویمئو.","تشخیص آهنگ: ویدیو را بفرست تا ربات آهنگِ بی‌نام را شناسایی کند.","متن ترانه با دستور /lyric.","دانلود ویدیو: اینستاگرام تا 4K بدون واترمارک، پینترست با کیفیت اصلی، تیک‌تاک HD بدون واترمارک، ویمئو.","رایگان و بدون ثبت‌نام؛ چهار زبان فارسی، انگلیسی، عربی و روسی."]},
+{"@type":"FAQPage","@id":"https://h095157497.github.io/promo/a1/#faq","mainEntity":[
+{"@type":"Question","name":"چطور با ربات دانلود موزیک کنم؟","acceptedAnswer":{"@type":"Answer","text":"در تلگرام ربات @InstaDownloadai را Start کن و اسم آهنگ را در چت بنویس؛ موزیک‌یاب از چند کاتالوگ جست‌وجو می‌کند و mp3 تا ۳۲۰kbps همان‌جا تحویل داده می‌شود — رایگان و بدون ثبت‌نام."}},
+{"@type":"Question","name":"دانلود آهنگ خارجی هم پشتیبانی می‌شود؟","acceptedAnswer":{"@type":"Answer","text":"بله؛ کاتالوگ‌های موازی هم آهنگ ایرانی و هم خارجی را پوشش می‌دهند. برای ریمیکس و ورژن‌های کمیاب هم کافی است کنار اسم آهنگ بنویسی remix یا ریمیکس."}},
+{"@type":"Question","name":"آهنگی که اسمش را نمی‌دانم چطور پیدا کنم؟","acceptedAnswer":{"@type":"Answer","text":"ویدیوی موردنظر (اینستاگرام، تیک‌تاک یا پینترست) را به ربات بفرست و گزینهٔ «پیدا کردن آهنگ» را بزن؛ ربات خودش آهنگ را تشخیص می‌دهد و بهترین کیفیتش را می‌فرستد."}},
+{"@type":"Question","name":"کیفیت آهنگ‌های دانلودشده چقدر است؟","acceptedAnswer":{"@type":"Answer","text":"آهنگ‌ها تا ۳۲۰ کیلوبیت بر ثانیه — بالاترین کیفیت رایج mp3 — همراه با تاگ کامل تحویل داده می‌شوند: کاور، نام خواننده و نام آلبوم."}},
+{"@type":"Question","name":"متن ترانهٔ آهنگ را هم می‌دهد؟","acceptedAnswer":{"@type":"Answer","text":"بله؛ دستور /lyric را با اسم آهنگ به ربات بفرست تا متن ترانه در چت نمایش داده شود."}},
+{"@type":"Question","name":"دانلود موزیک با این ربات رایگان است؟ محدودیت روزانه دارد؟","acceptedAnswer":{"@type":"Answer","text":"بله، همهٔ قابلیت‌ها رایگان هستند — حدود ۸۰ دانلود در روز برای هر کاربر — و هر فایل تا حدود ۴۹ مگابایت تحویل داده می‌شود. بدون اشتراک، بدون کارت بانکی و بدون لاگین."}}
+]}]}
+</script>
+<style>
+/* ============ InstaDownloadai v7 «Holographic Luxury Dark» — promo/a1 tokens (ported from site-v7.css) ============ */
+:root{
+  --bg:#05030a; --bg2:#0b0614;
+  --panel:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.015));
+  --line:rgba(255,255,255,.09);
+  --ink:#f3effc; --mut:#a096c2;
+  --v:#a855f7; --c:#22d3ee; --p:#f472b6;
+  --grad:linear-gradient(115deg,#a855f7,#22d3ee 34%,#f472b6 67%,#a855f7);
+  --r:16px; --r2:24px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+@supports not (overflow:clip){html,body{overflow-x:hidden}}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font:400 16px/1.95 Vazirmatn,"Space Grotesk",system-ui,"Segoe UI",Tahoma,sans-serif;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+::selection{background:rgba(168,85,247,.45);color:#fff}
+:focus-visible{outline:2px solid var(--c);outline-offset:3px;border-radius:10px}
+img,svg{display:block}
+a{-webkit-tap-highlight-color:rgba(168,85,247,.25)}
+.container{width:min(1160px,92%);margin-inline:auto}
+/* skip link */
+.skip{position:fixed;top:-70px;inset-inline-start:1rem;z-index:100;color:#0d0518;background:var(--grad);background-size:220% 100%;font-weight:800;font-size:.9rem;padding:.7rem 1.3rem;border-radius:12px;text-decoration:none;box-shadow:0 10px 30px rgba(168,85,247,.4);transition:top .25s}
+.skip:focus{top:.8rem}
+/* ambient background */
+.bgfx{position:fixed;inset:0;z-index:-2;pointer-events:none;overflow:hidden;background:radial-gradient(120% 90% at 50% -10%,#140a26 0%,var(--bg) 55%)}
+.neb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.42}
+.n1{width:56vmax;height:56vmax;top:-22vmax;inset-inline-start:-14vmax;background:radial-gradient(circle,rgba(138,43,226,.5),transparent 65%)}
+.n2{width:44vmax;height:44vmax;top:6vmax;inset-inline-end:-16vmax;background:radial-gradient(circle,rgba(34,211,238,.28),transparent 65%);opacity:.3}
+.n3{width:50vmax;height:50vmax;bottom:-24vmax;inset-inline-start:22vmax;background:radial-gradient(circle,rgba(244,114,182,.24),transparent 65%);opacity:.28}
+.stars{position:absolute;inset:0;opacity:.55;background-image:
+  radial-gradient(1.2px 1.2px at 22px 34px,rgba(255,255,255,.85),transparent 55%),
+  radial-gradient(1px 1px at 118px 92px,rgba(196,181,253,.8),transparent 55%),
+  radial-gradient(1.6px 1.6px at 208px 44px,rgba(103,232,249,.75),transparent 55%),
+  radial-gradient(1px 1px at 296px 158px,rgba(249,168,212,.7),transparent 55%),
+  radial-gradient(1px 1px at 62px 198px,rgba(255,255,255,.5),transparent 55%),
+  radial-gradient(1.3px 1.3px at 250px 232px,rgba(167,139,250,.65),transparent 55%);
+  background-size:330px 260px;animation:twinkle 7s ease-in-out infinite alternate}
+.grain{position:absolute;inset:0;opacity:.05;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E")}
+@keyframes twinkle{from{opacity:.32}to{opacity:.62}}
+/* utilities */
+.holo-text{background:var(--grad);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:holoShift 9s linear infinite}
+@keyframes holoShift{to{background-position:220% 50%}}
+.holo-b{position:relative}
+.holo-b::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1.2px;background:var(--grad);background-size:280% 100%;animation:holoShift 7s linear infinite;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);mask-composite:exclude;pointer-events:none;opacity:.85}
+.hr{height:1px;width:min(1160px,92%);margin-inline:auto;background:linear-gradient(90deg,transparent,rgba(168,85,247,.4),rgba(34,211,238,.4),rgba(244,114,182,.35),transparent)}
+/* buttons — ONE dominant CTA style, one destination */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:48px;padding:.72rem 1.6rem;border-radius:999px;font-weight:800;font-size:.98rem;text-decoration:none;cursor:pointer;border:0;transition:transform .3s,box-shadow .3s,background .3s;white-space:nowrap}
+.btn-holo{position:relative;color:#0d0518;background:var(--grad);background-size:220% 100%;animation:holoShift 6s linear infinite,holoPulse 2.6s ease-in-out infinite;box-shadow:0 10px 34px rgba(168,85,247,.38),0 3px 12px rgba(34,211,238,.28),inset 0 1px 0 rgba(255,255,255,.35)}
+@keyframes holoPulse{0%,100%{box-shadow:0 10px 34px rgba(168,85,247,.38),0 3px 12px rgba(34,211,238,.28),0 0 0 0 rgba(168,85,247,.5)}50%{box-shadow:0 14px 44px rgba(168,85,247,.55),0 3px 14px rgba(34,211,238,.42),0 0 0 10px rgba(168,85,247,0)}}
+.btn-holo:hover{transform:translateY(-2px) scale(1.015);box-shadow:0 16px 44px rgba(168,85,247,.5),0 6px 18px rgba(34,211,238,.35)}
+.btn-ghost{color:var(--ink);background:rgba(168,85,247,.08);border:1px solid rgba(168,85,247,.4)}
+.btn-ghost:hover{background:rgba(168,85,247,.16);transform:translateY(-2px)}
+/* header */
+.hdr{position:sticky;top:0;z-index:60;background:rgba(5,3,10,.55);-webkit-backdrop-filter:blur(20px) saturate(1.5);backdrop-filter:blur(20px) saturate(1.5);border-bottom:1px solid transparent;transition:background .35s,border-color .35s}
+.hdr.sc{background:rgba(5,3,10,.82);border-color:var(--line)}
+.nav{display:flex;align-items:center;gap:.75rem;min-height:70px}
+.brand{display:inline-flex;align-items:center;gap:.65rem;font-weight:900;color:var(--ink);text-decoration:none;font-size:1.04rem;letter-spacing:.01em}
+.brand .mark{width:40px;height:40px;overflow:visible}
+.links{display:flex;align-items:center;gap:.1rem;margin-inline-start:auto}
+.links a:not(.btn){color:var(--mut);text-decoration:none;padding:.7rem .85rem;border-radius:999px;font-weight:700;font-size:.92rem;transition:color .25s,background .25s}
+.links a:not(.btn):hover{color:#fff;background:rgba(255,255,255,.06)}
+.nav .btn{padding:.55rem 1.25rem;min-height:44px;font-size:.9rem;margin-inline-start:.6rem}
+@media(max-width:920px){.links a:not(.btn){display:none}}
+@media(max-width:400px){.nav .btn{padding:.5rem .9rem;font-size:.84rem}}
+/* hero */
+.hero{display:grid;gap:3.2rem;align-items:center;padding-block:clamp(3rem,7vw,5.5rem) clamp(3.2rem,6vw,5rem)}
+@media(min-width:1024px){.hero{grid-template-columns:1.06fr .94fr;gap:3.5rem}}
+.kicker{display:inline-flex;align-items:center;gap:.55rem;border:1px solid rgba(168,85,247,.4);background:rgba(168,85,247,.1);color:#ecd8ff;padding:.45rem 1.1rem;border-radius:999px;font-size:.85rem;font-weight:700}
+.kicker .dot{width:8px;height:8px;border-radius:50%;background:var(--grad);background-size:220% 100%;animation:holoShift 4s linear infinite;box-shadow:0 0 12px rgba(34,211,238,.8)}
+h1{font-size:clamp(1.85rem,4.7vw,3.5rem);line-height:1.42;font-weight:900;margin:1.2rem 0 1rem;overflow-wrap:break-word}
+h1 .holo-text{filter:drop-shadow(0 0 22px rgba(168,85,247,.35))}
+.sub{color:var(--mut);font-size:clamp(1rem,1.6vw,1.14rem);max-width:58ch;margin:0}
+.ctas{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
+.chips{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.7rem}
+.chips span{font-size:.8rem;font-weight:700;color:#cbc0e8;border:1px solid var(--line);background:rgba(255,255,255,.04);padding:.5rem .95rem;border-radius:999px}
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 1.6rem;max-width:600px;margin-top:2.6rem}
+@media(min-width:640px){.stats{grid-template-columns:repeat(4,1fr)}}
+.st{padding:.85rem .15rem;position:relative}
+.st::before{content:"";position:absolute;inset-inline-start:0;top:22%;bottom:22%;width:1px;background:linear-gradient(180deg,transparent,rgba(168,85,247,.55),transparent)}
+.st:first-child::before{display:none}
+.st b{display:block;font-size:1.4rem;font-weight:900;line-height:1.3;font-variant-numeric:tabular-nums}
+.st span{color:var(--mut);font-size:.82rem;font-weight:500}
+/* hero console (chat demo) */
+.stage{position:relative}
+.orbit-wrap{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:visible}
+.orb{position:absolute;left:50%;top:50%;aspect-ratio:1;border-radius:50%;overflow:visible;transform:translate(-50%,-50%)}
+.orb.a{height:112%;border:1px dashed rgba(168,85,247,.32);animation:spin 46s linear infinite}
+@keyframes spin{from{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(360deg)}}
+.spark{position:absolute;width:16px;height:16px;animation:twk 3.2s ease-in-out infinite}
+.spark.s1{top:-28px;inset-inline-end:30%}
+.spark.s2{width:11px;height:11px;bottom:14%;inset-inline-start:-26px;animation-delay:-1.6s}
+@keyframes twk{0%,100%{opacity:.2;transform:scale(.7) rotate(0deg)}50%{opacity:1;transform:scale(1.1) rotate(20deg)}}
+@media(max-width:640px){.orb.a{height:102%}.spark.s2{display:none}}
+.console{position:relative;z-index:1;border-radius:22px;padding:1rem 1.1rem 1.3rem;background:linear-gradient(165deg,rgba(255,255,255,.065),rgba(255,255,255,.02));box-shadow:0 34px 90px rgba(2,0,8,.65),0 20px 80px rgba(168,85,247,.16);transform:rotate(-1.4deg)}
+.console:hover{transform:rotate(0deg)}
+.c-bar{display:flex;align-items:center;gap:.4rem;padding:.4rem .3rem .95rem;border-bottom:1px solid var(--line)}
+.c-bar i{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.16)}
+.c-bar .t{margin-left:auto;font:500 .78rem "Space Grotesk",monospace;color:var(--mut);display:flex;align-items:center;gap:.4rem}
+.c-bar .t::before{content:"";width:7px;height:7px;border-radius:50%;background:#34d399;box-shadow:0 0 10px rgba(52,211,153,.9)}
+.bub{max-width:88%;padding:.62rem .95rem;border-radius:15px;font-size:.85rem;margin-block:.75rem;line-height:1.7}
+.bub.u{margin-inline-start:auto;background:rgba(168,85,247,.16);border:1px solid rgba(168,85,247,.32);font:500 .85rem Vazirmatn,sans-serif;color:#e4d7ff;overflow-wrap:anywhere}
+.bub.b{background:rgba(255,255,255,.05);border:1px solid var(--line)}
+.bub.b>b{color:#6ee7b7;font-size:.8rem;font-weight:800}
+.files{display:flex;flex-direction:column;gap:.45rem;margin-top:.55rem}
+.f{display:flex;align-items:center;gap:.55rem;background:rgba(2,0,8,.4);border:1px solid var(--line);border-radius:11px;padding:.5rem .75rem;font:500 .78rem "Space Grotesk",monospace;color:#ddd4f2;overflow-wrap:anywhere}
+.f em{margin-left:auto;font-style:normal;color:#67e8f9;font-size:.68rem;font-weight:700;letter-spacing:.04em;flex:none}
+.eq{display:inline-flex;gap:2.5px;align-items:flex-end;height:13px;margin-left:4px;flex:none}
+.eq i{width:3px;border-radius:2px;background:linear-gradient(180deg,var(--c),var(--v));animation:eq 1.1s ease-in-out infinite}
+.eq i:nth-child(1){height:6px}.eq i:nth-child(2){height:12px;animation-delay:.15s}.eq i:nth-child(3){height:8px;animation-delay:.3s}.eq i:nth-child(4){height:11px;animation-delay:.45s}
+@keyframes eq{0%,100%{transform:scaleY(.45)}50%{transform:scaleY(1)}}
+.typing{display:flex;gap:5px;align-items:center;padding:.7rem 1rem;width:max-content}
+.typing i{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.4);animation:tp 1.2s ease-in-out infinite}
+.typing i:nth-child(2){animation-delay:.18s}.typing i:nth-child(3){animation-delay:.36s}
+@keyframes tp{0%,100%{opacity:.25;transform:translateY(0)}50%{opacity:1;transform:translateY(-3px)}}
+.chip-f{position:absolute;z-index:2;font-size:.8rem;font-weight:800;padding:.5rem .9rem;border-radius:999px;color:#e8f9ff;background:rgba(9,5,18,.85);border:1px solid rgba(34,211,238,.45);box-shadow:0 0 22px rgba(34,211,238,.22),0 10px 30px rgba(2,0,8,.5);animation:float 6s ease-in-out infinite;max-width:88%}
+.chip-f.pk{border-color:rgba(244,114,182,.5);color:#ffe4f3;box-shadow:0 0 22px rgba(244,114,182,.25),0 10px 30px rgba(2,0,8,.5)}
+.c1{top:-26px;inset-inline-end:4%}
+.c2{bottom:-15px;inset-inline-start:3%;animation-delay:-3s}
+@keyframes float{50%{transform:translateY(-9px)}}
+@media(max-width:640px){.hero{padding-block:2.2rem 2.6rem}.stats{margin-top:2rem}.c1{top:-20px;font-size:.72rem}}
+/* sections */
+section{padding-block:clamp(3.4rem,7vw,6.2rem)}
+.sec-k{display:inline-flex;align-items:center;gap:.55rem;color:#a5f3fc;font-weight:800;font-size:.9rem}
+.sec-k::before{content:"✦";color:var(--v);text-shadow:0 0 14px rgba(168,85,247,.9)}
+.sec-h{font-size:clamp(1.5rem,3.3vw,2.35rem);font-weight:900;margin:.6rem 0 .7rem;line-height:1.5;overflow-wrap:break-word}
+.sec-p{color:var(--mut);max-width:64ch;margin:0 0 2.4rem}
+/* bento cards */
+.bento{display:grid;gap:1.05rem;grid-template-columns:1fr}
+@media(min-width:640px){.bento{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1024px){.bento{grid-template-columns:repeat(12,1fr)}.c-7{grid-column:span 7}.c-5{grid-column:span 5}}
+.card{position:relative;display:flex;flex-direction:column;gap:.65rem;border-radius:var(--r2);padding:1.7rem;background:var(--panel);border:1px solid var(--line);overflow:hidden;transition:transform .35s,border-color .35s,box-shadow .35s}
+.card:hover{transform:translateY(-5px);border-color:rgba(168,85,247,.45);box-shadow:0 22px 60px rgba(168,85,247,.14)}
+.ico{width:52px;height:52px;border-radius:15px;display:grid;place-items:center;background:rgba(255,255,255,.05);border:1px solid var(--line);flex:none}
+.ico svg{width:26px;height:26px}
+.card h3{font-size:1.16rem;font-weight:900;margin:.45rem 0 0;display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
+.card p{color:var(--mut);font-size:.95rem;margin:0;line-height:1.95}
+.meta{display:flex;gap:.45rem;flex-wrap:wrap;margin-top:auto;padding-top:1rem}
+.meta i{font-style:normal;font-size:.74rem;font-weight:700;color:#cbc0e8;border:1px solid var(--line);background:rgba(255,255,255,.03);padding:.32rem .75rem;border-radius:999px}
+.c-mu{border-color:rgba(52,211,153,.22)}
+.c-mu:hover{border-color:rgba(52,211,153,.45)}
+.wave{width:150px;height:26px;margin-top:.4rem;max-width:100%}
+.wave rect{fill:url(#hg);transform-box:fill-box;transform-origin:50% 100%;animation:wv 1.3s ease-in-out infinite}
+.wave rect:nth-of-type(2n){animation-delay:.15s}.wave rect:nth-of-type(3n){animation-delay:.32s}.wave rect:nth-of-type(5n){animation-delay:.5s}
+@keyframes wv{0%,100%{transform:scaleY(.4)}50%{transform:scaleY(1)}}
+.chip-code{display:inline-block;background:rgba(2,0,8,.45);border:1px solid var(--line);border-radius:11px;padding:.12rem .65rem;font:600 .88rem "Space Grotesk",monospace;color:#e9d5ff;direction:ltr;unicode-bidi:isolate;white-space:nowrap}
+/* steps */
+.steps{display:grid;gap:1.05rem;counter-reset:s}
+@media(min-width:900px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{position:relative;padding:1.9rem 1.6rem;border-radius:var(--r2);border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.01))}
+.step .n{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:1.25rem;margin-bottom:1.1rem;color:#fff;background:radial-gradient(circle at 30% 25%,rgba(168,85,247,.55),rgba(34,211,238,.14));border:1px solid rgba(168,85,247,.55);box-shadow:0 0 26px rgba(168,85,247,.28)}
+.step h3{margin:0 0 .45rem;font-size:1.08rem;font-weight:900}
+.step p{margin:0;color:var(--mut);font-size:.93rem}
+@media(min-width:900px){.step:not(:last-child)::after{content:"";position:absolute;top:calc(1.9rem + 27px);inset-inline-start:100%;width:1.05rem;height:1px;background:linear-gradient(90deg,rgba(168,85,247,.65),rgba(34,211,238,.4))}}
+/* features strip */
+.feats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}
+@media(min-width:760px){.feats{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1024px){.feats{grid-template-columns:repeat(6,1fr)}}
+.feat{display:flex;flex-direction:column;align-items:center;text-align:center;gap:.65rem;padding:1.35rem .6rem;border-radius:18px;border:1px solid var(--line);background:rgba(255,255,255,.025);transition:border-color .3s,background .3s}
+.feat:hover{border-color:rgba(34,211,238,.4);background:rgba(34,211,238,.05)}
+.feat svg{width:26px;height:26px}
+.feat b{font-size:.86rem;font-weight:800;line-height:1.7}
+/* EN / LTR panel */
+.en-panel{position:relative;border-radius:34px;border:1px solid var(--line);padding:clamp(2.2rem,5vw,3.8rem);overflow:hidden;background:radial-gradient(120% 140% at 15% 0%,rgba(168,85,247,.12),transparent 55%),radial-gradient(100% 130% at 90% 100%,rgba(34,211,238,.1),transparent 60%),linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.012))}
+.overline{font:700 .74rem/1.6 "Space Grotesk";letter-spacing:.24em;color:#a5f3fc;text-transform:uppercase}
+.en-panel h2{font:700 clamp(1.6rem,3.4vw,2.5rem)/1.25 "Space Grotesk",Vazirmatn;margin:.7rem 0 1rem}
+.en-panel h2 .holo-text{font-weight:700}
+.en-p{color:var(--mut);max-width:56ch;margin:0 0 1.8rem;font-size:1.02rem}
+.en-stats{display:flex;flex-wrap:wrap;gap:1.2rem 2.2rem;margin-top:2rem}
+.en-stat b{display:block;font:700 1.45rem/1.3 "Space Grotesk"}
+.en-stat span{color:var(--mut);font:500 .76rem "Space Grotesk";letter-spacing:.06em;text-transform:uppercase}
+/* FAQ */
+.faq{max-width:820px;margin-inline:auto}
+.faq details{border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.03);margin-bottom:.75rem;transition:border-color .3s,background .3s}
+.faq details[open]{border-color:rgba(168,85,247,.45);background:rgba(168,85,247,.05)}
+.faq summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:1rem;padding:1.05rem 1.35rem;font-weight:800;font-size:.99rem;min-height:44px;border-radius:16px}
+.faq summary::-webkit-details-marker{display:none}
+.pm{margin-inline-start:auto;flex:none;width:20px;height:20px;position:relative;opacity:.75}
+.pm::before,.pm::after{content:"";position:absolute;background:var(--c);border-radius:2px;transition:transform .3s}
+.pm::before{inset:9px 0 auto;height:2px}
+.pm::after{inset:0 9px auto;width:2px;height:20px;top:0}
+details[open] .pm::after{transform:scaleY(0)}
+.faq .a{padding:.1rem 1.35rem 1.25rem;color:var(--mut);font-size:.94rem}
+/* CTA band */
+.cta-band{position:relative;text-align:center;border-radius:34px;padding:clamp(2.6rem,6vw,4.6rem) 1.4rem;overflow:hidden;border:1px solid rgba(168,85,247,.4);background:radial-gradient(120% 170% at 50% -25%,rgba(168,85,247,.26),transparent 55%),radial-gradient(85% 130% at 82% 125%,rgba(34,211,238,.16),transparent 60%),radial-gradient(70% 120% at 12% 120%,rgba(244,114,182,.14),transparent 60%),rgba(255,255,255,.02)}
+.cta-band h2{font-size:clamp(1.6rem,3.8vw,2.6rem);font-weight:900;margin:0 0 .7rem;line-height:1.5}
+.cta-band p{color:var(--mut);margin:0 auto 2rem;max-width:52ch}
+.cta-band .btn{padding:.9rem 2.4rem;min-height:56px;font-size:1.06rem}
+.cta-band small{display:block;margin-top:1.4rem;color:#8d82b0;font-size:.82rem}
+/* footer */
+footer{border-top:1px solid var(--line);background:rgba(4,2,9,.72);padding:3.2rem 0 2rem;margin-top:1rem}
+.f-grid{display:grid;gap:2.4rem;grid-template-columns:1fr}
+@media(min-width:768px){.f-grid{grid-template-columns:1.5fr 1fr 1fr}}
+.f-brand{display:flex;align-items:center;gap:.6rem;font-weight:900;font-size:1rem;margin-bottom:.8rem}
+.f-brand .mark{width:32px;height:32px;overflow:visible}
+.f-note{color:var(--mut);font-size:.88rem;max-width:40ch}
+.f-h{font-weight:900;font-size:.95rem;margin:0 0 1rem}
+footer nav a{color:var(--mut);text-decoration:none;display:block;padding:.5rem 0;font-size:.9rem;transition:color .25s}
+footer nav a:hover{color:#fff}
+.f-bot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.8rem;border-top:1px solid var(--line);margin-top:2.6rem;padding-top:1.5rem;color:#847aa6;font-size:.84rem}
+.f-bot span[lang="en"]{font-family:"Space Grotesk"}
+/* sticky mobile CTA bar */
+.mbar{position:fixed;bottom:0;inset-inline:0;z-index:70;display:none;align-items:center;gap:.8rem;justify-content:space-between;padding:.65rem 1rem calc(.65rem + env(safe-area-inset-bottom,0px));background:rgba(7,4,14,.96);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border-top:1px solid rgba(168,85,247,.35);box-shadow:0 -12px 34px rgba(2,0,8,.6)}
+.mbar p{margin:0;font-size:.82rem;font-weight:700;color:#ddd3f4;line-height:1.5}
+.mbar .btn{min-height:44px;padding:.5rem 1.2rem;font-size:.9rem;flex:none}
+@media(max-width:720px){.mbar{display:flex}body{padding-bottom:calc(74px + env(safe-area-inset-bottom,0px))}}
+/* reveal — CSS-only (visible without JS, fill:backwards) */
+.rv{animation:reveal .75s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--d,0)*90ms)}
+@keyframes reveal{from{opacity:0;transform:translateY(26px)}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">پرش به محتوا</a>
+
+<div class="bgfx" aria-hidden="true"><div class="neb n1"></div><div class="neb n2"></div><div class="neb n3"></div><div class="stars"></div><div class="grain"></div></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<linearGradient id="hg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a855f7"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#f472b6"/></linearGradient>
+<linearGradient id="mu" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34d399"/><stop offset="1" stop-color="#0ea5a4"/></linearGradient>
+<symbol id="i-tg" viewBox="0 0 24 24"><path fill="url(#hg)" d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></symbol>
+<symbol id="i-mu" viewBox="0 0 24 24"><rect x="1.5" y="1.5" width="21" height="21" rx="6.2" fill="url(#mu)"/><path fill="#fff" d="M15.2 5.6 10 7.1a.9.9 0 0 0-.65.87v6.05a2.7 2.7 0 0 0-1.05-.2c-1.27 0-2.3.8-2.3 1.8s1.03 1.8 2.3 1.8 2.3-.8 2.3-1.8V9.6l4.6-1.32v3.94a2.7 2.7 0 0 0-1.05-.2c-1.27 0-2.3.8-2.3 1.8s1.03 1.8 2.3 1.8 2.3-.8 2.3-1.8V6.47a.9.9 0 0 0-1.15-.87z"/></symbol>
+<symbol id="i-dl" viewBox="0 0 24 24" fill="none" stroke="url(#hg)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5v11M7.5 10.5 12 15l4.5-4.5"/><path d="M4.5 17.5v1.9a1.6 1.6 0 0 0 1.6 1.6h11.8a1.6 1.6 0 0 0 1.6-1.6v-1.9"/></symbol>
+<symbol id="i-lyr" viewBox="0 0 24 24" fill="none" stroke="url(#hg)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="3" width="15" height="18" rx="3"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4.5"/></symbol>
+<symbol id="i-nw" viewBox="0 0 24 24" fill="none" stroke="url(#hg)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2s6 6.2 6 10.4a6 6 0 0 1-11.2 3"/><path d="M6.3 10.2c-.2.9-.3 1.9-.3 2.9"/><path d="M4 4l16 16"/></symbol>
+<symbol id="i-hd" viewBox="0 0 24 24" fill="none" stroke="url(#hg)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="13.5" rx="3"/><path d="M7.5 9v4.5M7.5 9l3 2.2 3-2.2v4.5" stroke-width="1.6"/><path d="M16.5 9.5v4M15 11.5h3"/></symbol>
+<symbol id="i-free" viewBox="0 0 24 24" fill="none" stroke="url(#hg)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/><circle cx="12" cy="12" r="3.2"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="url(#hg)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10" width="15" height="10" rx="3"/><path d="M8 10V7.5a4 4 0 0 1 8 0"/><path d="M9.5 15h5"/></symbol>
+<symbol id="i-lang" viewBox="0 0 24 24" fill="none" stroke="url(#hg)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 2.6 4 5.6 4 9s-1.2 6.4-4 9c-2.8-2.6-4-5.6-4-9s1.2-6.4 4-9z"/></symbol>
+<symbol id="i-fast" viewBox="0 0 24 24" fill="none" stroke="url(#hg)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 5 13.5h5.5L10 22l8-11.5h-5.5z"/></symbol>
+<symbol id="i-rocket" viewBox="0 0 24 24" fill="none" stroke="url(#hg)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path fill="url(#hg)" d="M12 2.6c.7 4.4 2.9 6.7 7.4 7.4-4.5.7-6.7 3-7.4 7.4-.7-4.4-2.9-6.7-7.4-7.4 4.5-.7 6.7-3 7.4-7.4z"/></symbol>
+</defs></svg>
+
+<header class="hdr" id="top">
+  <div class="container nav">
+    <a class="brand" href="#top" aria-label="InstaDownloadai — بالای صفحه">
+      <svg class="mark" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="17" fill="rgba(168,85,247,.08)" stroke="url(#hg)" stroke-width="1.6"/>
+        <ellipse cx="24" cy="24" rx="23" ry="7.5" fill="none" stroke="url(#hg)" stroke-width="1" opacity=".45" transform="rotate(-18 24 24)"/>
+        <path d="M24 15v13m0 0 5.5-5.5M24 28l-5.5-5.5" stroke="url(#hg)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle cx="36.5" cy="12.5" r="1.6" fill="#22d3ee"/>
+      </svg>
+      <span>InstaDownloadai</span>
+    </a>
+    <nav class="links" aria-label="ناوبری اصلی">
+      <a href="#services">قابلیت‌ها</a>
+      <a href="#how">مراحل</a>
+      <a href="#faq">سؤالات</a>
+      <a class="btn btn-holo" href="https://t.me/InstaDownloadai?start=a1" target="_blank" rel="noopener">شروع ربات</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <!-- ============ HERO ============ -->
+  <section class="hero container" aria-labelledby="h1">
+    <div>
+      <span class="kicker"><i class="dot" aria-hidden="true"></i> ربات رسمی تلگرام · <bdi dir="ltr">@InstaDownloadai</bdi></span>
+      <h1 id="h1">دانلود موزیک و آهنگ با <span class="holo-text">موزیک‌یاب تلگرام</span> — هر آهنگی، تا ۳۲۰kbps</h1>
+      <p class="sub">اسم آهنگ را در ربات بنویس — فارسی، خارجی یا ریمیکس — تا mp3 با کیفیت ۳۲۰kbps و تاگ کامل (کاور، خواننده، آلبوم) همان‌جا در چت تحویل بگیری. دانلود موزیک با <bdi dir="ltr">@InstaDownloadai</bdi> رایگان است؛ بدون تبلیغ، بدون ثبت‌نام.</p>
+      <div class="ctas">
+        <a class="btn btn-holo" href="https://t.me/InstaDownloadai?start=a1" target="_blank" rel="noopener">
+          <svg width="20" height="20" aria-hidden="true"><use href="#i-tg"/></svg>
+          شروع ربات در تلگرام
+        </a>
+        <a class="btn btn-ghost" href="#how">چطور کار می‌کند؟ ↓</a>
+      </div>
+      <div class="chips" aria-label="نکات کلیدی">
+        <span>تا ۳۲۰kbps</span>
+        <span>تاگ کامل و کاور</span>
+        <span>تشخیص آهنگ از ویدیو</span>
+        <span>متن ترانه با <bdi dir="ltr">/lyric</bdi></span>
+      </div>
+      <div class="stats" role="list">
+        <div class="st" role="listitem"><b class="holo-text">۳۲۰kbps</b><span>کیفیت موزیک</span></div>
+        <div class="st" role="listitem"><b class="holo-text">حدود ۸۰</b><span>دانلود رایگان در روز</span></div>
+        <div class="st" role="listitem"><b class="holo-text">۴۹MB</b><span>سقف حجم هر فایل</span></div>
+        <div class="st" role="listitem"><b class="holo-text">۴</b><span>زبان: فا، EN، عربی، روسی</span></div>
+      </div>
+    </div>
+
+    <div class="stage rv" style="--d:2">
+      <div class="orbit-wrap" aria-hidden="true">
+        <div class="orb a"></div>
+        <svg class="spark s1"><use href="#i-spark"/></svg>
+        <svg class="spark s2"><use href="#i-spark"/></svg>
+      </div>
+      <span class="chip-f c1" aria-hidden="true">۳۲۰kbps · تاگ کامل</span>
+      <span class="chip-f pk c2" aria-hidden="true">🎵 هر آهنگی · <bdi dir="ltr">/lyric</bdi></span>
+      <div class="console holo-b" dir="ltr" aria-hidden="true">
+        <div class="c-bar"><i></i><i></i><i></i><span class="t">@InstaDownloadai</span></div>
+        <div class="bub u" dir="rtl">گل یخ ریمیکس</div>
+        <div class="bub b"><b>✓ Found — 320kbps</b>
+          <div class="files">
+            <span class="f">🎵 Gole_Yakh_Remix_320.mp3 <em>320kbps</em><span class="eq"><i></i><i></i><i></i><i></i></span></span>
+            <span class="f">🏷 Reza Sadeghi — گل یخ <em>TAGS</em></span>
+            <span class="f">📄 /lyric گل یخ <em>LYRICS</em></span>
+          </div>
+        </div>
+        <div class="bub b typing"><i></i><i></i><i></i></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="hr" aria-hidden="true"></div>
+
+  <!-- ============ CAPABILITIES ============ -->
+  <section id="services" class="container" aria-labelledby="h-serv">
+    <span class="sec-k">قابلیت‌های ربات</span>
+    <h2 class="sec-h" id="h-serv">موزیک‌یاب فقط اسم می‌خواهد — <span class="holo-text">بقیه‌اش با ربات</span></h2>
+    <p class="sec-p">همهٔ چیزهایی که ربات واقعاً انجام می‌دهد؛ بدون اغراق — همین قابلیت‌ها، همین کیفیت، همین‌قدر ساده.</p>
+
+    <div class="bento">
+      <article class="card c-mu c-7 rv">
+        <span class="ico"><svg aria-hidden="true"><use href="#i-mu"/></svg></span>
+        <h3>موزیک‌یاب — دانلود موزیک با اسم</h3>
+        <p>اسم آهنگ را بنویس — ایرانی، خارجی یا ریمیکس — تا از چند کاتالوگ به‌صورت موازی جست‌وجو شود و mp3 تا ۳۲۰kbps با تاگ کامل (کاور، نام خواننده و آلبوم) در چت تحویل بگیری. ورژن‌های کمیاب را هم امتحان کن؛ اگر بار اول پیدا نشد، با املای متفاوت یا نام خواننده دوباره بپرس.</p>
+        <svg class="wave" viewBox="0 0 150 26" aria-hidden="true"><rect x="2" y="8" width="4" height="18" rx="2"/><rect x="12" y="2" width="4" height="24" rx="2"/><rect x="22" y="10" width="4" height="16" rx="2"/><rect x="32" y="5" width="4" height="21" rx="2"/><rect x="42" y="12" width="4" height="14" rx="2"/><rect x="52" y="3" width="4" height="23" rx="2"/><rect x="62" y="9" width="4" height="17" rx="2"/><rect x="72" y="1" width="4" height="25" rx="2"/><rect x="82" y="11" width="4" height="15" rx="2"/><rect x="92" y="6" width="4" height="20" rx="2"/><rect x="102" y="13" width="4" height="13" rx="2"/><rect x="112" y="4" width="4" height="22" rx="2"/><rect x="122" y="10" width="4" height="16" rx="2"/><rect x="132" y="7" width="4" height="19" rx="2"/><rect x="142" y="12" width="4" height="14" rx="2"/></svg>
+        <div class="meta"><i>۳۲۰kbps</i><i>جست‌وجوی موازی</i><i>ورژن کمیاب</i></div>
+      </article>
+
+      <article class="card c-5 rv" style="--d:1">
+        <span class="ico"><svg aria-hidden="true"><use href="#i-dl"/></svg></span>
+        <h3>استخراج mp3 از ویدیو</h3>
+        <p>لینک ویدیوی اینستاگرام، تیک‌تاک یا ویمئو را بفرست و فایل صوتی mp3 همان ویدیو را بگیر — زیر هر ویدیو گزینهٔ استخراج صدا هست.</p>
+        <div class="meta"><i>اینستاگرام</i><i>تیک‌تاک</i><i>ویمئو</i></div>
+      </article>
+
+      <article class="card c-5 rv" style="--d:1">
+        <span class="ico"><svg aria-hidden="true"><use href="#i-spark"/></svg></span>
+        <h3>تشخیص آهنگ از ویدیو</h3>
+        <p>آهنگی که اسمش را نمی‌دانی؟ ویدیو را بفرست و «پیدا کردن آهنگ» را بزن؛ ربات خودش آهنگ را تشخیص می‌دهد و بهترین کیفیتش را می‌فرستد.</p>
+        <div class="meta"><i>ویدیو → آهنگ</i></div>
+      </article>
+
+      <article class="card c-7 rv" style="--d:2">
+        <span class="ico"><svg aria-hidden="true"><use href="#i-lyr"/></svg></span>
+        <h3>متن ترانه با <span class="chip-code" lang="en">/lyric</span></h3>
+        <p>دستور <span class="chip-code" lang="en">/lyric</span> را همراه اسم آهنگ به ربات بفرست تا متن ترانه در چت نمایش داده شود — برای وقتی که آهنگ در گوشت چرخیده ولی کلمه‌هایش یادت نیست.</p>
+        <div class="meta"><i>دستور /lyric</i><i>مستقیم در چت</i></div>
+      </article>
+
+      <article class="card c-5 rv" style="--d:2">
+        <span class="ico"><svg aria-hidden="true"><use href="#i-rocket"/></svg></span>
+        <h3>دانلود ویدیو — چهار پلتفرم</h3>
+        <p>کنار موزیک‌یاب، ربات ویدیو هم دانلود می‌کند: اینستاگرام (پست، ریلز، استوری، آلبوم) تا ۴K بدون واترمارک؛ پینترست با کیفیت اصلی؛ تیک‌تاک HD بدون واترمارک؛ و ویمئو.</p>
+        <div class="meta"><i>اینستاگرام تا ۴K</i><i>پینترست</i><i>تیک‌تاک HD</i><i>ویمئو</i></div>
+      </article>
+    </div>
+  </section>
+
+  <div class="hr" aria-hidden="true"></div>
+
+  <!-- ============ HOW — 3 STEPS ============ -->
+  <section id="how" class="container" aria-labelledby="h-how">
+    <span class="sec-k">راهنما</span>
+    <h2 class="sec-h" id="h-how">دانلود موزیک در سه قدم</h2>
+    <p class="sec-p">نه ثبت‌نام، نه نصب اپلیکیشن — فقط تلگرام که همین حالا هم داری.</p>
+    <div class="steps">
+      <article class="step rv">
+        <div class="n" aria-hidden="true">۱</div>
+        <h3>اسم آهنگ را بفرست</h3>
+        <p>در چت ربات <bdi dir="ltr">@InstaDownloadai</bdi> اسم آهنگ را بنویس — فارسی، خارجی یا ریمیکس؛ یا اگر آهنگ بی‌نام است، لینک ویدیو را بفرست.</p>
+      </article>
+      <article class="step rv" style="--d:1">
+        <div class="n" aria-hidden="true">۲</div>
+        <h3>mp3 تا ۳۲۰kbps بگیر</h3>
+        <p>موزیک‌یاب جست‌وجو می‌کند و فایل mp3 را با کیفیت تا ۳۲۰kbps و تاگ کامل — کاور، خواننده و آلبوم — همان‌جا می‌فرستد.</p>
+      </article>
+      <article class="step rv" style="--d:2">
+        <div class="n" aria-hidden="true">۳</div>
+        <h3>متن ترانه را بگیر</h3>
+        <p>دستور <bdi dir="ltr">/lyric</bdi> را با اسم آهنگ بفرست تا متن ترانه در چت بیاید؛ حالا آهنگ و کلمه‌هایش هر دو دستِ توست.</p>
+      </article>
+    </div>
+  </section>
+
+  <div class="hr" aria-hidden="true"></div>
+
+  <!-- ============ FEATURES STRIP ============ -->
+  <section id="features" class="container" aria-labelledby="h-feat">
+    <span class="sec-k">چرا این ربات؟</span>
+    <h2 class="sec-h" id="h-feat">سریع مثل یک موشک، شفاف مثل کریستال</h2>
+    <p class="sec-p">همین‌هایی که یک دانلودر واقعی باید داشته باشد — بدون «اما» و بدون پرداخت.</p>
+    <div class="feats">
+      <div class="feat rv"><svg aria-hidden="true"><use href="#i-hd"/></svg><b>موزیک تا ۳۲۰kbps</b></div>
+      <div class="feat rv" style="--d:1"><svg aria-hidden="true"><use href="#i-spark"/></svg><b>تاگ کامل و کاور</b></div>
+      <div class="feat rv" style="--d:2"><svg aria-hidden="true"><use href="#i-free"/></svg><b>کاملاً رایگان</b></div>
+      <div class="feat rv" style="--d:3"><svg aria-hidden="true"><use href="#i-lock"/></svg><b>بدون لاگین و ثبت‌نام</b></div>
+      <div class="feat rv" style="--d:4"><svg aria-hidden="true"><use href="#i-lang"/></svg><b>۴ زبان: فا، EN، عربی، روسی</b></div>
+      <div class="feat rv" style="--d:5"><svg aria-hidden="true"><use href="#i-fast"/></svg><b>تحویل در چند ثانیه</b></div>
+    </div>
+  </section>
+
+  <div class="hr" aria-hidden="true"></div>
+
+  <!-- ============ EN / LTR PANEL ============ -->
+  <section id="en" class="container" lang="en" dir="ltr" aria-labelledby="h-en">
+    <div class="en-panel holo-b rv">
+      <span class="overline">Music Finder — same bot</span>
+      <h2 id="h-en">Type a song name.<br><span class="holo-text">Get the MP3.</span></h2>
+      <p class="en-p">Send any song name — Persian or international, remixes, rare versions — to <bdi dir="ltr">@InstaDownloadai</bdi> on Telegram and get MP3 up to 320kbps with full tags (cover, artist, album) right in the chat. Send <bdi dir="ltr">/lyric</bdi> for song lyrics, or drop a video link from Instagram, TikTok or Vimeo to extract its audio or recognize the track. Free, no sign-up.</p>
+      <a class="btn btn-holo" href="https://t.me/InstaDownloadai?start=a1" target="_blank" rel="noopener">
+        <svg width="20" height="20" aria-hidden="true"><use href="#i-tg"/></svg>
+        Open @InstaDownloadai
+      </a>
+      <div class="en-stats">
+        <div class="en-stat"><b class="holo-text">320kbps</b><span>max audio</span></div>
+        <div class="en-stat"><b class="holo-text">~80</b><span>free downloads / day</span></div>
+        <div class="en-stat"><b class="holo-text">49MB</b><span>max file size</span></div>
+        <div class="en-stat"><b class="holo-text">100%</b><span>free</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="hr" aria-hidden="true"></div>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" class="container faq" aria-labelledby="h-faq">
+    <span class="sec-k">سؤالات رایج</span>
+    <h2 class="sec-h" id="h-faq">هر چیزی که ممکن است بپرسی</h2>
+    <details>
+      <summary>چطور با ربات دانلود موزیک کنم؟<i class="pm" aria-hidden="true"></i></summary>
+      <div class="a">در تلگرام ربات <bdi dir="ltr">@InstaDownloadai</bdi> را Start کن و اسم آهنگ را در چت بنویس؛ موزیک‌یاب از چند کاتالوگ جست‌وجو می‌کند و mp3 تا ۳۲۰kbps همان‌جا تحویل داده می‌شود — رایگان و بدون ثبت‌نام.</div>
+    </details>
+    <details>
+      <summary>دانلود آهنگ خارجی هم پشتیبانی می‌شود؟<i class="pm" aria-hidden="true"></i></summary>
+      <div class="a">بله؛ کاتالوگ‌های موازی هم آهنگ ایرانی و هم خارجی را پوشش می‌دهند. برای ریمیکس و ورژن‌های کمیاب هم کافی است کنار اسم آهنگ بنویسی <bdi dir="ltr">remix</bdi> یا ریمیکس.</div>
+    </details>
+    <details>
+      <summary>آهنگی که اسمش را نمی‌دانم چطور پیدا کنم؟<i class="pm" aria-hidden="true"></i></summary>
+      <div class="a">ویدیوی موردنظر (اینستاگرام، تیک‌تاک یا پینترست) را به ربات بفرست و گزینهٔ «پیدا کردن آهنگ» را بزن؛ ربات خودش آهنگ را تشخیص می‌دهد و بهترین کیفیتش را می‌فرستد.</div>
+    </details>
+    <details>
+      <summary>کیفیت آهنگ‌های دانلودشده چقدر است؟<i class="pm" aria-hidden="true"></i></summary>
+      <div class="a">آهنگ‌ها تا ۳۲۰ کیلوبیت بر ثانیه — بالاترین کیفیت رایج mp3 — همراه با تاگ کامل تحویل داده می‌شوند: کاور، نام خواننده و نام آلبوم.</div>
+    </details>
+    <details>
+      <summary>متن ترانهٔ آهنگ را هم می‌دهد؟<i class="pm" aria-hidden="true"></i></summary>
+      <div class="a">بله؛ دستور <bdi dir="ltr">/lyric</bdi> را با اسم آهنگ به ربات بفرست تا متن ترانه در چت نمایش داده شود.</div>
+    </details>
+    <details>
+      <summary>دانلود موزیک با این ربات رایگان است؟ محدودیت روزانه دارد؟<i class="pm" aria-hidden="true"></i></summary>
+      <div class="a">بله، همهٔ قابلیت‌ها رایگان هستند — حدود ۸۰ دانلود در روز برای هر کاربر — و هر فایل تا حدود ۴۹ مگابایت تحویل داده می‌شود. بدون اشتراک، بدون کارت بانکی و بدون لاگین.</div>
+    </details>
+  </section>
+
+  <div class="hr" aria-hidden="true"></div>
+
+  <!-- ============ BIG CTA ============ -->
+  <section class="container" aria-labelledby="h-cta">
+    <div class="cta-band holo-b rv">
+      <h2 id="h-cta">اسم آهنگ بعدی را همین حالا بنویس</h2>
+      <p>دانلود موزیک و دانلود آهنگ — فارسی، خارجی یا ریمیکس — تا ۳۲۰kbps؛ رایگان، بدون تبلیغ، بدون ثبت‌نام.</p>
+      <a class="btn btn-holo" href="https://t.me/InstaDownloadai?start=a1" target="_blank" rel="noopener">
+        <svg width="22" height="22" aria-hidden="true"><use href="#i-tg"/></svg>
+        شروع ربات در تلگرام
+      </a>
+      <small><bdi dir="ltr">@InstaDownloadai</bdi> · حدود ۸۰ دانلود در روز · تا ۴۹ مگابایت برای هر فایل · ۴ زبان</small>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="f-grid">
+      <div>
+        <div class="f-brand">
+          <svg class="mark" viewBox="0 0 48 48" aria-hidden="true">
+            <circle cx="24" cy="24" r="17" fill="rgba(168,85,247,.08)" stroke="url(#hg)" stroke-width="1.6"/>
+            <ellipse cx="24" cy="24" rx="23" ry="7.5" fill="none" stroke="url(#hg)" stroke-width="1" opacity=".45" transform="rotate(-18 24 24)"/>
+            <path d="M24 15v13m0 0 5.5-5.5M24 28l-5.5-5.5" stroke="url(#hg)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+          <span>InstaDownloadai</span>
+        </div>
+        <p class="f-note">ساخته‌شده با ♥ برای تلگرام — موزیک‌یاب هر آهنگی، استخراج mp3، متن ترانه با <bdi dir="ltr">/lyric</bdi> و دانلود ویدیو از اینستاگرام، پینترست، تیک‌تاک و ویمئو. بدون تبلیغ، بدون لاگین.</p>
+      </div>
+      <nav aria-label="صفحات دانلودر">
+        <h3 class="f-h">دانلودرها</h3>
+        <a href="https://h095157497.github.io/music">موزیک‌یاب</a>
+        <a href="https://h095157497.github.io/instagram">دانلود اینستاگرام</a>
+        <a href="https://h095157497.github.io/pinterest">دانلود پینترست</a>
+        <a href="https://h095157497.github.io/tiktok">دانلود تیک‌تاک</a>
+        <a href="https://h095157497.github.io/abzar">دانلودرها</a>
+      </nav>
+      <nav aria-label="ربات">
+        <h3 class="f-h">ربات</h3>
+        <a href="https://t.me/InstaDownloadai?start=a1" target="_blank" rel="noopener">شروع ربات در تلگرام ↗</a>
+        <a href="https://h095157497.github.io/">صفحهٔ اصلی سایت</a>
+      </nav>
+    </div>
+    <div class="f-bot">
+      <span>© ۲۰۲۶ InstaDownloadai · همهٔ حقوق محفوظ است.</span>
+      <span lang="en" dir="ltr">v7 — Holographic Luxury Dark</span>
+    </div>
+  </div>
+</footer>
+
+<!-- sticky mobile CTA bar -->
+<div class="mbar" role="region" aria-label="شروع ربات">
+  <p>موزیک‌یاب رایگان تلگرام</p>
+  <a class="btn btn-holo" href="https://t.me/InstaDownloadai?start=a1" target="_blank" rel="noopener">
+    <svg width="18" height="18" aria-hidden="true"><use href="#i-tg"/></svg>
+    شروع ربات
+  </a>
+</div>
+
+<script>
+addEventListener('scroll',function(){var h=document.querySelector('.hdr');if(h)h.classList.toggle('sc',scrollY>8)},{passive:true});
+</script>
+</body>
+</html>
