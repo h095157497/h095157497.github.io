@@ -1,0 +1,303 @@
+/* SWISS GRID SUPREME — v8 production (design champion arena8/entry-7-final.html; Task 13-V8-BUILD) */
+/* ---- self-hosted fonts (b8 final-tech.md §3): Vazirmatn + Archivo variable woff2 subsets,
+   downloaded from Google Fonts css2 (UA Chrome/120) on build day; font-display:swap + unicode-range.
+   Cyrillic (ru prose) falls back to system-ui exactly as the champion design did (Archivo has no Cyrillic). ---- */
+@font-face{font-family:"Archivo";font-style:normal;font-stretch:62% 125%;font-weight:100 900;font-display:swap;src:url("/assets/fonts/archivo-latin-ext.woff2") format("woff2");unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}
+@font-face{font-family:"Archivo";font-style:normal;font-stretch:62% 125%;font-weight:100 900;font-display:swap;src:url("/assets/fonts/archivo-latin.woff2") format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Vazirmatn";font-style:normal;font-weight:100 900;font-display:swap;src:url("/assets/fonts/vazirmatn-arabic.woff2") format("woff2");unicode-range:U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC7, U+10EC9-10EEE, U+10EF0-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1}
+@font-face{font-family:"Vazirmatn";font-style:normal;font-weight:100 900;font-display:swap;src:url("/assets/fonts/vazirmatn-latin-ext.woff2") format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Vazirmatn";font-style:normal;font-weight:100 900;font-display:swap;src:url("/assets/fonts/vazirmatn-latin.woff2") format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+
+/* ============================================================
+   SWISS GRID SUPREME — entry 07
+   One accent. One grid. Zero decoration.
+   ============================================================ */
+:root{
+  --paper:#F2EFE9;          /* warm off-white */
+  --ink:#0E0D0B;            /* near-black */
+  --accent:#FF4400;         /* signal red-orange — the only accent */
+  --line:rgba(14,13,11,.18);
+  --line-soft:rgba(14,13,11,.09);
+  --line-inv:rgba(242,239,233,.2);
+  --muted:rgba(14,13,11,.58);
+  --muted-inv:rgba(242,239,233,.62);
+  --f-fa:"Vazirmatn","Archivo",system-ui,sans-serif;
+  --f-en:"Archivo","Vazirmatn",system-ui,sans-serif;
+  --mx:clamp(18px,4.5vw,64px);
+  --gap:clamp(64px,9vw,128px); /* section rhythm, baseline-locked */
+  --t:140ms; /* the ONE micro-interaction timing — every state change lands inside 120–150ms */
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  min-height:100svh;display:flex;flex-direction:column;
+  background:var(--paper);color:var(--ink);
+  font-family:var(--f-fa);font-size:16px;line-height:1.8;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  overflow-x:clip;
+}
+main{flex:1 0 auto}
+footer{margin-top:auto}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+::selection{background:var(--accent);color:var(--paper)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{padding-inline:var(--mx)}
+.skip{position:fixed;top:-100px;inset-inline-start:16px;z-index:100;background:var(--ink);color:var(--paper);padding:10px 18px;font-weight:700;transition:top var(--t)}
+.skip:focus{top:12px}
+
+/* — micro-label system: uppercase Latin + Persian, perfectly aligned — */
+.tag{font-family:var(--f-en);font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;display:inline-flex;gap:10px;align-items:baseline;line-height:1.4;white-space:nowrap}
+.tag .idx{color:var(--accent);font-feature-settings:"tnum"}
+.tag .sep{color:var(--accent);font-weight:400}
+.tag .fa{font-family:var(--f-fa);font-size:12.5px;letter-spacing:0;font-weight:500}
+
+/* — progress hairline — */
+.prog{position:fixed;top:0;inset-inline-start:0;height:2px;width:0;background:var(--accent);z-index:70}
+
+/* — top meta bar (scrolls away) — */
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:10px;border-bottom:1px solid var(--line);font-family:var(--f-en);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:500}
+.topbar .fa{font-family:var(--f-fa);letter-spacing:0;font-size:12px}
+.topbar .mid{color:var(--muted)}
+.topbar bdi{font-feature-settings:"tnum"}
+#clk{color:var(--accent);font-weight:700}
+
+/* — sticky grid nav — */
+.nav{position:sticky;top:0;z-index:60;background:var(--paper);border-bottom:1px solid var(--line)}
+.nav-inner{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:clamp(14px,2.5vw,32px);padding-block:13px}
+.wm{display:inline-flex;align-items:center;gap:9px;font-family:var(--f-en);font-weight:800;font-size:14px;letter-spacing:.04em;white-space:nowrap}
+.dotm{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none;transition:transform var(--t)}
+.wm:hover .dotm,.wm:focus-visible .dotm{transform:scale(1.45)}
+.hlinks{display:flex;gap:clamp(14px,1.8vw,26px);overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;justify-self:center;max-width:100%}
+.hlinks::-webkit-scrollbar{display:none}
+.hlinks a{font-size:13px;font-weight:500;opacity:.72;white-space:nowrap;padding-block:2px;background:linear-gradient(currentColor,currentColor) 100% 100%/0 1px no-repeat;transition:opacity var(--t),background-size var(--t)}
+.hlinks a:hover,.hlinks a:focus-visible{opacity:1;background-size:100% 1px}
+.hlinks a[aria-current="page"]{opacity:1;color:var(--accent);background:linear-gradient(var(--accent),var(--accent)) 100% 100%/100% 1px no-repeat}
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--accent);color:var(--ink);font-family:var(--f-fa);font-weight:700;font-size:15.5px;padding:13px 26px;border:1px solid var(--accent);transition:background var(--t),color var(--t);line-height:1.5;white-space:nowrap}
+.btn .barr{font-family:var(--f-en);transition:transform var(--t)}
+.btn:hover,.btn:focus-visible{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn:hover .barr,.btn:focus-visible .barr{transform:translateX(-5px)}
+.nav .btn{padding:9px 18px;font-size:13.5px}
+
+/* — hero — */
+.hero{position:relative;padding-block:clamp(40px,6vw,88px) 0}
+.hero-cols{position:absolute;inset:0;display:grid;grid-template-columns:repeat(12,1fr);pointer-events:none}
+.hero-cols i{border-inline-start:1px solid var(--line-soft)}
+.hero-cols i:first-child{border-inline-start:0}
+.disc{position:absolute;z-index:0;inset-inline-end:2%;top:clamp(180px,24vw,300px);width:clamp(110px,20vw,300px);height:clamp(110px,20vw,300px);border-radius:50%;background:var(--accent)}
+.hero-head{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-block:14px;border-block:1px solid var(--line)}
+.hero-head .mid{color:var(--muted)}
+h1{position:relative;z-index:1;font-weight:900;font-size:clamp(58px,14.5vw,186px);line-height:1.02;letter-spacing:-.015em;margin-block:clamp(28px,4vw,56px) 0}
+h1 .hl{display:block}
+h1 em{font-style:normal;color:var(--accent)}
+h1 .pdot{font-style:normal;color:var(--accent);display:inline-block;transform:translateX(-.14em)} /* hung period — optical margin alignment on the monumental H1 */
+.hero-foot{position:relative;z-index:1;display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:end;margin-block:clamp(32px,4.5vw,64px)}
+.lede{grid-column:1/span 6;font-size:clamp(15.5px,1.35vw,19px);line-height:1.9;max-width:56ch;color:var(--ink)}
+.lede b{font-weight:800}
+.hero-cta{grid-column:8/span 5;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:flex-start}
+.ghost{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-en);font-weight:600;font-size:14px;letter-spacing:.02em;border-bottom:1px solid var(--ink);padding-block:4px;transition:color var(--t),border-color var(--t)}
+.ghost:hover,.ghost:focus-visible{color:var(--accent);border-color:var(--accent)}
+
+/* — stat data strip — */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border-block:1px solid var(--line);margin-top:clamp(40px,5vw,72px)}
+.stat{background:var(--paper);padding:clamp(18px,2.4vw,34px) clamp(14px,2vw,30px);display:flex;flex-direction:column;gap:10px}
+.sv{direction:ltr;display:flex;align-items:baseline;gap:7px;font-weight:800;font-size:clamp(40px,5vw,76px);line-height:1;letter-spacing:-.02em;font-feature-settings:"tnum"}
+.sv .unit{color:var(--accent);font-family:var(--f-en);font-weight:700;font-size:.42em;letter-spacing:0}
+.sl{display:flex;flex-direction:column;gap:2px}
+.sl b{font-size:13.5px;font-weight:700;line-height:1.6}
+.sl i{font-style:normal;font-family:var(--f-en);font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+
+/* — SF accent moment: the single red ticker strip under the hero —
+   marquee pauses on hover; static under prefers-reduced-motion — */
+.ticker{direction:ltr;overflow:hidden;background:var(--accent);color:var(--ink);border-bottom:1px solid rgba(14,13,11,.3);padding-block:10px;user-select:none}
+.tk-track{display:flex;width:max-content;animation:tick 40s linear infinite}
+.ticker:hover .tk-track{animation-play-state:paused}
+.tk{display:inline-flex;align-items:center;gap:24px;padding-inline-end:24px;font-size:12.5px;font-weight:700;line-height:1.6;white-space:nowrap}
+.tk i{width:5px;height:5px;border-radius:50%;background:var(--ink);opacity:.8;flex:none}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* — FINAL proof strip: relative daily share of the real ~80 downloads/day.
+   Pure CSS bars; the only printed figure is the honest «حدود ۸۰ در روز» total.
+   Entrance grow (fill:backwards) + a whisper-quiet breathe loop; static under RM. — */
+#platforms .sh{margin-bottom:clamp(24px,3.2vw,44px)}
+.proof{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border-block:1px solid var(--line);margin-bottom:clamp(22px,2.8vw,40px)}
+.pr{background:var(--paper);padding:clamp(14px,1.8vw,24px) clamp(12px,1.6vw,22px);display:flex;flex-direction:column;justify-content:flex-end;gap:12px}
+.prb{height:clamp(36px,4.2vw,58px);border-bottom:1px solid var(--line-soft);position:relative;direction:ltr}
+.prb::after{content:"";position:absolute;left:18%;right:18%;bottom:0;height:calc(var(--h)*100%);background:var(--accent);transform-origin:bottom;animation:prGrow .55s cubic-bezier(.22,.61,.36,1) backwards calc(var(--pd,0)*80ms),prBreathe 5.2s ease-in-out calc(var(--pd,0)*80ms + .6s) infinite alternate;transition:background var(--t)}
+.pr:hover .prb::after{background:var(--ink)}
+.prl{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.prl .fa{font-size:12px;font-weight:700;line-height:1.5}
+.prl bdi{font-family:var(--f-en);font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-feature-settings:"tnum"}
+.proof-cap{margin-top:12px;display:flex;flex-wrap:wrap;gap:4px 24px;justify-content:space-between;font-size:11.5px;color:var(--muted);line-height:1.7}
+.proof-cap b{color:var(--ink);font-weight:800}
+@keyframes prGrow{from{transform:scaleY(0)}}
+@keyframes prBreathe{to{transform:scaleY(1.05)}}
+
+/* — section header — */
+.sec{padding-block:var(--gap)}
+.sh{display:flex;flex-direction:column;gap:18px;margin-bottom:clamp(36px,4.5vw,64px);border-top:1px solid var(--line);padding-top:18px}
+.sh h2{font-size:clamp(34px,6.2vw,84px);font-weight:800;line-height:1.1;letter-spacing:-.01em;max-width:22ch}
+.sh h2 em{font-style:normal;color:var(--accent)}
+.sh .sub{max-width:62ch;color:var(--muted);font-size:15.5px}
+.band{background:var(--ink);color:var(--paper)}
+.band .sh{border-top-color:var(--line-inv)}
+.band .sh .sub{color:var(--muted-inv)}
+
+/* — platform grid: hairline table on the 12-col grid — */
+.pf{display:grid;grid-template-columns:repeat(12,1fr);gap:1px;background:var(--line);border-block:1px solid var(--line)}
+/* — SF hover: hairline state — index numeral fills red, baseline lifts 2px, 150ms — */
+.cell{--cl:var(--line);background:var(--paper);padding:clamp(20px,2.6vw,38px);min-height:clamp(260px,30vw,380px);display:flex;flex-direction:column;transition:transform var(--t) ease,box-shadow var(--t) ease}
+.s5{grid-column:span 5}.s4{grid-column:span 4}.s3{grid-column:span 3}.s7{grid-column:span 7}
+.cell:hover,.cell:focus-visible{transform:translateY(-2px);box-shadow:inset 0 0 0 1px var(--ink)}
+.cell .idx{padding-inline:6px;margin-inline:-6px;transition:background var(--t) ease,color var(--t) ease}
+.cell:hover .idx,.cell:focus-visible .idx{background:var(--accent);color:var(--paper)}
+.cell-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.arr{font-family:var(--f-en);font-size:22px;line-height:1;transition:transform var(--t);color:var(--accent)}
+.cell:hover .arr,.cell:focus-visible .arr{transform:translateX(-7px)}
+.cell h3{font-size:clamp(26px,3.4vw,52px);font-weight:800;line-height:1.2;margin-top:clamp(18px,2.4vw,34px);letter-spacing:-.01em}
+.cell .d{margin-top:10px;font-size:14px;line-height:1.85;color:var(--muted);max-width:44ch}
+.fl{margin-top:auto;padding-top:16px}
+.fl li{border-top:1px solid var(--cl);padding-block:7px;font-size:12.5px;font-weight:600;display:flex;justify-content:space-between;gap:12px}
+.fl li bdi{font-family:var(--f-en);font-weight:500;color:var(--muted);font-size:11px;letter-spacing:.08em}
+
+/* — how-to: numbered columns on black — */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-inv);border-block:1px solid var(--line-inv)}
+.step{background:var(--ink);padding:clamp(24px,3vw,44px);min-height:clamp(280px,26vw,360px);display:flex;flex-direction:column;gap:8px}
+.step .sn{font-size:clamp(84px,9vw,148px);font-weight:900;line-height:.95;color:var(--accent);letter-spacing:-.02em}
+.step .st{font-family:var(--f-en);font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted-inv);margin-top:6px}
+.step h3{font-size:clamp(22px,2.6vw,36px);font-weight:800;margin-top:2px}
+.step p{font-size:14px;color:var(--muted-inv);max-width:38ch}
+.step p bdi{font-weight:600;color:var(--paper)}
+
+/* — features: 4 principles — */
+.feats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border-block:1px solid var(--line)}
+.feat{background:var(--paper);padding:clamp(20px,2.6vw,38px);min-height:clamp(200px,20vw,260px);display:flex;flex-direction:column}
+.feat h3{font-size:clamp(20px,2.2vw,30px);font-weight:800;margin-top:auto;line-height:1.35}
+.feat p{font-size:13.5px;color:var(--muted);margin-top:8px;line-height:1.8}
+
+/* — FAQ — */
+.faq-list{border-block:1px solid var(--line)}
+details{border-top:1px solid var(--line)}
+details:first-child{border-top:0}
+summary{display:flex;align-items:baseline;gap:clamp(14px,2vw,28px);padding-block:clamp(18px,2.2vw,26px);cursor:pointer;list-style:none;transition:color var(--t)}
+summary::-webkit-details-marker{display:none}
+summary:hover,summary:focus-visible{color:var(--accent)}
+.qi{font-family:var(--f-en);font-size:11px;font-weight:600;letter-spacing:.14em;color:var(--accent);flex:none;font-feature-settings:"tnum"}
+.qt{font-size:clamp(16.5px,2vw,24px);font-weight:700;line-height:1.6}
+.pm{position:relative;flex:none;width:16px;height:16px;margin-inline-start:auto;align-self:center}
+.pm::before,.pm::after{content:"";position:absolute;background:currentColor;inset-inline-start:0;top:50%;width:16px;height:2px;translate:0 -50%;transition:transform var(--t),opacity var(--t)}
+.pm::after{transform:rotate(90deg)}
+details[open] .pm::after{transform:rotate(0);opacity:0}
+.qa{padding-inline-start:calc(11px + clamp(14px,2vw,28px));padding-bottom:clamp(20px,2.4vw,30px);max-width:70ch;color:var(--muted);font-size:15px}
+.qa bdi{color:var(--ink);font-weight:600}
+
+/* — CTA band: the red poster — */
+.start{background:radial-gradient(125% 160% at 28% 8%, #FF6E33 0%, var(--accent) 52%, #E93B00 100%);color:var(--ink)}
+.start .sh{border-top-color:rgba(14,13,11,.3)}
+.start h2{font-size:clamp(52px,11vw,160px);font-weight:900;line-height:1;letter-spacing:-.02em;margin-bottom:clamp(20px,2.6vw,36px)}
+.start .sub{color:rgba(14,13,11,.75);font-size:clamp(15.5px,1.4vw,19px);max-width:56ch}
+.btn-inv{display:inline-flex;align-items:center;gap:14px;background:var(--ink);color:var(--paper);font-weight:800;font-size:clamp(16px,1.5vw,20px);padding:clamp(16px,1.8vw,22px) clamp(28px,3.4vw,52px);margin-top:clamp(26px,3vw,44px);transition:background var(--t),color var(--t);line-height:1.5}
+.btn-inv .barr{font-family:var(--f-en);transition:transform var(--t)}
+.btn-inv:hover,.btn-inv:focus-visible{background:var(--paper);color:var(--ink)}
+.btn-inv:hover .barr,.btn-inv:focus-visible .barr{transform:translateX(-5px)}
+.start-meta{margin-top:clamp(40px,5vw,72px);border-top:1px solid rgba(14,13,11,.3);padding-block:16px;display:flex;flex-wrap:wrap;gap:10px 32px;font-family:var(--f-en);font-size:10.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+.start-meta .fa{font-family:var(--f-fa);font-size:12.5px;letter-spacing:0}
+
+/* — footer — */
+.footer{background:var(--ink);color:var(--paper)}
+.fw{display:block;font-family:var(--f-en);font-weight:900;font-stretch:114%;font-size:clamp(27px,8.3vw,112px);line-height:.95;letter-spacing:-.035em;white-space:nowrap;padding-block:clamp(36px,4.5vw,64px) clamp(24px,3vw,44px)}
+.fw span{color:var(--accent)}
+.f-grid{display:grid;grid-template-columns:4fr 3fr 3fr 2fr;gap:clamp(24px,3vw,48px);border-top:1px solid var(--line-inv);padding-block:clamp(28px,3.4vw,52px)}
+.f-grid h4{font-family:var(--f-en);font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted-inv);margin-bottom:14px}
+.f-grid h4 .fa{font-family:var(--f-fa);font-size:12px;letter-spacing:0;margin-inline-start:6px}
+.f-grid p{font-size:13.5px;color:var(--muted-inv);max-width:38ch;line-height:1.9}
+.f-grid ul{display:flex;flex-direction:column;gap:6px}
+.f-grid ul a{font-size:13.5px;opacity:.85;align-self:flex-start;background:linear-gradient(currentColor,currentColor) 100% 100%/0 1px no-repeat;padding-block:2px;transition:color var(--t),opacity var(--t),background-size var(--t)}
+.f-grid ul a:hover,.f-grid ul a:focus-visible{color:var(--accent);opacity:1;background-size:100% 1px}
+.f-bottom{border-top:1px solid var(--line-inv);padding-block:16px;display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-between;font-family:var(--f-en);font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted-inv)}
+.f-bottom .fa{font-family:var(--f-fa);font-size:12px;letter-spacing:0}
+
+/* — entrance: pure CSS, fill:backwards — no IO gating, no-JS safe — */
+@keyframes rvIn{from{opacity:0;transform:translateY(14px)}}
+.rv{animation:rvIn .6s cubic-bezier(.22,.61,.36,1) backwards;animation-delay:calc(var(--rd,0)*80ms)}
+.rv:nth-child(2){--rd:1}
+.rv:nth-child(3){--rd:2}
+.rv:nth-child(4){--rd:3}
+.rv:nth-child(5){--rd:4}
+
+/* — responsive — */
+@media (max-width:1020px){
+  .s5,.s4,.s3,.s7{grid-column:span 6}
+  .f-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:900px){
+  .nav-inner{grid-template-columns:auto auto}
+  .hlinks{grid-column:1/-1;order:3;justify-self:stretch;padding-bottom:6px;margin-top:-2px}
+  .nav .btn{justify-self:end}
+  .lede{grid-column:1/-1}
+  .hero-cta{grid-column:1/-1}
+  .steps{grid-template-columns:1fr}
+  .step{min-height:0}
+}
+@media (max-width:640px){
+  /* FINAL: proof strip folds to a 2×2 data grid — same rhythm as the stats */
+  .proof{grid-template-columns:1fr 1fr}
+  .prl .fa{font-size:11.5px}
+  .topbar .mid{display:none}
+  .hero-head .mid{display:none}
+  .s5,.s4,.s3,.s7{grid-column:span 12}
+  .cell{min-height:0}
+  .stats{grid-template-columns:1fr 1fr}
+  .feats{grid-template-columns:1fr 1fr}
+  .feat{min-height:0;gap:16px}
+  .disc{top:220px;inset-inline-end:0;opacity:.92}
+  .hero-cta .btn{flex:1;justify-content:center}
+  .f-grid{grid-template-columns:1fr}
+  .fw{white-space:normal;overflow-wrap:anywhere}
+  /* SF: FAQ rows go full-bleed hairlines, text stays on the grid */
+  .faq-list{margin-inline:calc(var(--mx)*-1)}
+  .faq-list summary{padding-inline:var(--mx)}
+  .faq-list .qa{padding-inline-start:calc(var(--mx) + 11px + clamp(14px,2vw,28px));padding-inline-end:var(--mx)}
+}
+@media (max-width:460px){
+  .feats{grid-template-columns:1fr}
+}
+/* — reduced motion: clarity without movement — */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+
+/* ============================================================
+   v8 PRODUCTION ADDITIONS — Swiss Grid Supreme tokens only
+   ============================================================ */
+/* b3 accent-span convention: 1:1 map to the champion h1 em (identical render) */
+h1 em,h1 .holo-text{font-style:normal;color:var(--accent)}
+/* b3 H1s are real SEO headlines (53–94ch) — same monumental system, real-content scale */
+h1{font-size:clamp(34px,6.5vw,92px);line-height:1.1}
+/* b5-sf silo rows (§E; hrefs carry the b8 trailing-slash law) */
+.xlang,.xlink,.xlinks{max-width:72ch;margin:14px 0 0;font-size:14.5px;line-height:1.9;color:var(--muted)}
+.xlang a,.xlink a,.xlinks a{color:var(--ink);font-weight:700;text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px;transition:color var(--t)}
+.xlang a:hover,.xlink a:hover,.xlinks a:hover,.xlang a:focus-visible,.xlink a:focus-visible,.xlinks a:focus-visible{color:var(--accent)}
+.xlang,.xlink{margin-top:clamp(18px,2.4vw,28px)}
+/* absorbed b4 depth sections (#formats #device-how #why #limits) — champion skin */
+.sec-k{display:block;color:var(--accent);font-size:12.5px;font-weight:700;margin-bottom:12px}
+.sec-h{font-size:clamp(28px,4.4vw,58px);font-weight:800;line-height:1.15;letter-spacing:-.01em;max-width:26ch;margin-bottom:16px}
+.sec-p{max-width:68ch;color:var(--muted);font-size:15px;line-height:1.9;margin-bottom:8px}
+.dsec h3{font-size:clamp(19px,2.1vw,27px);font-weight:800;line-height:1.4;margin:clamp(24px,3vw,40px) 0 8px}
+.dsec p{max-width:70ch;font-size:14.5px;line-height:1.95}
+.dsec ul{max-width:70ch;margin-top:20px}
+.dsec ul li{border-top:1px solid var(--line);padding-block:14px;font-size:14px;line-height:1.95;color:var(--muted)}
+.dsec ul li b{color:var(--ink)}
+/* honest compare table — hairline treatment */
+.cmp{width:100%;max-width:900px;border:1px solid var(--line);border-collapse:collapse;margin-top:clamp(22px,3vw,36px);font-size:13.5px;line-height:1.8}
+.cmp caption{text-align:start;color:var(--muted);font-size:12px;padding-bottom:10px}
+.cmp th,.cmp td{border:1px solid var(--line);padding:10px 14px;text-align:start;vertical-align:top}
+.cmp thead th{background:var(--ink);color:var(--paper);font-weight:700}
+.cmp tbody td:last-child{color:var(--muted)}
+/* .qi counters → CSS counters (DOM summary text == JSON-LD name, b3 F1 law) */
+.faq-list{counter-reset:sq}
+summary::before{counter-increment:sq;content:counter(sq,decimal-leading-zero);font-family:var(--f-en);font-size:11px;font-weight:600;letter-spacing:.14em;color:var(--accent);flex:none;font-feature-settings:"tnum"}
+/* related-downloaders grid — tighter than the home bento */
+.pf-rel .cell{min-height:0;padding-block:clamp(18px,2.2vw,30px)}
+.pf-rel .cell h3{font-size:clamp(21px,2.6vw,36px);margin-top:12px}

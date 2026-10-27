@@ -1,82 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- b8-final definitive sitemap · canonical host https://h095157497.github.io ONLY.
+     Policy (b8-sf §0/§3, unchanged):
+     · every <loc> = the exact 200-serving trailing-slash form (GitHub Pages serves /x/ 200 and 301s /x → /x/) — zero redirect hops in signal resolution;
+     · xhtml:link alternates ONLY where real language twins exist = the 4 localized homes (4+1 cluster, bidirectional); the 5 fa-only service pages carry ZERO alternates — honest extension policy, no invented twins, no image/video/news sitemap extensions (none apply);
+     · head clusters == sitemap alternates == rule table (machine-checked by test-final.mjs T4/T7/T8);
+     · lastmod = the deploy date of the build that actually ships this file (content DID change: new build + b3 content + these heads). Value below = 2026-10-26, the v7.2 base truth; the integration task MUST bump it to the real deploy date (YYYY-MM-DD) in the deploy commit — never future-date, never leave a stale date after a content change;
+     · the tgcloud mirror host gets NO sitemap reference anywhere (it is noindexed; see final-mirror-ops/runbook.md §robots) — sitemap discovery belongs to the canonical host only. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://h095157497.github.io/</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="fa" href="https://h095157497.github.io/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://h095157497.github.io/en"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://h095157497.github.io/ar"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://h095157497.github.io/ru"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://h095157497.github.io/en/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://h095157497.github.io/ar/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h095157497.github.io/ru/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://h095157497.github.io/"/>
   </url>
   <url>
-    <loc>https://h095157497.github.io/en</loc>
-    <lastmod>2026-10-26</lastmod>
+    <loc>https://h095157497.github.io/en/</loc>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fa" href="https://h095157497.github.io/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://h095157497.github.io/en"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://h095157497.github.io/ar"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://h095157497.github.io/ru"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://h095157497.github.io/en/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://h095157497.github.io/ar/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h095157497.github.io/ru/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://h095157497.github.io/"/>
   </url>
   <url>
-    <loc>https://h095157497.github.io/ar</loc>
-    <lastmod>2026-10-26</lastmod>
+    <loc>https://h095157497.github.io/ar/</loc>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fa" href="https://h095157497.github.io/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://h095157497.github.io/en"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://h095157497.github.io/ar"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://h095157497.github.io/ru"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://h095157497.github.io/en/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://h095157497.github.io/ar/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h095157497.github.io/ru/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://h095157497.github.io/"/>
   </url>
   <url>
-    <loc>https://h095157497.github.io/ru</loc>
-    <lastmod>2026-10-26</lastmod>
+    <loc>https://h095157497.github.io/ru/</loc>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fa" href="https://h095157497.github.io/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://h095157497.github.io/en"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://h095157497.github.io/ar"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://h095157497.github.io/ru"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://h095157497.github.io/en/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://h095157497.github.io/ar/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h095157497.github.io/ru/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://h095157497.github.io/"/>
   </url>
-  <url>
-    <loc>https://h095157497.github.io/instagram</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-
-  </url>
-  <url>
-    <loc>https://h095157497.github.io/pinterest</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-
-  </url>
-  <url>
-    <loc>https://h095157497.github.io/music</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-
-  </url>
-  <url>
-    <loc>https://h095157497.github.io/tiktok</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-
-  </url>
-  <url>
-    <loc>https://h095157497.github.io/abzar</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-
-  </url>
+  <url><loc>https://h095157497.github.io/instagram/</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://h095157497.github.io/pinterest/</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://h095157497.github.io/music/</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://h095157497.github.io/tiktok/</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://h095157497.github.io/abzar/</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>

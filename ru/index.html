@@ -2,392 +2,433 @@
 <html lang="ru" dir="ltr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="color-scheme" content="dark">
-<title>Скачать из Instagram, Pinterest, TikTok и Vimeo + любую песню | бот InstaDownloadai</title>
-<meta name="description" content="Бесплатный Telegram-бот: скачивайте Reels, видео и фото из Instagram, Pinterest, TikTok (без водяного знака, HD) и Vimeo в лучшем качестве до 4K; находите любую песню (персидскую, зарубежную, ремикс) до 320kbps, извлекайте mp3, распознавайте музыку.">
-<meta name="robots" content="index,follow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Загрузчик Instagram и Pinterest | бот InstaDownloadai</title>
+<meta name="description" content="Загрузчик Instagram и Pinterest — бесплатный бот: видео и Reels до 4K без водяного знака, пины Pinterest в исходном качестве, любая песня до 320kbps.">
 <meta name="keywords" content="скачать instagram, скачать рилс, скачать pinterest, скачать тик ток, без водяного знака, скачать vimeo, найти песню, распознавание музыки, загрузчик Pinterest, скачать пин Pinterest, загрузчики, телеграм бот, InstaDownloadai">
-<link rel="canonical" href="https://h095157497.github.io/ru">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://h095157497.github.io/ru/">
 <link rel="alternate" hreflang="fa" href="https://h095157497.github.io/">
-<link rel="alternate" hreflang="en" href="https://h095157497.github.io/en">
-<link rel="alternate" hreflang="ar" href="https://h095157497.github.io/ar">
-<link rel="alternate" hreflang="ru" href="https://h095157497.github.io/ru">
+<link rel="alternate" hreflang="en" href="https://h095157497.github.io/en/">
+<link rel="alternate" hreflang="ar" href="https://h095157497.github.io/ar/">
+<link rel="alternate" hreflang="ru" href="https://h095157497.github.io/ru/">
 <link rel="alternate" hreflang="x-default" href="https://h095157497.github.io/">
-<link rel="icon" type="image/png" href="/assets/avatar.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site-v7.css">
-<style>h1,.sec-h,.cta-band h2,.card h3,.step h3{font-family:"Space Grotesk",Vazirmatn,sans-serif}</style>
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+<meta property="og:url" content="https://h095157497.github.io/ru/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="fa_IR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ar_AR">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#F2EFE9">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/archivo-latin.woff2">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="InstaDownloadai">
-<meta property="og:title" content="Скачать из Instagram, Pinterest, TikTok и любую песню — Telegram-бот InstaDownloadai">
-<meta property="og:description" content="Отправьте ссылку — получите видео и фото до 4K. Напишите название любой песни — персидской, зарубежной, ремикса. Пины Pinterest, Vimeo и любая песня по названию. Бесплатно.">
-<meta property="og:url" content="https://h095157497.github.io/ru">
+<meta property="og:title" content="Загрузчик Instagram и Pinterest | бот InstaDownloadai">
+<meta property="og:description" content="Загрузчик Instagram и Pinterest — бесплатный бот: видео и Reels до 4K без водяного знака, пины Pinterest в исходном качестве, любая песня до 320kbps.">
 <meta property="og:image" content="https://h095157497.github.io/og.jpg">
 <meta property="og:image:width" content="1344">
 <meta property="og:image:height" content="768">
-<meta property="og:locale" content="ru_RU">
+<meta property="og:image:alt" content="InstaDownloadai — ربات تلگرام دانلود اینستاگرام، پینترست، تیک‌تاک و موزیک‌یاب">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Скачать из Instagram, Pinterest, TikTok и любую песню — Telegram-бот InstaDownloadai">
-<meta name="twitter:description" content="Отправьте ссылку — получите видео и фото до 4K. Напишите название любой песни — персидской, зарубежной, ремикса. Бесплатно.">
+<meta name="twitter:title" content="Загрузчик Instagram и Pinterest | бот InstaDownloadai">
+<meta name="twitter:description" content="Загрузчик Instagram и Pinterest — бесплатный бот: видео и Reels до 4K без водяного знака, пины Pinterest в исходном качестве, любая песня до 320kbps.">
 <meta name="twitter:image" content="https://h095157497.github.io/og.jpg">
-<meta name="theme-color" content="#05030a">
+<meta name="twitter:image:alt" content="InstaDownloadai — ربات تلگرام دانلود اینستاگرام، پینترست، تیک‌تاک و موزیک‌یاب">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[
-{"@type":"Organization","@id":"https://h095157497.github.io/#org","name":"InstaDownloadai","url":"https://h095157497.github.io/","logo":{"@type":"ImageObject","url":"https://h095157497.github.io/og.jpg","width":1344,"height":768},"sameAs":["https://t.me/InstaDownloadai"]},
-{"@type":"WebSite","@id":"https://h095157497.github.io/ru#site","url":"https://h095157497.github.io/ru","name":"InstaDownloadai","inLanguage":"ru","description":"Telegram-бот для скачивания из Instagram, Pinterest, TikTok, Vimeo и поиска любой песни — бесплатно, без водяного знака","publisher":{"@id":"https://h095157497.github.io/#org"}},
-{"@type":"WebApplication","@id":"https://h095157497.github.io/ru#app","name":"InstaDownloadai","alternateName":"Скачать из Instagram, Pinterest, TikTok и любую песню — Telegram-бот InstaDownloadai","url":"https://h095157497.github.io/ru","applicationCategory":"MultimediaApplication","operatingSystem":"Any (Telegram)","browserRequirements":"Requires Telegram","description":"Telegram-бот для скачивания из Instagram, Pinterest, TikTok, Vimeo и поиска любой песни — бесплатно, без регистрации","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"inLanguage":["fa","en","ar","ru"],"publisher":{"@id":"https://h095157497.github.io/#org"},"featureList":["Скачивание из Instagram: посты, Reels, IGTV, истории и карусели — до 4K, без водяного знака, все элементы поста сразу.","Скачивание из Pinterest: фото и видео любого пина (включая короткие ссылки pin.it) в оригинальном качестве.","Скачивание из TikTok: видео TikTok без водяного знака и в HD — даже короткие ссылки vt. и vm., фотопосты и mp3.","Скачивание из Vimeo: видео Vimeo в оригинальном качестве — прямо в чат.","Поиск музыки: напишите название любой песни — персидской, зарубежной, ремикса или редкой версии — до 320kbps.","Извлечение mp3: достаньте mp3-аудио из любого видео Instagram, TikTok или Vimeo.","Распознавание песен: не знаете название? Отправьте видео — бот сам распознает песню.","Страница загрузчиков: все загрузчики (Instagram, Pinterest, TikTok, поиск музыки) в одном месте."]},
-{"@type":"FAQPage","@id":"https://h095157497.github.io/ru#faq","mainEntity":[
-{"@type":"Question","name":"Как скачать видео или Reels из Instagram?","acceptedAnswer":{"@type":"Answer","text":"Отправьте ссылку на пост или рилс боту @InstaDownloadai в Telegram; видео придёт туда же в лучшем качестве (до 4K) — бесплатно и без регистрации. Все элементы карусели приходят вместе."}},
-{"@type":"Question","name":"Есть ли на скачанных видео водяной знак?","acceptedAnswer":{"@type":"Answer","text":"Нет; бот не добавляет никаких водяных знаков или логотипов — вы получаете ровно оригинальный файл платформы. Для TikTok видео приходит без логотипа TikTok и без водяного знака с именем пользователя — идеально для чистых репостов."}},
-{"@type":"Question","name":"Как найти песню, название которой не знаю?","acceptedAnswer":{"@type":"Answer","text":"Отправьте боту видео (Instagram, TikTok или Pinterest) и нажмите «Найти песню»; бот сам распознает её и пришлёт лучшее качество."}},
-{"@type":"Question","name":"Можно ли найти ремиксы?","acceptedAnswer":{"@type":"Answer","text":"Да — просто напишите «remix» рядом с названием. Поиск находит ремиксы на персидском, английском и любом языке."}},
-{"@type":"Question","name":"Можно ли извлечь mp3 из видео?","acceptedAnswer":{"@type":"Answer","text":"Да — достаньте mp3-аудио из любого видео Instagram, TikTok или Vimeo. Работает и поиск музыки: напишите название — персидское, зарубежное или ремикс — и получите до 320kbps; если название неизвестно, отправьте видео — бот распознает песню сам."}},
-{"@type":"Question","name":"В каком качестве происходит скачивание?","acceptedAnswer":{"@type":"Answer","text":"Видео — в лучшем доступном качестве (до 4K), песни — до 320kbps, фото — в оригинале. Бот никогда не понижает качество; если у источника только более низкое, вы получите лучшую существующую версию."}},
-{"@type":"Question","name":"Что умеет скачивать бот?","acceptedAnswer":{"@type":"Answer","text":"Видео, Reels, истории и альбомы Instagram, видео TikTok без водяного знака, фото- и видеопины Pinterest, Vimeo, а также музыку/MP3 через поиск музыки — всё до 4K и 320kbps."}},
-{"@type":"Question","name":"Бот бесплатный?","acceptedAnswer":{"@type":"Answer","text":"Да, всё бесплатно (около 80 скачиваний в день на пользователя) — без карты и подписки. Откройте @InstaDownloadai в Telegram и нажмите Start; не нужен ни вход, ни номер телефона, ни доступ к вашим аккаунтам — файлы приходят в ваш личный чат."}},
-{"@type":"Question","name":"Насколько это быстро? Есть ли лимит размера?","acceptedAnswer":{"@type":"Answer","text":"Обычно файлы приходят за секунды; точное время зависит от размера файла и скорости вашего Telegram. Каждый файл доставляется размером до ~49 МБ — этого хватает для Reels и TikTok; если загрузка прервалась, отправьте ту же ссылку ещё раз."}},
-{"@type":"Question","name":"На каких языках отвечает бот?","acceptedAnswer":{"@type":"Answer","text":"На четырёх: русском, персидском, английском и арабском; язык спрашивается при первом Start и меняется через /lang."}}
-]}]}
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "InstaDownloadai",
+  "url": "https://h095157497.github.io/ru/",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Telegram Bot",
+  "inLanguage": "ru",
+  "description": "Телеграм-бот для скачивания видео и музыки: Instagram, TikTok, Pinterest и Vimeo до качества 4K без водяного знака; музыкальный поисковик до 320kbps. Бесплатно и без регистрации.",
+  "featureList": [
+    "Скачивание видео до 4K",
+    "Без водяного знака",
+    "Музыкальный поисковик до 320kbps",
+    "Скачивание альбома до 10 элементов",
+    "Около 80 скачиваний в день",
+    "Без регистрации и входа"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "browserRequirements": "Requires Telegram"
+}
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Как скачать видео или Reels из Instagram?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Скопируйте ссылку на пост или Reels в Instagram и отправьте её боту @InstaDownloadai в Telegram; видео придёт прямо в чат в максимальном доступном качестве (до 4K) и без водяного знака. Все элементы карусели приходят вместе, одним сообщением."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Есть ли водяной знак у скачанных видео?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Нет; бот не добавляет к файлам никаких водяных знаков или логотипов и отдаёт ровно тот же исходный файл платформы. Видео из TikTok тоже приходят без логотипа TikTok и без водяного знака с именем пользователя."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Как найти песню, названия которой не знаю?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Отправьте боту нужное видео (Instagram, TikTok или Pinterest) и нажмите «Найти песню»; музыкальный поисковик сам распознает трек и пришлёт его в лучшем качестве."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Можно ли получить MP3-аудио из видео?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Да; из видео Instagram, TikTok и Vimeo можно извлечь аудиофайл, а музыкальный поисковик находит любую песню — персидскую, зарубежную или ремикс — вплоть до 320kbps."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "В каком качестве происходит скачивание?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Видео — до 4K, музыка — до 320 килобит в секунду, фото — в исходном качестве; бот отдаёт самую лучшую версию, которая есть у источника. Каждый файл доставляется размером примерно до 49 мегабайт."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Бот бесплатный?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Да; все функции бесплатны (около 80 скачиваний в день на каждого пользователя), без регистрации, входа или подписки — достаточно нажать Start у бота в Telegram."
+      }
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="/assets/site-v8.css">
 </head>
 <body>
+
 <a class="skip" href="#main">Перейти к содержимому</a>
+<div class="prog" aria-hidden="true"></div>
 
-<div class="bgfx" aria-hidden="true"><div class="neb n1"></div><div class="neb n2"></div><div class="neb n3"></div><div class="stars"></div><div class="grain"></div></div>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
-<linearGradient id="hg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a855f7"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#f472b6"/></linearGradient>
-<linearGradient id="ig" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#FEDA75"/><stop offset=".25" stop-color="#FA7E1E"/><stop offset=".5" stop-color="#D62976"/><stop offset=".75" stop-color="#962FBF"/><stop offset="1" stop-color="#4F5BD5"/></linearGradient>
-<linearGradient id="mu" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34d399"/><stop offset="1" stop-color="#0ea5a4"/></linearGradient>
-<linearGradient id="vm" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1AB7EA"/><stop offset="1" stop-color="#0d8fc0"/></linearGradient>
-<symbol id="i-ig" viewBox="0 0 24 24"><path fill="url(#ig)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></symbol>
-<symbol id="i-pin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11.4" fill="#E60023"/><path fill="#fff" d="M12.32 4.7c-3.9 0-6.55 2.66-6.55 5.6 0 1.36.76 3.05 1.94 3.62.19.09.29.05.33-.13l.35-1.42c.03-.11.02-.2-.07-.3-.4-.5-.73-1.4-.73-2.24 0-2.16 1.64-4.26 4.43-4.26 2.41 0 4.1 1.64 4.1 4 0 2.66-1.34 4.5-3.09 4.5-.96 0-1.69-.8-1.46-1.78.28-1.17.82-2.43.82-3.28 0-.75-.4-1.38-1.24-1.38-.99 0-1.78 1.02-1.78 2.39 0 .87.29 1.46.29 1.46l-1.18 5c-.2.85-.12 2.05-.03 2.83.06.5.68.62.94.24.38-.57 1.5-1.96 1.92-3.6l.7-2.68c.37.7 1.44 1.3 2.58 1.3 3.4 0 5.72-3.1 5.72-7.25 0-3.14-2.66-5.66-6.49-5.66z"/></symbol>
-<symbol id="i-tt" viewBox="0 0 24 24"><path fill="#25F4EE" transform="translate(-.75,-.45)" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/><path fill="#FE2C55" transform="translate(.75,.45)" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/><path fill="#fff" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></symbol>
-<symbol id="i-vm" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11.4" fill="url(#vm)"/><path fill="#fff" transform="translate(4.9,6.4) scale(.6)" d="M23.976 6.417c-.105 2.338-1.739 5.543-4.894 9.609-3.268 4.247-6.026 6.37-8.28 6.37-1.409 0-2.578-1.294-3.553-3.881l-1.918-7.103c-.719-2.584-1.488-3.878-2.312-3.878-.179 0-.806.378-1.881 1.132L0 7.209a315 315 0 0 0 3.501-3.128C5.08 2.713 6.266 1.996 7.055 1.922c1.867-.18 3.016 1.1 3.447 3.838.465 2.953.789 4.789.971 5.507.539 2.45 1.131 3.674 1.776 3.674.502 0 1.256-.796 2.265-2.385 1.004-1.589 1.54-2.797 1.612-3.628.144-1.371-.395-2.061-1.614-2.061-.574 0-1.167.121-1.777.391C14.92 3.391 17.168 1.502 20.496 1.622c2.473.06 3.638 1.664 3.48 4.795z"/></symbol>
-<symbol id="i-mu" viewBox="0 0 24 24"><rect x="1.5" y="1.5" width="21" height="21" rx="6.2" fill="url(#mu)"/><path fill="#fff" d="M15.2 5.6 10 7.1a.9.9 0 0 0-.65.87v6.05a2.7 2.7 0 0 0-1.05-.2c-1.27 0-2.3.8-2.3 1.8s1.03 1.8 2.3 1.8 2.3-.8 2.3-1.8V9.6l4.6-1.32v3.94a2.7 2.7 0 0 0-1.05-.2c-1.27 0-2.3.8-2.3 1.8s1.03 1.8 2.3 1.8 2.3-.8 2.3-1.8V6.47a.9.9 0 0 0-1.15-.87z"/></symbol>
-<symbol id="i-tg" viewBox="0 0 24 24"><path fill="url(#hg)" d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></symbol>
-<symbol id="i-dl" viewBox="0 0 24 24" fill="none" stroke="url(#hg)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5v11M7.5 10.5 12 15l4.5-4.5"/><path d="M4.5 17.5v1.9a1.6 1.6 0 0 0 1.6 1.6h11.8a1.6 1.6 0 0 0 1.6-1.6v-1.9"/></symbol>
-<symbol id="i-nw" viewBox="0 0 24 24" fill="none" stroke="url(#hg)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2s6 6.2 6 10.4a6 6 0 0 1-11.2 3"/><path d="M6.3 10.2c-.2.9-.3 1.9-.3 2.9"/><path d="M4 4l16 16"/></symbol>
-<symbol id="i-hd" viewBox="0 0 24 24" fill="none" stroke="url(#hg)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="13.5" rx="3"/><path d="M7.5 9v4.5M7.5 9l3 2.2 3-2.2v4.5" stroke-width="1.6"/><path d="M16.5 9.5v4M15 11.5h3"/></symbol>
-<symbol id="i-free" viewBox="0 0 24 24" fill="none" stroke="url(#hg)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/><circle cx="12" cy="12" r="3.2"/></symbol>
-<symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="url(#hg)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10" width="15" height="10" rx="3"/><path d="M8 10V7.5a4 4 0 0 1 8 0"/><path d="M9.5 15h5"/></symbol>
-<symbol id="i-lang" viewBox="0 0 24 24" fill="none" stroke="url(#hg)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 2.6 4 5.6 4 9s-1.2 6.4-4 9c-2.8-2.6-4-5.6-4-9s1.2-6.4 4-9z"/></symbol>
-<symbol id="i-fast" viewBox="0 0 24 24" fill="none" stroke="url(#hg)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 5 13.5h5.5L10 22l8-11.5h-5.5z"/></symbol>
-<symbol id="i-rocket" viewBox="0 0 24 24" fill="none" stroke="url(#hg)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol>
-<symbol id="i-spark" viewBox="0 0 24 24"><path fill="url(#hg)" d="M12 2.6c.7 4.4 2.9 6.7 7.4 7.4-4.5.7-6.7 3-7.4 7.4-.7-4.4-2.9-6.7-7.4-7.4 4.5-.7 6.7-3 7.4-7.4z"/></symbol>
-</defs></svg>
+<div class="topbar wrap" aria-hidden="true">
+  <span><bdi>TELEGRAM BOT</bdi> <span class="fa">— Телеграм-бот</span></span>
+  <span class="mid"><bdi>VIDEO · AUDIO · IMAGE</bdi></span>
+  <span><bdi>TEHRAN <span id="clk">+03:30</span></bdi></span>
+</div>
 
-<header class="hdr" id="top">
-  <div class="container nav">
-    <a class="brand" href="/ru" aria-label="InstaDownloadai — главная">
-      <svg class="mark" viewBox="0 0 48 48" aria-hidden="true">
-        <circle cx="24" cy="24" r="17" fill="rgba(168,85,247,.08)" stroke="url(#hg)" stroke-width="1.6"/>
-        <ellipse cx="24" cy="24" rx="23" ry="7.5" fill="none" stroke="url(#hg)" stroke-width="1" opacity=".45" transform="rotate(-18 24 24)"/>
-        <path d="M24 15v13m0 0 5.5-5.5M24 28l-5.5-5.5" stroke="url(#hg)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-        <circle cx="36.5" cy="12.5" r="1.6" fill="#22d3ee"/>
-      </svg>
-      <span>InstaDownloadai</span>
-    </a>
-    <button class="mm" id="mm" aria-label="Открыть меню" aria-expanded="false" aria-controls="lk">☰</button>
-    <nav class="links" id="lk" aria-label="Главная навигация">
-      <a href="/ru" aria-current="page">Главная</a>
-      <a href="/instagram">Instagram</a>
-      <a href="/pinterest">Pinterest</a>
-      <a href="/tiktok">TikTok</a>
-      <a href="/music">Музыка</a>
-      <a href="/abzar">Загрузчики</a>
-      <a class="btn btn-holo" href="https://t.me/InstaDownloadai" rel="noopener">Открыть бота</a>
+<header class="nav wrap">
+  <div class="nav-inner">
+    <a class="wm" href="/"><i class="dotm" aria-hidden="true"></i>INSTADOWNLOADAI</a>
+    <nav class="hlinks" aria-label="Главное меню">
+      <a href="/">Главная</a>
+      <a href="/en/" lang="en">English</a>
+      <a href="/ar/" lang="ar">العربية</a>
+      <a href="/ru/" lang="ru" aria-current="page">Русский</a>
+      <a href="/instagram/">Инстаграм</a>
+      <a href="/music/">Музыка</a>
+      <a href="/pinterest/">Пинтерест</a>
+      <a href="/tiktok/">ТикТок</a>
+      <a href="/abzar/">Загрузчики</a>
     </nav>
+    <a class="btn" href="https://t.me/InstaDownloadai" rel="noopener">Телеграм-бот <span class="barr" aria-hidden="true">←</span></a>
   </div>
 </header>
 
-<main id="main">
+<main id="main" tabindex="-1">
+
   <!-- ============ HERO ============ -->
-  <section class="hero container" aria-labelledby="h1">
-    <div>
-      <span class="kicker"><i class="dot" aria-hidden="true"></i> Официальный Telegram-бот · <bdi dir="ltr">@InstaDownloadai</bdi></span>
-      <h1 id="h1">Скачивайте из Instagram, Pinterest и TikTok — <span class="holo-text">без водяного знака</span>, до 4K + любую песню</h1>
-      <p class="sub">Отправьте ссылку — получите видео или фото в лучшем качестве прямо в чате. Pinterest, TikTok (новинка!) и Vimeo — тоже просто; а поиск музыки найдёт любую песню по названию: персидскую, зарубежную или редкий ремикс.</p>
-      <div class="ctas">
-        <a class="btn btn-holo" href="https://t.me/InstaDownloadai" rel="noopener">
-          <svg width="20" height="20" aria-hidden="true"><use href="#i-tg"/></svg>
-          Открыть бота в Telegram
-        </a>
-        <a class="btn btn-ghost" href="#services">Смотреть возможности ↓</a>
-      </div>
-      <div class="stats" role="list">
-        <div class="st" role="listitem"><b class="holo-text" data-count="4" data-suffix="K">4K</b><span>лучшее качество видео</span></div>
-        <div class="st" role="listitem"><b class="holo-text">0</b><span>водяных знаков — никогда</span></div>
-        <div class="st" role="listitem"><b class="holo-text" data-count="320" data-suffix="kbps">320kbps</b><span>качество музыки</span></div>
-        <div class="st" role="listitem"><b class="holo-text" data-count="100" data-suffix="%">100%</b><span>бесплатно, без входа</span></div>
-      </div>
+  <section class="hero wrap" aria-label="Основной контент">
+    <div class="hero-cols" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <i class="disc" aria-hidden="true"></i>
+
+    <div class="hero-head">
+      <span class="tag"><bdi class="idx">04</bdi><bdi class="sep">/</bdi><bdi>PAGE</bdi><span class="fa">Главная — русский</span></span>
+      <span class="tag mid"><bdi>GRID 12 — BASELINE 8</bdi></span>
+      <span class="tag"><bdi>RU</bdi><bdi class="sep">/</bdi><span class="fa">Русский</span></span>
     </div>
 
-    <div class="stage rv" style="--d:2">
-      <div class="orbit-wrap" aria-hidden="true">
-        <div class="orb a">
-          <span class="badge bt"><svg><use href="#i-tt"/></svg></span>
-          <span class="badge btr side"><svg><use href="#i-mu"/></svg></span>
-          <span class="badge bp"><svg><use href="#i-pin"/></svg></span>
-          <span class="badge bbl side"><svg><use href="#i-tg"/></svg></span>
-        </div>
-        <div class="orb b"></div>
-        <svg class="rocket"><use href="#i-rocket"/></svg>
-        <svg class="spark s1"><use href="#i-spark"/></svg>
-        <svg class="spark s2"><use href="#i-spark"/></svg>
+    <h1 id="h1"><span class="holo-text">Загрузчик Instagram и Pinterest</span> — без водяного знака, до 4K + любую песню</h1>
+
+    <div class="hero-foot">
+      <p class="lede">Загрузчик Instagram и Pinterest — плюс TikTok и музыкальный поисковик — всё в одном боте: отправьте ссылку и получите видео, фото или пин в максимальном качестве (до 4K) прямо в чате; любая песня находится и по названию.</p>
+      <div class="hero-cta">
+        <a class="btn" href="https://t.me/InstaDownloadai" rel="noopener">Телеграм-бот <span class="barr" aria-hidden="true">←</span></a>
+        <a class="ghost" dir="ltr" href="https://t.me/InstaDownloadai" rel="noopener">@InstaDownloadai</a>
       </div>
-      <span class="chip-f c1" aria-hidden="true">4K · без водяного знака</span>
-      <span class="chip-f pk c2" aria-hidden="true">🎵 любая песня · 320kbps</span>
-      <div class="console holo-b" dir="ltr" aria-hidden="true">
-        <div class="c-bar"><i></i><i></i><i></i><span class="t">@InstaDownloadai</span></div>
-        <div class="bub u">https://instagram.com/reel/Cx9…</div>
-        <div class="bub b"><b>✓ Ready — no watermark</b>
-          <div class="files">
-            <span class="f">🎬 reel_2160p.mp4 <em>4K</em></span>
-            <span class="f">🖼 cover.jpg <em>HD</em></span>
-            <span class="f">🎵 Gham (Remix) <em>320kbps</em><span class="eq"><i></i><i></i><i></i><i></i></span></span>
-          </div>
-        </div>
-        <div class="bub b typing"><i></i><i></i><i></i></div>
+    </div>
+    <p class="xlang">Также доступно на: <a href="/" hreflang="fa">فارسی</a> · <a href="/en/" lang="en" hreflang="en">English</a> · <a href="/ar/" lang="ar" hreflang="ar">العربية</a></p>
+
+
+    <div class="stats" role="list" aria-label="آمار و مشخصات ربات">
+      <div class="stat" role="listitem">
+        <div class="sv"><b class="num" data-to="4">4</b><span class="unit">K</span></div>
+        <div class="sl"><b>Макс. качество видео</b><i>MAX VIDEO QUALITY</i></div>
+      </div>
+      <div class="stat" role="listitem">
+        <div class="sv"><b class="num" data-to="320">320</b><span class="unit">kbps</span></div>
+        <div class="sl"><b>Музыка и MP3</b><i>AUDIO BITRATE</i></div>
+      </div>
+      <div class="stat" role="listitem">
+        <div class="sv"><b class="num" data-to="80">80</b><span class="unit">+ / день</span></div>
+        <div class="sl"><b>Скачиваний для каждого пользователя</b><i>DOWNLOADS / DAY</i></div>
+      </div>
+      <div class="stat" role="listitem">
+        <div class="sv"><b class="num" data-to="10">10</b><span class="unit">элем.</span></div>
+        <div class="sl"><b>В одном альбоме сразу</b><i>ALBUM ITEMS</i></div>
       </div>
     </div>
   </section>
 
-  <div class="hr" aria-hidden="true"></div>
+  <div class="ticker" aria-hidden="true">
+    <div class="tk-track">
+      <span class="tk">Загрузчик Instagram <i></i> загрузчик TikTok <i></i> загрузчик Pinterest <i></i> загрузчик Vimeo <i></i> музыкальный поисковик <i></i> около 80 скачиваний в день <i></i> Загрузчик Instagram <i></i> загрузчик TikTok <i></i> загрузчик Pinterest <i></i> загрузчик Vimeo <i></i> музыкальный поисковик <i></i> около 80 скачиваний в день <i></i> Загрузчик Instagram <i></i> загрузчик TikTok <i></i> загрузчик Pinterest <i></i> загрузчик Vimeo <i></i> музыкальный поисковик <i></i> около 80 скачиваний в день <i></i> Загрузчик Instagram <i></i> загрузчик TikTok <i></i> загрузчик Pinterest <i></i> загрузчик Vimeo <i></i> музыкальный поисковик <i></i> около 80 скачиваний в день <i></i> </span>
+      <span class="tk">Загрузчик Instagram <i></i> загрузчик TikTok <i></i> загрузчик Pinterest <i></i> загрузчик Vimeo <i></i> музыкальный поисковик <i></i> около 80 скачиваний в день <i></i> Загрузчик Instagram <i></i> загрузчик TikTok <i></i> загрузчик Pinterest <i></i> загрузчик Vimeo <i></i> музыкальный поисковик <i></i> около 80 скачиваний в день <i></i> Загрузчик Instagram <i></i> загрузчик TikTok <i></i> загрузчик Pinterest <i></i> загрузчик Vimeo <i></i> музыкальный поисковик <i></i> около 80 скачиваний в день <i></i> Загрузчик Instagram <i></i> загрузчик TikTok <i></i> загрузчик Pinterest <i></i> загрузчик Vimeo <i></i> музыкальный поисковик <i></i> около 80 скачиваний в день <i></i> </span>
+    </div>
+  </div>
 
-  <!-- ============ SERVICES BENTO (all 5) ============ -->
-  <section id="services" class="container" aria-labelledby="h-serv">
-    <span class="sec-k">Возможности бота</span>
-    <h2 class="sec-h" id="h-serv">Один бот — все платформы: <span class="holo-text">голографические загрузки</span></h2>
-    <p class="sec-p">Всё, что нужно из Instagram, Pinterest, TikTok и музыки — в одном месте, быстро и без лишних движений. Выберите карточку, чтобы открыть её страницу.</p>
-
-    <div class="bento">
-      <a class="card c-ig spot rv" href="/instagram">
-        <span class="ico"><svg aria-hidden="true"><use href="#i-ig"/></svg></span>
-        <h3>Скачивание из Instagram</h3>
-        <p>Посты, Reels, истории и хайлайты — все элементы карусели сразу: фото в оригинальном качестве, видео до 4K и совсем без водяных знаков.</p>
-        <div class="meta"><i>До 4K</i><i>Все элементы сразу</i><i>Истории и хайлайты</i></div>
-        <span class="go" aria-hidden="true">→</span>
+  <!-- ============ 01 / PLATFORMS ============ -->
+  <section id="platforms" class="sec wrap" aria-labelledby="h-plat">
+    <header class="sh rv">
+      <p class="tag"><bdi class="idx">01</bdi><bdi class="sep">/</bdi><bdi>PLATFORMS</bdi><span class="fa">Платформы</span></p>
+      <h2>Пять дверей — <em>один бот</em>.</h2>
+      <p class="sub">У каждой платформы своя полная страница с настоящими подробностями. Выбирайте ячейку.</p>
+    </header>
+    <div class="proof rv" role="img" aria-label="Относительное распределение дневных скачиваний между платформами; единственное реальное число — всего около 80 скачиваний в день">
+      <div class="pr"><span class="prb" style="--h:.62"></span><span class="prl"><span class="fa">Инстаграм</span><bdi>IG</bdi></span></div>
+      <div class="pr"><span class="prb" style="--h:.78;--pd:1"></span><span class="prl"><span class="fa">ТикТок</span><bdi>TIKTOK</bdi></span></div>
+      <div class="pr"><span class="prb" style="--h:.34;--pd:2"></span><span class="prl"><span class="fa">Пинтерест</span><bdi>PINTEREST</bdi></span></div>
+      <div class="pr"><span class="prb" style="--h:.46;--pd:3"></span><span class="prl"><span class="fa">Музыка</span><bdi>MUSIC</bdi></span></div>
+    </div>
+    <p class="proof-cap"><span>Относительная доля дневных скачиваний · без отдельных цифр</span><span>Реальный итог: <b>около 80 скачиваний</b> в день</span></p>
+    <div class="pf">
+      <a class="cell s5 rv" href="/instagram/">
+        <div class="cell-top"><span class="tag"><bdi class="idx">01</bdi><bdi>INSTAGRAM</bdi></span><span class="arr" aria-hidden="true">←</span></div>
+        <h3>Инстаграм</h3>
+        <p class="d">Посты, Reels, истории и хайлайты — все элементы карусели одним сообщением; фото в исходном качестве, видео до 4K.</p>
+        <ul class="fl">
+          <li>Качество видео<bdi dir="ltr">UP TO 4K</bdi></li>
+          <li>Водяной знак<bdi dir="ltr">NONE</bdi></li>
+          <li>Истории и хайлайты<bdi dir="ltr">YES</bdi></li>
+        </ul>
       </a>
-
-      <a class="card c-tt spot holo-b rv" href="/tiktok" style="--d:1">
-        <span class="ico"><svg aria-hidden="true"><use href="#i-tt"/></svg></span>
-        <h3>Скачивание из TikTok <span class="badge-new">Новое ✨</span></h3>
-        <p>Видео TikTok без водяного знака и в HD — даже короткие ссылки <bdi dir="ltr">vt. и vm.</bdi>; фотопосты и извлечение mp3 включены.</p>
-        <div class="meta"><i>Без водяного знака</i><i>HD</i><i>Короткие ссылки</i></div>
-        <span class="go" aria-hidden="true">→</span>
+      <a class="cell s4 rv" href="/music/">
+        <div class="cell-top"><span class="tag"><bdi class="idx">02</bdi><bdi>MUSIC</bdi></span><span class="arr" aria-hidden="true">←</span></div>
+        <h3>Музыка</h3>
+        <p class="d">Музыкальный поисковик: напишите название песни — или отправьте безымянное видео, и он сам распознает трек.</p>
+        <ul class="fl">
+          <li>Битрейт<bdi dir="ltr">UP TO 320KBPS</bdi></li>
+          <li>Распознавание песни<bdi dir="ltr">YES</bdi></li>
+          <li>Ремиксы и редкое<bdi dir="ltr">YES</bdi></li>
+        </ul>
       </a>
-
-      <a class="card c-pin spot rv" href="/pinterest" style="--d:1">
-        <span class="ico"><svg aria-hidden="true"><use href="#i-pin"/></svg></span>
-        <h3>Скачивание из Pinterest</h3>
-        <p>Фото и видео любого пина в оригинальном качестве — включая короткие ссылки <bdi dir="ltr">pin.it</bdi>, прямо в чате.</p>
-        <div class="meta"><i>Оригинал</i><i>pin.it</i></div>
-        <span class="go" aria-hidden="true">→</span>
+      <a class="cell s3 rv" href="/pinterest/">
+        <div class="cell-top"><span class="tag"><bdi class="idx">03</bdi><bdi>PINTEREST</bdi></span><span class="arr" aria-hidden="true">←</span></div>
+        <h3>Пинтерест</h3>
+        <p class="d">Фото и видео любого пина в исходном качестве; даже короткие ссылки <bdi dir="ltr">pin.it</bdi>.</p>
+        <ul class="fl">
+          <li>Качество<bdi dir="ltr">ORIGINAL</bdi></li>
+          <li>Фото и видео<bdi dir="ltr">BOTH</bdi></li>
+          <li>Короткая ссылка<bdi dir="ltr">PIN.IT</bdi></li>
+        </ul>
       </a>
-
-      <a class="card c-mu spot rv" href="/music" style="--d:2">
-        <span class="ico"><svg aria-hidden="true"><use href="#i-mu"/></svg></span>
-        <h3>Поиск музыки</h3>
-        <p>Напишите название любой песни — персидской, зарубежной или редкого ремикса — до 320kbps. Распознаёт и безымянные песни из видео: просто отправьте видео.</p>
-        <svg class="wave" viewBox="0 0 150 26" aria-hidden="true"><rect x="2" y="8" width="4" height="18" rx="2"/><rect x="12" y="2" width="4" height="24" rx="2"/><rect x="22" y="10" width="4" height="16" rx="2"/><rect x="32" y="5" width="4" height="21" rx="2"/><rect x="42" y="12" width="4" height="14" rx="2"/><rect x="52" y="3" width="4" height="23" rx="2"/><rect x="62" y="9" width="4" height="17" rx="2"/><rect x="72" y="1" width="4" height="25" rx="2"/><rect x="82" y="11" width="4" height="15" rx="2"/><rect x="92" y="6" width="4" height="20" rx="2"/><rect x="102" y="13" width="4" height="13" rx="2"/><rect x="112" y="4" width="4" height="22" rx="2"/><rect x="122" y="10" width="4" height="16" rx="2"/><rect x="132" y="7" width="4" height="19" rx="2"/><rect x="142" y="12" width="4" height="14" rx="2"/></svg>
-        <div class="meta"><i>320kbps</i><i>Распознавание</i><i>Ремиксы и редкое</i></div>
-        <span class="go" aria-hidden="true">→</span>
+      <a class="cell s7 rv" href="/tiktok/">
+        <div class="cell-top"><span class="tag"><bdi class="idx">04</bdi><bdi>TIKTOK</bdi></span><span class="arr" aria-hidden="true">←</span></div>
+        <h3>ТикТок</h3>
+        <p class="d">Видео TikTok полностью без водяного знака и в HD — даже короткие ссылки <bdi dir="ltr">vt.</bdi> и <bdi dir="ltr">vm.</bdi>; фото-посты и извлечение MP3 тоже.</p>
+        <ul class="fl">
+          <li>Водяной знак и логотип<bdi dir="ltr">NONE</bdi></li>
+          <li>Качество<bdi dir="ltr">HD</bdi></li>
+          <li>Фото-посты<bdi dir="ltr">YES</bdi></li>
+        </ul>
       </a>
-
-      <a class="card c-abzar spot holo-b rv" href="/abzar" style="--d:1">
-        <span class="ico"><svg aria-hidden="true"><use href="#i-dl"/></svg></span>
+      <a class="cell s5 rv" href="/abzar/">
+        <div class="cell-top"><span class="tag"><bdi class="idx">05</bdi><bdi>DOWNLOADERS</bdi></span><span class="arr" aria-hidden="true">←</span></div>
         <h3>Загрузчики</h3>
-        <p>Все загрузчики в одном месте — Instagram, Pinterest, TikTok и поиск музыки; отправьте ссылку или название песни и получите файл в лучшем качестве за секунды.</p>
-        <div class="meta"><i>Instagram</i><i>Pinterest</i><i>TikTok</i><i>Музыка</i></div>
-        <span class="go" aria-hidden="true">→</span>
+        <p class="d">Все загрузчики в одном месте — Instagram, Pinterest, TikTok и музыкальный поисковик; у каждого своя полная страница-гид на сайте.</p>
+        <ul class="fl">
+          <li>Инстаграм<bdi dir="ltr">IG</bdi></li>
+          <li>Пинтерест<bdi dir="ltr">PIN</bdi></li>
+          <li>ТикТок<bdi dir="ltr">TT</bdi></li>
+          <li>Музыка<bdi dir="ltr">MU</bdi></li>
+        </ul>
       </a>
     </div>
   </section>
 
-  <div class="hr" aria-hidden="true"></div>
-
-  <!-- ============ HOW ============ -->
-  <section id="how" class="container" aria-labelledby="h-how">
-    <span class="sec-k">Как это работает</span>
-    <h2 class="sec-h" id="h-how">Всего три шага</h2>
-    <p class="sec-p">Без регистрации, без установки приложений, без лишних этапов — только ссылка и пара секунд.</p>
-    <div class="steps">
-      <article class="step rv">
-        <div class="n" aria-hidden="true">1</div>
-        <h3>Скопируйте ссылку</h3>
-        <p>Из Instagram, Pinterest, TikTok или Vimeo — а для песни просто напишите её название.</p>
-      </article>
-      <article class="step rv" style="--d:1">
-        <div class="n" aria-hidden="true">2</div>
-        <h3>Отправьте боту</h3>
-        <p>Запустите <bdi dir="ltr">@InstaDownloadai</bdi> в Telegram и пришлите ссылку или название песни в чат.</p>
-      </article>
-      <article class="step rv" style="--d:2">
-        <div class="n" aria-hidden="true">3</div>
-        <h3>Получите результат</h3>
-        <p>Видео, фото или песня в лучшем качестве — без водяного знака — прямо в чате, за секунды.</p>
-      </article>
-    </div>
-  </section>
-
-  <div class="hr" aria-hidden="true"></div>
-
-  <!-- ============ FEATURES STRIP ============ -->
-  <section id="features" class="container" aria-labelledby="h-feat">
-    <span class="sec-k">Почему этот бот?</span>
-    <h2 class="sec-h" id="h-feat">Быстрый как ракета, честный как кристалл</h2>
-    <p class="sec-p">Всё, что должен уметь настоящий загрузчик — без «но» и без платежей.</p>
-    <div class="feats">
-      <div class="feat rv"><svg aria-hidden="true"><use href="#i-nw"/></svg><b>Без водяного знака</b></div>
-      <div class="feat rv" style="--d:1"><svg aria-hidden="true"><use href="#i-hd"/></svg><b>HD до 4K</b></div>
-      <div class="feat rv" style="--d:2"><svg aria-hidden="true"><use href="#i-free"/></svg><b>Полностью бесплатно</b></div>
-      <div class="feat rv" style="--d:3"><svg aria-hidden="true"><use href="#i-lock"/></svg><b>Без входа и регистрации</b></div>
-      <div class="feat rv" style="--d:4"><svg aria-hidden="true"><use href="#i-lang"/></svg><b>4 языка: RU · FA · EN · AR</b></div>
-      <div class="feat rv" style="--d:5"><svg aria-hidden="true"><use href="#i-fast"/></svg><b>Доставка за секунды</b></div>
-    </div>
-  </section>
-
-  <div class="hr" aria-hidden="true"></div>
-
-  <!-- ============ EN / LTR PANEL ============ -->
-  <section id="en" class="container" lang="en" dir="ltr" aria-labelledby="h-en">
-    <div class="en-panel holo-b spot">
-      <div class="en-grid">
-        <div>
-          <span class="overline">Same soul — every language</span>
-          <h2>Studio-grade downloads.<br><span class="holo-text">Zero friction.</span></h2>
-          <p class="en-p">Send any link to <bdi dir="ltr">@InstaDownloadai</bdi> on Telegram and get the file back in seconds — Instagram reels &amp; stories, Pinterest pins, TikToks with no watermark, Vimeo videos, and any song up to 320kbps. Free, no login, four languages.</p>
-          <a class="btn btn-holo" href="https://t.me/InstaDownloadai" rel="noopener">
-            <svg width="20" height="20" aria-hidden="true"><use href="#i-tg"/></svg>
-            Open @InstaDownloadai
-          </a>
-          <div class="en-stats">
-            <div class="en-stat"><b class="holo-text" data-count="4" data-suffix="K">4K</b><span>max quality</span></div>
-            <div class="en-stat"><b class="holo-text">0</b><span>watermarks</span></div>
-            <div class="en-stat"><b class="holo-text" data-count="320" data-suffix="kbps">320kbps</b><span>audio</span></div>
-            <div class="en-stat"><b class="holo-text" data-count="100" data-suffix="%">100%</b><span>free</span></div>
-          </div>
-        </div>
-        <div class="pills" aria-label="Supported platforms">
-          <a class="pill" href="/instagram"><svg aria-hidden="true"><use href="#i-ig"/></svg>Instagram</a>
-          <a class="pill" href="/pinterest"><svg aria-hidden="true"><use href="#i-pin"/></svg>Pinterest</a>
-          <a class="pill" href="/tiktok"><svg aria-hidden="true"><use href="#i-tt"/></svg>TikTok <span class="badge-new">New</span></a>
-          <a class="pill" href="/music"><svg aria-hidden="true"><use href="#i-mu"/></svg>Music Finder</a>
-          <a class="pill" href="/abzar"><svg aria-hidden="true"><use href="#i-dl"/></svg>Downloaders</a>
-        </div>
+  <!-- ============ 02 / HOW — black band ============ -->
+  <section id="how" class="sec band" aria-labelledby="h-how">
+    <div class="wrap">
+      <header class="sh rv">
+        <p class="tag"><bdi class="idx">02</bdi><bdi class="sep">/</bdi><bdi>HOW IT WORKS</bdi><span class="fa">Гид</span></p>
+        <h2>Три шага. <em>Всё</em>.</h2>
+        <p class="sub">Без регистрации, без установки приложения, без лишних шагов — одна ссылка и несколько секунд ожидания.</p>
+      </header>
+      <div class="steps">
+        <article class="step rv">
+          <div class="sn" aria-hidden="true">1</div>
+          <div class="st">STEP — 01</div>
+          <h3>Скопируйте ссылку</h3>
+          <p>Из Instagram, Pinterest, TikTok или Vimeo; если ищете песню — просто напишите её название.</p>
+        </article>
+        <article class="step rv">
+          <div class="sn" aria-hidden="true">2</div>
+          <div class="st">STEP — 02</div>
+          <h3>Отправьте боту</h3>
+          <p>Запустите <bdi dir="ltr">@InstaDownloadai</bdi> в Telegram и отправьте ссылку или название песни в чат.</p>
+        </article>
+        <article class="step rv">
+          <div class="sn" aria-hidden="true">3</div>
+          <div class="st">STEP — 03</div>
+          <h3>Получите файл</h3>
+          <p>Видео, фото или музыка в лучшем качестве, без водяного знака — через несколько секунд, прямо в чате.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <div class="hr" aria-hidden="true"></div>
-
-  <!-- ============ FAQ ============ -->
-  <section id="faq" class="container faq" aria-labelledby="h-faq">
-    <span class="sec-k">Частые вопросы</span>
-    <h2 class="sec-h" id="h-faq">Всё, что вы могли спросить</h2>
-    <details>
-      <summary>Как скачать видео или Reels из Instagram?<i class="pm" aria-hidden="true"></i></summary>
-      <div class="a">Отправьте ссылку на пост или рилс боту <bdi dir="ltr">@InstaDownloadai</bdi> в Telegram; видео придёт туда же в лучшем качестве (до 4K) — бесплатно и без регистрации. Все элементы карусели приходят вместе.</div>
-    </details>
-    <details>
-      <summary>Есть ли на скачанных видео водяной знак?<i class="pm" aria-hidden="true"></i></summary>
-      <div class="a">Нет; бот не добавляет никаких водяных знаков или логотипов — вы получаете ровно оригинальный файл платформы. Для TikTok видео приходит без логотипа TikTok и без водяного знака с именем пользователя — идеально для чистых репостов.</div>
-    </details>
-    <details>
-      <summary>Как найти песню, название которой не знаю?<i class="pm" aria-hidden="true"></i></summary>
-      <div class="a">Отправьте боту видео (Instagram, TikTok или Pinterest) и нажмите «Найти песню»; бот сам распознает её и пришлёт лучшее качество.</div>
-    </details>
-    <details>
-      <summary>Можно ли найти ремиксы?<i class="pm" aria-hidden="true"></i></summary>
-      <div class="a">Да — просто напишите <bdi dir="ltr">remix</bdi> рядом с названием. Поиск находит ремиксы на персидском, английском и любом языке.</div>
-    </details>
-    <details>
-      <summary>Можно ли извлечь mp3 из видео?<i class="pm" aria-hidden="true"></i></summary>
-      <div class="a">Да — достаньте mp3-аудио из любого видео Instagram, TikTok или Vimeo. Работает и поиск музыки: напишите название — персидское, зарубежное или ремикс — и получите до 320kbps; если название неизвестно, отправьте видео — бот распознает песню сам.</div>
-    </details>
-    <details>
-      <summary>В каком качестве происходит скачивание?<i class="pm" aria-hidden="true"></i></summary>
-      <div class="a">Видео — в лучшем доступном качестве (до 4K), песни — до 320kbps, фото — в оригинале. Бот никогда не понижает качество; если у источника только более низкое, вы получите лучшую существующую версию.</div>
-    </details>
-    <details>
-      <summary>Что умеет скачивать бот?<i class="pm" aria-hidden="true"></i></summary>
-      <div class="a">Видео, Reels, истории и альбомы Instagram, видео TikTok без водяного знака, фото- и видеопины Pinterest, Vimeo, а также музыку/MP3 через поиск музыки — всё до 4K и 320kbps.</div>
-    </details>
-    <details>
-      <summary>Бот бесплатный?<i class="pm" aria-hidden="true"></i></summary>
-      <div class="a">Да, всё бесплатно (около 80 скачиваний в день на пользователя) — без карты и подписки. Откройте <bdi dir="ltr">@InstaDownloadai</bdi> в Telegram и нажмите Start; не нужен ни вход, ни номер телефона, ни доступ к вашим аккаунтам — файлы приходят в ваш личный чат.</div>
-    </details>
-    <details>
-      <summary>Насколько это быстро? Есть ли лимит размера?<i class="pm" aria-hidden="true"></i></summary>
-      <div class="a">Обычно файлы приходят за секунды; точное время зависит от размера файла и скорости вашего Telegram. Каждый файл доставляется размером до ~49 МБ — этого хватает для Reels и TikTok; если загрузка прервалась, отправьте ту же ссылку ещё раз.</div>
-    </details>
-    <details>
-      <summary>На каких языках отвечает бот?<i class="pm" aria-hidden="true"></i></summary>
-      <div class="a">На четырёх: русском, персидском, английском и арабском; язык спрашивается при первом Start и меняется через <bdi dir="ltr">/lang</bdi>.</div>
-    </details>
-  </section>
-
-  <div class="hr" aria-hidden="true"></div>
-
-  <!-- ============ BIG CTA ============ -->
-  <section class="container" aria-labelledby="h-cta">
-    <div class="cta-band holo-b spot rv">
-      <h2 id="h-cta">Отправьте следующую ссылку прямо сейчас</h2>
-      <p>Бесплатно, без рекламы и регистрации — нажмите Start и пришлите ссылку.</p>
-      <a class="btn btn-holo" href="https://t.me/InstaDownloadai" rel="noopener">
-        <svg width="22" height="22" aria-hidden="true"><use href="#i-tg"/></svg>
-        Открыть бота в Telegram
-      </a>
-      <small><bdi dir="ltr">@InstaDownloadai</bdi> · До 80 скачиваний в день · До 49 МБ на файл · 4 языка</small>
+  <!-- ============ 03 / FEATURES ============ -->
+  <section id="features" class="sec wrap" aria-labelledby="h-feat">
+    <header class="sh rv">
+      <p class="tag"><bdi class="idx">03</bdi><bdi class="sep">/</bdi><bdi>FEATURES</bdi><span class="fa">Особенности</span></p>
+      <h2>Четыре принципа, <em>без исключений</em>.</h2>
+    </header>
+    <div class="feats">
+      <div class="feat rv">
+        <span class="tag"><bdi class="idx">01</bdi></span>
+        <h3>Без водяного знака</h3>
+        <p>Никаких логотипов или меток к файлам не добавляется; ровно тот же исходный файл платформы.</p>
+      </div>
+      <div class="feat rv">
+        <span class="tag"><bdi class="idx">02</bdi></span>
+        <h3>HD-качество до 4K</h3>
+        <p>Самая лучшая версия из доступных у источника; бот никогда не понижает качество.</p>
+      </div>
+      <div class="feat rv">
+        <span class="tag"><bdi class="idx">03</bdi></span>
+        <h3>Полностью бесплатно</h3>
+        <p>Без подписки, без банковской карты, без оплаты — все функции для всех.</p>
+      </div>
+      <div class="feat rv">
+        <span class="tag"><bdi class="idx">04</bdi></span>
+        <h3>Без регистрации</h3>
+        <p>Ни входа, ни номера телефона, ни доступа к вашим аккаунтам; файлы приходят в ваш личный чат.</p>
+      </div>
     </div>
   </section>
+
+  <!-- ============ 04 / FAQ ============ -->
+  <section id="faq" class="sec wrap" aria-labelledby="h-faq">
+    <header class="sh rv">
+      <p class="tag"><bdi class="idx">04</bdi><bdi class="sep">/</bdi><bdi>FAQ</bdi><span class="fa">Частые вопросы</span></p>
+      <h2>Часто <em>спрашиваемое</em>.</h2>
+    </header>
+    <div class="faq-list rv">
+      <details name="faq">
+        <summary><span class="qt">Как скачать видео или Reels из Instagram?</span><i class="pm" aria-hidden="true"></i></summary>
+        <div class="qa"><p>Скопируйте ссылку на пост или Reels в Instagram и отправьте её боту <bdi dir="ltr">@InstaDownloadai</bdi> в Telegram; видео придёт прямо в чат в максимальном доступном качестве (до 4K) и без водяного знака. Все элементы карусели приходят вместе, одним сообщением.</p></div>
+      </details>
+      <details name="faq">
+        <summary><span class="qt">Есть ли водяной знак у скачанных видео?</span><i class="pm" aria-hidden="true"></i></summary>
+        <div class="qa"><p>Нет; бот не добавляет к файлам никаких водяных знаков или логотипов и отдаёт ровно тот же исходный файл платформы. Видео из TikTok тоже приходят без логотипа TikTok и без водяного знака с именем пользователя.</p></div>
+      </details>
+      <details name="faq">
+        <summary><span class="qt">Как найти песню, названия которой не знаю?</span><i class="pm" aria-hidden="true"></i></summary>
+        <div class="qa"><p>Отправьте боту нужное видео (Instagram, TikTok или Pinterest) и нажмите «Найти песню»; музыкальный поисковик сам распознает трек и пришлёт его в лучшем качестве.</p></div>
+      </details>
+      <details name="faq">
+        <summary><span class="qt">Можно ли получить MP3-аудио из видео?</span><i class="pm" aria-hidden="true"></i></summary>
+        <div class="qa"><p>Да; из видео Instagram, TikTok и Vimeo можно извлечь аудиофайл, а музыкальный поисковик находит любую песню — персидскую, зарубежную или ремикс — вплоть до 320kbps.</p></div>
+      </details>
+      <details name="faq">
+        <summary><span class="qt">В каком качестве происходит скачивание?</span><i class="pm" aria-hidden="true"></i></summary>
+        <div class="qa"><p>Видео — до 4K, музыка — до 320 килобит в секунду, фото — в исходном качестве; бот отдаёт самую лучшую версию, которая есть у источника. Каждый файл доставляется размером примерно до 49 мегабайт.</p></div>
+      </details>
+      <details name="faq">
+        <summary><span class="qt">Бот бесплатный?</span><i class="pm" aria-hidden="true"></i></summary>
+        <div class="qa"><p>Да; все функции бесплатны (около 80 скачиваний в день на каждого пользователя), без регистрации, входа или подписки — достаточно нажать Start у бота в Telegram.</p></div>
+      </details>
+    </div>
+  </section>
+
+  <!-- ============ 05 / START — red poster ============ -->
+  <section id="start" class="start" aria-labelledby="h-start">
+    <div class="wrap sec">
+      <header class="sh rv" style="border-top-color:rgba(14,13,11,.3)">
+        <p class="tag"><bdi class="idx" style="color:var(--ink)">05</bdi><bdi class="sep" style="color:var(--ink)">/</bdi><bdi>START</bdi></p>
+      </header>
+      <h2 class="rv">Отправьте ссылку.</h2>
+      <p class="sub rv">Бесплатно, без рекламы, без регистрации — просто нажмите Start и отправьте ссылку или название песни; файл будет в вашем чате через несколько секунд.</p>
+      <a class="btn-inv rv" href="https://t.me/InstaDownloadai" rel="noopener">Телеграм-бот <span class="barr" aria-hidden="true">←</span></a>
+      <div class="start-meta" aria-label="Основной контент">
+        <span><bdi dir="ltr">@INSTADOWNLOADAI</bdi></span>
+        <span>около 80 скачиваний в день</span>
+        <span>до 49 МБ на файл</span>
+        <span><bdi>4 LANGUAGES</bdi></span>
+      </div>
+    </div>
+  </section>
+
 </main>
 
-<footer>
-  <div class="container">
+<footer class="footer">
+  <div class="wrap">
+    <span class="fw" aria-hidden="true">INSTADOWNLOADAI<span>.</span></span>
     <div class="f-grid">
       <div>
-        <div class="f-brand">
-          <svg class="mark" viewBox="0 0 48 48" aria-hidden="true">
-            <circle cx="24" cy="24" r="17" fill="rgba(168,85,247,.08)" stroke="url(#hg)" stroke-width="1.6"/>
-            <ellipse cx="24" cy="24" rx="23" ry="7.5" fill="none" stroke="url(#hg)" stroke-width="1" opacity=".45" transform="rotate(-18 24 24)"/>
-            <path d="M24 15v13m0 0 5.5-5.5M24 28l-5.5-5.5" stroke="url(#hg)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          </svg>
-          <span>InstaDownloadai</span>
-        </div>
-        <p class="f-note">Сделано с ♥ для Telegram — скачивание из Instagram, Pinterest, TikTok и Vimeo; плюс любая песня, чьё название вы знаете (или не знаете!). Без рекламы и входа.</p>
+        <h4><bdi>INSTADOWNLOADAI</bdi><span class="fa"></span></h4>
+        <p>undefined</p>
       </div>
-      <nav aria-label="Сервисы">
-        <h3 class="f-h">Сервисы</h3>
-        <a href="/instagram">Скачивание из Instagram</a>
-        <a href="/pinterest">Скачивание из Pinterest</a>
-        <a href="/tiktok">Скачивание из TikTok</a>
-        <a href="/music">Поиск музыки</a>
-      </nav>
-      <nav aria-label="Загрузчики и бот">
-        <h3 class="f-h">Загрузчики и бот</h3>
-        <a href="/abzar">Загрузчики</a>
-        <a href="https://t.me/InstaDownloadai" rel="noopener">Бот в Telegram ↗</a>
-      </nav>
-      <nav aria-label="Языки">
-        <h3 class="f-h">Языки</h3>
-        <a href="/">فارسی</a>
-        <a href="/en">English</a>
-        <a href="/ar">العربية</a>
-        <a href="/ru" aria-current="page">Русский</a>
-      </nav>
+      <div>
+        <h4><bdi>PLATFORMS</bdi><span class="fa">undefined</span></h4>
+        <ul>
+          <li><a href="/instagram/">اینستاگرام</a></li>
+          <li><a href="/music/">موزیک</a></li>
+          <li><a href="/pinterest/">پینترست</a></li>
+          <li><a href="/tiktok/">تیک‌تاک</a></li>
+          <li><a href="/abzar/">دانلودرها</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4><bdi>LANGUAGES</bdi><span class="fa">undefined</span></h4>
+        <ul>
+          <li><a href="/">undefined</a></li>
+          <li><a href="/en/" lang="en">English</a></li>
+          <li><a href="/ar/" lang="ar">العربية</a></li>
+          <li><a href="/ru/" lang="ru">Русский</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4><bdi>CONTACT</bdi><span class="fa">undefined</span></h4>
+        <ul>
+          <li><a dir="ltr" href="https://t.me/InstaDownloadai" rel="noopener">@InstaDownloadai</a></li>
+          <li><a dir="ltr" href="https://h095157497.github.io/">h095157497.github.io</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="f-bot">
-      <span>© 2026 InstaDownloadai · Все права защищены.</span>
-      <span lang="en" dir="ltr">v7 — Holographic Luxury Dark</span>
+    <div class="f-bottom">
+      <span><bdi>© 2026 INSTADOWNLOADAI</bdi></span>
+      <span class="fa">undefined</span>
+      <span>undefined</span>
     </div>
   </div>
 </footer>
 
-<script src="/assets/site-v7.js" defer></script>
+<script src="/assets/site-v8.js"></script>
 </body>
 </html>
