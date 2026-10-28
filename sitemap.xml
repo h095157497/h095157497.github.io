@@ -7,80 +7,80 @@
      · lastmod = the deploy date of the build that actually ships this file (content DID change: new build + b3 content + these heads). Value below = 2026-10-26, the v7.2 base truth; the integration task MUST bump it to the real deploy date (YYYY-MM-DD) in the deploy commit — never future-date, never leave a stale date after a content change;
      · the tgcloud mirror host gets NO sitemap reference anywhere (it is noindexed; see final-mirror-ops/runbook.md §robots) — sitemap discovery belongs to the canonical host only. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://h095157497.github.io/blog/</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://h095157497.github.io/blog/download-instagram-video-link/</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://h095157497.github.io/blog/download-instagram-reels-hd/</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://h095157497.github.io/blog/instagram-to-mp3/</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://h095157497.github.io/blog/download-instagram-story/</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://h095157497.github.io/blog/save-instagram-video-gallery/</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://h095157497.github.io/blog/instagram-link-not-working/</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://h095157497.github.io/blog/instagram-download-without-app/</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://h095157497.github.io/blog/best-way-save-instagram-reels-2026/</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://h095157497.github.io/blog/download-instagram-carousel-photos/</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://h095157497.github.io/blog/find-song-name-from-video/</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://h095157497.github.io/blog/</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://h095157497.github.io/blog/download-instagram-video-link/</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://h095157497.github.io/blog/download-instagram-reels-hd/</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://h095157497.github.io/blog/instagram-to-mp3/</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://h095157497.github.io/blog/download-instagram-story/</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://h095157497.github.io/blog/save-instagram-video-gallery/</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://h095157497.github.io/blog/instagram-link-not-working/</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://h095157497.github.io/blog/instagram-download-without-app/</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://h095157497.github.io/blog/best-way-save-instagram-reels-2026/</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://h095157497.github.io/blog/download-instagram-carousel-photos/</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://h095157497.github.io/blog/find-song-name-from-video/</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url>
     <loc>https://h095157497.github.io/promo/a1/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://h095157497.github.io/promo/a2/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://h095157497.github.io/promo/a3/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://h095157497.github.io/promo/a4/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://h095157497.github.io/promo/a5/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://h095157497.github.io/promo/a6/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://h095157497.github.io/promo/a7/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://h095157497.github.io/promo/a8/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://h095157497.github.io/promo/a9/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://h095157497.github.io/promo/a10/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://h095157497.github.io/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="fa" href="https://h095157497.github.io/"/>
@@ -91,7 +91,7 @@
   </url>
   <url>
     <loc>https://h095157497.github.io/en/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fa" href="https://h095157497.github.io/"/>
@@ -102,7 +102,7 @@
   </url>
   <url>
     <loc>https://h095157497.github.io/ar/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fa" href="https://h095157497.github.io/"/>
@@ -113,7 +113,7 @@
   </url>
   <url>
     <loc>https://h095157497.github.io/ru/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fa" href="https://h095157497.github.io/"/>
@@ -122,9 +122,9 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://h095157497.github.io/ru/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://h095157497.github.io/"/>
   </url>
-  <url><loc>https://h095157497.github.io/instagram/</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://h095157497.github.io/pinterest/</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://h095157497.github.io/music/</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://h095157497.github.io/tiktok/</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://h095157497.github.io/abzar/</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://h095157497.github.io/instagram/</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://h095157497.github.io/pinterest/</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://h095157497.github.io/music/</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://h095157497.github.io/tiktok/</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://h095157497.github.io/abzar/</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>

@@ -13,16 +13,15 @@
 <link rel="alternate" hreflang="ar" href="https://h095157497.github.io/ar/">
 <link rel="alternate" hreflang="ru" href="https://h095157497.github.io/ru/">
 <link rel="alternate" hreflang="x-default" href="https://h095157497.github.io/">
-<link rel="icon" href="/favicon.ico" sizes="32x32">
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 <meta property="og:url" content="https://h095157497.github.io/">
 <meta property="og:locale" content="fa_IR">
 <meta property="og:locale:alternate" content="en_US">
 <meta property="og:locale:alternate" content="ar_AR">
 <meta property="og:locale:alternate" content="ru_RU">
-<meta name="color-scheme" content="light">
-<meta name="theme-color" content="#F2EFE9">
-<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/vazirmatn-arabic.woff2">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#05030A">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="InstaDownloadai">
 <meta property="og:title" content="اینستاگرام و پینترست دانلودر | ربات تلگرام InstaDownloadai">
@@ -118,7 +117,46 @@
   ]
 }
 </script>
-<link rel="stylesheet" href="/assets/site-v8.css">
+<link rel="stylesheet" href="assets/site-v8.css">
+<style>
+/* s2 demo-hero «بفرست، بگیر»: 6s pure-CSS chat loop, zero JS. Base styles = the finished
+   transcript, so prefers-reduced-motion (global kill in site-v8.css) shows it honestly. */
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,344px);gap:clamp(28px,4vw,60px);align-items:center;margin-block:clamp(30px,4vw,60px) 0;--ez:cubic-bezier(.22,.61,.36,1)}
+.hero-copy{min-width:0}
+.demo-fig{margin:0}
+.phone{position:relative;z-index:2;width:min(320px,100%);margin-inline:auto;padding:10px;border:1px solid rgba(242,239,233,.2);border-radius:36px;background:linear-gradient(180deg,#0E0919,#070410);box-shadow:0 40px 90px -36px rgba(168,85,247,.5),inset 0 0 0 1px rgba(242,239,233,.05)}
+.ph-screen{display:flex;flex-direction:column;min-height:432px;border:1px solid rgba(242,239,233,.09);border-radius:27px;background:radial-gradient(130% 80% at 85% -5%,rgba(168,85,247,.14),transparent 52%),#04020A;overflow:hidden}
+.ph-top{display:flex;align-items:center;gap:8px;padding:11px 13px;border-bottom:1px solid var(--line-soft);font-size:11px;font-weight:700}
+.ph-ava{width:22px;height:22px;border-radius:50%;flex:none;background:conic-gradient(from 200deg,var(--accent),var(--holo-p),var(--holo-c),var(--accent))}
+.ph-on{margin-inline-start:auto;color:var(--holo-c);font-size:9.5px;font-weight:600;display:flex;align-items:center;gap:4px}
+.ph-on::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--holo-c)}
+.chat{flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:8px;padding:13px}
+.bub{max-width:88%;padding:8px 12px;border-radius:14px;font-size:12px;line-height:1.75}
+.bub.u{align-self:flex-end;background:linear-gradient(135deg,#9333EA,#A855F7);color:var(--on-accent);font-weight:600;animation:dU 6s var(--ez) infinite}
+.bub.b{align-self:flex-start;background:#110B1F;border:1px solid var(--line-soft)}
+.typing{display:flex;gap:4px;align-items:center;padding:11px 14px;opacity:0;animation:dT 6s var(--ez) infinite}
+.typing i{width:6px;height:6px;border-radius:50%;background:var(--muted);animation:dDot 1.1s ease-in-out infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+.file{display:flex;gap:10px;align-items:center;padding:10px 12px;animation:dF 6s var(--ez) infinite}
+.f-ic{position:relative;width:36px;height:36px;border-radius:10px;flex:none;background:linear-gradient(135deg,var(--accent),var(--holo-p))}
+.f-ic::after{content:"";position:absolute;inset:0;margin:auto;width:0;height:0;border-inline-start:10px solid var(--on-accent);border-block:6.5px solid transparent;translate:2px 0}
+.f-tx{display:flex;flex-direction:column;gap:1px;min-width:0}
+.f-tx b{font-size:12px}.f-tx>span{font-size:10.5px;color:var(--muted)}
+.kb{align-self:flex-start;display:flex;gap:6px;flex-wrap:wrap;animation:dK 6s var(--ez) infinite}
+.kb-b{border:1px solid rgba(168,85,247,.55);background:rgba(168,85,247,.13);border-radius:10px;padding:5px 11px;font-size:11px;font-weight:700}
+.ph-input{display:flex;align-items:center;gap:8px;padding:10px 12px;border-top:1px solid var(--line-soft)}
+.ph-field{flex:1;border:1px solid var(--line-soft);border-radius:99px;padding:6px 12px;font-size:10.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ph-send{position:relative;width:26px;height:26px;border-radius:50%;flex:none;background:var(--accent)}
+.ph-send::after{content:"";position:absolute;inset:0;margin:auto;width:0;height:0;border-inline-start:8px solid var(--on-accent);border-block:5px solid transparent;translate:1px 0}
+.demo-cap{margin-top:12px;text-align:center;font-size:11.5px;color:var(--muted);line-height:1.8}
+.demo-cap a{color:var(--ink);font-weight:700;text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}
+@keyframes dU{0%{opacity:0;transform:translateY(8px) scale(.97)}5%,88%{opacity:1;transform:none}94%,100%{opacity:0;transform:translateY(-6px)}}
+@keyframes dT{0%,12%{opacity:0}16%,30%{opacity:1}33%,100%{opacity:0}}
+@keyframes dDot{0%,60%,100%{transform:none;opacity:.45}30%{transform:translateY(-3px);opacity:1}}
+@keyframes dF{0%,30%{opacity:0;transform:translateY(10px) scale(.97)}36%,88%{opacity:1;transform:none}94%,100%{opacity:0;transform:translateY(-6px)}}
+@keyframes dK{0%,50%{opacity:0;transform:translateY(6px)}56%,88%{opacity:1;transform:none}94%,100%{opacity:0;transform:translateY(-4px)}}
+@media (max-width:1020px){.hero-grid{grid-template-columns:minmax(0,1fr)}}
+</style>
 </head>
 <body>
 
@@ -169,14 +207,31 @@
       <span class="hl">و موزیک، بدون واترمارک</span>
     </h1>
 
-    <div class="hero-foot">
-      <p class="lede">اینستاگرام و پینترست دانلودر به‌همراه تیک‌تاک و موزیک‌یاب، همه در یک ربات: لینک را بفرست تا ویدیو، عکس یا پین با بالاترین کیفیت (تا ۴K) همان‌جا در چت تحویل بگیری؛ هر آهنگی هم با اسمش پیدا می‌شود.</p>
-      <div class="hero-cta">
-        <a class="btn" href="https://t.me/InstaDownloadai" rel="noopener">ربات تلگرام <span class="barr" aria-hidden="true">←</span></a>
-        <a class="ghost" dir="ltr" href="https://t.me/InstaDownloadai" rel="noopener">@InstaDownloadai</a>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="lede">اینستاگرام و پینترست دانلودر به‌همراه تیک‌تاک و موزیک‌یاب، همه در یک ربات: لینک را بفرست تا ویدیو، عکس یا پین با بالاترین کیفیت (تا ۴K) همان‌جا در چت تحویل بگیری؛ هر آهنگی هم با اسمش پیدا می‌شود.</p>
+        <div class="hero-cta">
+          <a class="btn" href="https://t.me/InstaDownloadai" rel="noopener">ربات تلگرام <span class="barr" aria-hidden="true">←</span></a>
+          <a class="ghost" dir="ltr" href="https://t.me/InstaDownloadai" rel="noopener">@InstaDownloadai</a>
+        </div>
+        <p class="xlang">همین سایت به زبان‌های دیگر هم موجود است: <a href="/en/" lang="en">English</a> · <a href="/ar/" lang="ar">العربية</a> · <a href="/ru/" lang="ru">Русский</a></p>
       </div>
+      <figure class="demo-fig">
+        <div class="phone" role="img" aria-label="نمونه‌ی تعاملی: کاربر لینک اینستاگرام را می‌فرستد؛ ربات پس از تایپ، ویدیوی ۴K بدون واترمارک را با دکمه‌های «استخراج MP3» و «پیدا کردن آهنگ» در چت تحویل می‌دهد.">
+          <div class="ph-screen" aria-hidden="true">
+            <div class="ph-top"><i class="ph-ava"></i><span dir="ltr">InstaDownloadai</span><span class="ph-on">آنلاین</span></div>
+            <div class="chat">
+              <div class="bub u"><bdi dir="ltr">instagram.com/reel/Cx8…</bdi></div>
+              <div class="bub b typing"><i></i><i></i><i></i></div>
+              <div class="bub b file"><i class="f-ic"></i><span class="f-tx"><b><bdi dir="ltr">reel.mp4</bdi></b><span>۴K · بدون واترمارک</span></span></div>
+              <div class="kb"><span class="kb-b">استخراج MP3</span><span class="kb-b">پیدا کردن آهنگ</span></div>
+            </div>
+            <div class="ph-input"><span class="ph-field">لینک یا اسم آهنگ…</span><i class="ph-send"></i></div>
+          </div>
+        </div>
+        <figcaption class="demo-cap">نمونه‌ی تعاملی · شبیه‌سازی چت با CSS — تجربهٔ واقعی در <a href="https://t.me/InstaDownloadai" rel="noopener">ربات تلگرام</a></figcaption>
+      </figure>
     </div>
-    <p class="xlang">همین سایت به زبان‌های دیگر هم موجود است: <a href="/en/" lang="en">English</a> · <a href="/ar/" lang="ar">العربية</a> · <a href="/ru/" lang="ru">Русский</a></p>
 
     <div class="stats" role="list" aria-label="آمار و مشخصات ربات">
       <div class="stat" role="listitem">
@@ -374,7 +429,7 @@
   <!-- ============ 05 / START — red poster ============ -->
   <section id="start" class="start" aria-labelledby="h-start">
     <div class="wrap sec">
-      <header class="sh rv" style="border-top-color:rgba(14,13,11,.3)">
+      <header class="sh rv" style="border-top-color:rgba(242,239,233,.24)">
         <p class="tag"><bdi class="idx" style="color:var(--ink)">05</bdi><bdi class="sep" style="color:var(--ink)">/</bdi><bdi>START</bdi><span class="fa">شروع</span></p>
       </header>
       <h2 class="rv">لینک را بفرست.</h2>
@@ -435,6 +490,6 @@
   </div>
 </footer>
 
-<script src="/assets/site-v8.js"></script>
+<script src="assets/site-v8.js"></script>
 </body>
 </html>

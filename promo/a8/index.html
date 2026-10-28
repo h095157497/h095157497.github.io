@@ -10,7 +10,6 @@
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://h095157497.github.io/promo/a8/">
 <link rel="alternate" hreflang="fa" href="https://h095157497.github.io/promo/a8/">
-<link rel="alternate" hreflang="en" href="https://h095157497.github.io/promo/a8/">
 <link rel="alternate" hreflang="x-default" href="https://h095157497.github.io/promo/a8/">
 <link rel="icon" type="image/png" href="https://h095157497.github.io/assets/avatar.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -121,8 +120,8 @@ a{-webkit-tap-highlight-color:rgba(168,85,247,.25)}
   .nav .btn{margin:.6rem 0 0}
 }
 /* hero */
-.hero{display:grid;gap:3.2rem;align-items:center;padding-block:clamp(3rem,7vw,5.5rem) clamp(3.2rem,6vw,5rem)}
-@media(min-width:1024px){.hero{grid-template-columns:1.06fr .94fr;gap:3.5rem}}
+.hero{display:grid;grid-template-columns:minmax(0,1fr);gap:3.2rem;align-items:center;padding-block:clamp(3rem,7vw,5.5rem) clamp(3.2rem,6vw,5rem)}
+@media(min-width:1024px){.hero{grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);gap:3.5rem}}
 .kicker{display:inline-flex;align-items:center;gap:.55rem;border:1px solid rgba(168,85,247,.4);background:rgba(168,85,247,.1);color:#ecd8ff;padding:.45rem 1.1rem;border-radius:999px;font-size:.85rem;font-weight:700}
 .kicker .dot{width:8px;height:8px;border-radius:50%;background:var(--grad);background-size:220% 100%;animation:holoShift 4s linear infinite;box-shadow:0 0 12px rgba(34,211,238,.8)}
 h1{font-size:clamp(1.85rem,4.7vw,3.5rem);line-height:1.42;font-weight:900;margin:1.2rem 0 1rem}

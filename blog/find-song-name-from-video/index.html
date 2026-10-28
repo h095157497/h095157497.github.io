@@ -1,40 +1,53 @@
-<!-- SEO-ARENA R2 | AGENT: a10 | SLUG: find-song-name-from-video | METHOD: Owning the «اسم این آهنگ چیست» recognition intent with an empathy-first Persian guide that routes three real scenarios (reel link, public-story username, saved file) into the bot's «پیدا کردن آهنگ» flow and bridges honestly to the music-yab download, converted via 3 ref-attributed CTAs carrying start=a10 -->
 <!DOCTYPE html>
+<!-- FINAL BATTLE ROYALE | ARTICLES | AGENT: a10→c10 | SLUG: find-song-name-from-video |
+METHOD: ارتقای مقالهٔ a10 برای کلاستر «اسم این آهنگ چیست؟» — قصد تشخیص آهنگ (متمایز از c3/تبدیل MP3). رقبا: فقط لیستِ اپ‌استور (شازم در کافه‌بازار ۵۶۸w / مایکت ۸۷۷w) + خود شازم؛ هیچ مقالهٔ فارسی‌ای این قصد را نمی‌پوشاند.
+Beat-moves: ① HowTo JSON-LD پنج‌قدمی «ویدیو بفرست → اسم آهنگ بگیر» (رقیب صفر HowTo دارد، ما هم نداشتیم) ② جدول «اپ میکروفونی (شازم و مانند آن) در برابر ربات لینکی» — مقایسه‌ای که هیچ‌کس ننوشته + صداقت دربارهٔ هام‌کردن (SoundHound) که ربات ندارد ③ دو فیگور شبیه‌سازی چت CSS با برچسب صادقانهٔ «شبیه‌سازی» (ریلزِ آهنگ‌ناشناس → «آهنگش پیدا شد» + موزیک‌یاب تا ۳۲۰kbps) ④ تیتر: قصد پرسشی + «(۱۴۰۵)» (هیچ رقیب فارسی سال در تیتر ندارد) ⑤ پل دانلود: «اسمش را گرفتی؟ همان‌جا موزیکش را بگیر» — صادقانه طبق /music/: تا ۳۲۰kbps فقط برای موزیک‌یاب؛ استخراج صدا = همان صدای ویدیو ⑥ FAQ هفت‌تایی آینه‌ای بایت‌به‌بایت.
+صداقت (وریفای‌شده روی اسنپ‌شات v1.52 ربات): تشخیص فقط از لینک ویدیو (اینستاگرام/پینترست/تیک‌تاک/ویمئو) با کارت استودیو زیر هر ویدیو؛ جریان استوری/یوزرنیم در v1.16 بازنشسته شده و ربات خودش می‌گوید «استوری‌ها پشتیبانی نمی‌شوند» — ادعای قدیمیِ «یوزرنیم بفرست» حذف شد؛ تشخیص از فایل گالری هم وجود ندارد (hint ربات: لینک یا اسم) — هر دو به سناریوی صادقانهٔ «لینک ندارد» با ۳ جایگزین واقعی تبدیل شد؛ پیج خصوصی = ممکن نیست؛ موتور تشخیص بی‌نقص نیست + fallback کپشن صادقانه گفته شد؛ «مثل شزام» دقیقاً یک بار؛ هیچ ادعای شراکتی با Shazam/AudD/SoundHound نیست (فقط نام‌بردن صادقانه).
+هر ۳ CTA فقط https://t.me/InstaDownloadai?start=a10 · لینک‌های داخلی /promo/a10/ + /music/ + /instagram/ + /blog/instagram-to-mp3/ + / · تک-H1 · canonical و اسلاگ تغییر نکرده. -->
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>اسم این آهنگ چیست؟ پیدا کردن آهنگ از روی ویدیو</title>
-<meta name="description" content="آهنگ گوشه‌ی ریلز یا استوری چنگ می‌زند؟ لینک یا فایل ویدیو را برای ربات تلگرام بفرست تا اسم آهنگ را تشخیص دهد و همان موزیک را در چت تحویلت بدهد؛ رایگان.">
+<title>اسم این آهنگ چیست؟ پیدا کردن آهنگ از روی ویدیو (۱۴۰۵)</title>
+<meta name="description" content="آهنگ ریلز چنگ می‌زند ولی اسمش را نمی‌دانی؟ لینک ویدیو را به ربات تلگرام بده تا اسم ترانه و خواننده را تشخیص دهد و خود موزیک را بدهد؛ رایگان، بدون برنامه.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://h095157497.github.io/blog/find-song-name-from-video/">
-<link rel="icon" type="image/png" href="/assets/avatar.png">
+<link rel="icon" type="image/png" href="https://h095157497.github.io/assets/avatar.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="InstaDownloadai">
 <meta property="og:locale" content="fa_IR">
-<meta property="og:title" content="اسم این آهنگ چیست؟ پیدا کردن آهنگ از روی ویدیو">
-<meta property="og:description" content="لینک یا فایل ویدیو را برای ربات تلگرامی InstaDownloadai بفرست و «پیدا کردن آهنگ» را بزن؛ ربات اسم ترانه را تشخیص می‌دهد و خود موزیک را هم تحویل می‌دهد — رایگان.">
+<meta property="og:title" content="اسم این آهنگ چیست؟ پیدا کردن آهنگ از روی ویدیو (۱۴۰۵)">
+<meta property="og:description" content="لینک ویدیو را به ربات تلگرامی InstaDownloadai بفرست و «پیدا کردن آهنگ» را بزن؛ ربات اسم ترانه و خواننده را تشخیص می‌دهد و خود موزیک را هم تحویل می‌دهد — رایگان.">
 <meta property="og:url" content="https://h095157497.github.io/blog/find-song-name-from-video/">
 <meta property="og:image" content="https://h095157497.github.io/og.jpg">
 <meta property="article:published_time" content="2026-10-27">
+<meta property="article:modified_time" content="2026-10-28">
 <meta property="article:section" content="راهنما">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="اسم این آهنگ چیست؟ پیدا کردن آهنگ از روی ویدیو">
-<meta name="twitter:description" content="لینک یا فایل ویدیو را برای ربات تلگرام بفرست تا اسم آهنگ را تشخیص دهد و خود موزیک را تحویلت بدهد؛ رایگان و بدون ثبت‌نام.">
+<meta name="twitter:title" content="اسم این آهنگ چیست؟ پیدا کردن آهنگ از روی ویدیو (۱۴۰۵)">
+<meta name="twitter:description" content="لینک ویدیو را به ربات تلگرام بده تا اسم ترانه و خواننده را تشخیص دهد و خود موزیک را هم تحویلت بدهد؛ رایگان و بدون برنامه.">
 <meta name="twitter:image" content="https://h095157497.github.io/og.jpg">
 <meta name="theme-color" content="#05030a">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"Article","@id":"https://h095157497.github.io/blog/find-song-name-from-video/#article","url":"https://h095157497.github.io/blog/find-song-name-from-video/","mainEntityOfPage":"https://h095157497.github.io/blog/find-song-name-from-video/","headline":"اسم این آهنگ چیست؟ پیدا کردن آهنگ از روی ویدیو در تلگرام","description":"آهنگ گوشه‌ی ریلز یا استوری چنگ می‌زند؟ لینک یا فایل ویدیو را برای ربات تلگرام بفرست تا اسم آهنگ را تشخیص دهد و همان موزیک را در چت تحویلت بدهد؛ رایگان.","image":"https://h095157497.github.io/og.jpg","inLanguage":"fa","datePublished":"2026-10-27","dateModified":"2026-10-27","author":{"@type":"Organization","name":"InstaDownloadai","url":"https://h095157497.github.io/"},"publisher":{"@type":"Organization","name":"InstaDownloadai","url":"https://h095157497.github.io/"}},
+{"@type":"Article","@id":"https://h095157497.github.io/blog/find-song-name-from-video/#article","url":"https://h095157497.github.io/blog/find-song-name-from-video/","mainEntityOfPage":{"@type":"WebPage","@id":"https://h095157497.github.io/blog/find-song-name-from-video/"},"headline":"اسم این آهنگ چیست؟ پیدا کردن آهنگ از روی ویدیو در تلگرام","description":"آهنگ ریلز چنگ می‌زند ولی اسمش را نمی‌دانی؟ لینک ویدیو را به ربات تلگرام بده تا اسم ترانه و خواننده را تشخیص دهد و خود موزیک را بدهد؛ رایگان، بدون برنامه.","image":{"@type":"ImageObject","url":"https://h095157497.github.io/og.jpg","width":1344,"height":768},"inLanguage":"fa","datePublished":"2026-10-27","dateModified":"2026-10-28","author":{"@type":"Organization","name":"InstaDownloadai","url":"https://h095157497.github.io/"},"publisher":{"@type":"Organization","name":"InstaDownloadai","url":"https://h095157497.github.io/","logo":{"@type":"ImageObject","url":"https://h095157497.github.io/og.jpg","width":1344,"height":768}}},
+{"@type":"HowTo","@id":"https://h095157497.github.io/blog/find-song-name-from-video/#howto","name":"چطور در تلگرام اسم آهنگ یک ویدیو را پیدا کنیم","description":"کپی لینک ریلز یا پست، ارسال آن به ربات تلگرام InstaDownloadai، زدن «پیدا کردن آهنگ» و دیدن نام ترانه و خواننده؛ خود آهنگ هم با بهترین کیفیت در همان چت تحویل می‌شود.","inLanguage":"fa","totalTime":"PT2M","tool":[{"@type":"HowToTool","name":"ربات تلگرام InstaDownloadai"}],"step":[
+{"@type":"HowToStep","position":1,"name":"لینک ویدیو را کپی کن","text":"در اپ اینستاگرام روی «⋯» یا «ارسال به» بزن و «کپی لینک» را انتخاب کن؛ لینک ویدیوهای تیک‌تاک، پینترست و ویمئو هم پذیرفته می‌شود. در نسخه‌ی وب آدرس را از نوار مرورگر کپی کن."},
+{"@type":"HowToStep","position":2,"name":"ربات را در تلگرام باز کن","text":"دکمه‌ی زیر چت ربات را با پیام شروع باز می‌کند؛ روی Start بزن. نه لاگین می‌خواهد، نه شماره و نه هیچ دسترسی‌ای به اکانت اینستاگرامت."},
+{"@type":"HowToStep","position":3,"name":"لینک را در چت بفرست","text":"لینک را Paste کن؛ ربات ویدیو را با کیفیت اصلی تحویل می‌دهد و زیرش کارت استودیو با دو دکمه‌ی «استخراج صدا» و «پیدا کردن آهنگ» می‌آید. دستور خاصی لازم نیست بنویسی."},
+{"@type":"HowToStep","position":4,"name":"«پیدا کردن آهنگ» را بزن","text":"ربات اثر انگشت صدای ویدیو را با کاتالوگ‌های موسیقی تطبیق می‌دهد؛ چند ثانیه بعد نام ترانه و نام خواننده روی کارت می‌آید. اگر تشخیص دقیق نشد، ربات صادقانه از کپشن خود ویدیو نتیجه‌های احتمالی نشان می‌دهد."},
+{"@type":"HowToStep","position":5,"name":"اسم را گرفتی؛ خود آهنگ را هم بگیر","text":"روی دکمه‌ی تحویل با بهترین کیفیت بزن تا خود آهنگ از موزیک‌یاب در همان چت بیاید؛ فایل را با کاور و تاگ کامل (نام خواننده و آلبوم) ذخیره کن و هر وقت خواستی گوش بده."}]},
 {"@type":"FAQPage","@id":"https://h095157497.github.io/blog/find-song-name-from-video/#faq","mainEntity":[
-{"@type":"Question","name":"چطور با ربات اسم آهنگی را که نمی‌دانم پیدا کنم؟","acceptedAnswer":{"@type":"Answer","text":"لینک یا فایل ویدیویی که آهنگ در آن پخش می‌شود را برای ربات بفرست و گزینه‌ی «پیدا کردن آهنگ» را بزن؛ ربات با موتور تشخیص، ترانه را شناسایی می‌کند و همان آهنگ را با بهترین کیفیت در چت می‌فرستد."}},
-{"@type":"Question","name":"آهنگ استوری هم تشخیص داده می‌شود؟","acceptedAnswer":{"@type":"Answer","text":"استوری لینک ندارد؛ یوزرنیم حساب عمومی را در چت ربات بفرست تا استوری‌های عمومی‌اش باز شود و ویدیوی استوری را برای تشخیص بفرست. استوری اکانت خصوصی قابل دسترسی نیست و ربات از پیج خصوصی چیزی تحویل نمی‌دهد."}},
-{"@type":"Question","name":"فقط فایل ویدیو یا صدا دارم؛ باز هم جواب می‌دهد؟","acceptedAnswer":{"@type":"Answer","text":"بله؛ برای وقتی که ویدیو لینک آنلاین ندارد، فایل ویدیو یا صدا را در چت ربات بفرست و «پیدا کردن آهنگ» را بزن؛ ربات از داخل خود ویدیو صدای آهنگ را بررسی و شناسایی می‌کند."}},
-{"@type":"Question","name":"چرا گاهی آهنگ پیدا نمی‌شود؟","acceptedAnswer":{"@type":"Answer","text":"هیچ موتور تشخیصی بی‌نقص نیست؛ برای نسخه‌های خیلی خاص یا فایل‌های کم‌کیفیت و پرنویز گاهی نتیجه خالی می‌ماند. فایل واضح‌تر با یک تکه‌ی مشخص از آهنگ بفرست؛ اگر باز هم نشد، هر چه از ترانه به یاد داری را در موزیک‌یاب بنویس یا با املای متفاوت و نام خواننده دوباره امتحان کن."}},
-{"@type":"Question","name":"تشخیص و دانلود آهنگ رایگان است؟","acceptedAnswer":{"@type":"Answer","text":"بله؛ مثل بقیه‌ی قابلیت‌ها رایگان است (حدود ۸۰ دانلود در روز برای هر کاربر) — بدون اشتراک و بدون ثبت‌نام؛ آهنگ‌ها تا کیفیت ۳۲۰kbps با تاگ کامل (کاور، نام خواننده و آلبوم) تحویل داده می‌شوند."}}
+{"@type":"Question","name":"چطور با ربات اسم آهنگی را که نمی‌دانم پیدا کنم؟","acceptedAnswer":{"@type":"Answer","text":"لینک ویدیویی که آهنگ در آن پخش می‌شود — ریلز یا پست اینستاگرام، ویدیوی تیک‌تاک، پین پینترست یا ویمئو — را در چت ربات بفرست؛ زیر ویدیوی دریافتی «پیدا کردن آهنگ» را بزن. ربات اثر انگشت صدا را با کاتالوگ‌های موسیقی تطبیق می‌دهد و نام ترانه و نام خواننده را می‌گوید."}},
+{"@type":"Question","name":"آهنگ استوری هم تشخیص داده می‌شود؟","acceptedAnswer":{"@type":"Answer","text":"استوری دیگر مسیر پشتیبانی‌شده‌ی ربات نیست؛ لینک استوری را نمی‌گیرد و خودش هم صادقانه همین را می‌گوید. اگر همان آهنگ در یک ریلز یا پست عمومی هم استفاده شده، لینک همان را بفرست؛ استوری اکانت خصوصی هم به هر حال از دسترس خارج است و ربات از پیج خصوصی چیزی تحویل نمی‌دهد."}},
+{"@type":"Question","name":"فایل ویدیوی داخل گالری را هم می‌شناسد؟","acceptedAnswer":{"@type":"Answer","text":"تشخیص از روی لینک انجام می‌شود، نه از فایل داخل گالری؛ برای فایل محلی مسیر مستقیمی وجود ندارد. اگر همان ویدیو در اینستاگرام، تیک‌تاک یا پینترست آنلاین است لینکش را بفرست؛ وگرنه هر چه از ترانه به یاد داری را در موزیک‌یاب بنویس تا از کاتالوگ‌ها پیدایش کند."}},
+{"@type":"Question","name":"چرا گاهی آهنگ پیدا نمی‌شود؟","acceptedAnswer":{"@type":"Answer","text":"هیچ موتور تشخیصی بی‌نقص نیست؛ نسخه‌های خیلی خاص یا فایل‌های کم‌کیفیت و پرنویز گاهی نتیجه نمی‌دهند. وقتی تشخیص دقیق نشد، ربات از کپشن خود ویدیو نتیجه‌های احتمالی می‌آورد؛ اگر آن هم جواب نداد، هر چه از ترانه به یاد داری را در موزیک‌یاب بنویس یا با املای متفاوت و نام خواننده دوباره امتحان کن."}},
+{"@type":"Question","name":"فرق این ربات با شازام چیست؟","acceptedAnswer":{"@type":"Answer","text":"شازام صدای زنده‌ی محیط را از میکروفون می‌شنود و اسم را می‌دهد؛ ربات از روی لینک ویدیو کار می‌کند، اپ جداگانه نمی‌خواهد و در همان چت خودِ فایل آهنگ را هم تحویل می‌دهد. برای ویدیویی که جلوی توست راه کوتاه‌تر ربات است و برای صدای زنده‌ی همین لحظه، اپ میکروفونی گزینه‌ی طبیعی‌تری است."}},
+{"@type":"Question","name":"تشخیص و دانلود آهنگ رایگان است؟","acceptedAnswer":{"@type":"Answer","text":"بله؛ مثل بقیه‌ی قابلیت‌ها رایگان است (حدود ۸۰ دانلود در روز برای هر کاربر) — بدون اشتراک و بدون ثبت‌نام؛ آهنگ‌های موزیک‌یاب تا کیفیت ۳۲۰kbps با تاگ کامل (کاور، نام خواننده و آلبوم) تحویل داده می‌شوند."}},
+{"@type":"Question","name":"اسم آهنگ را می‌دانم؛ خودش را هم می‌توانم بگیرم؟","acceptedAnswer":{"@type":"Answer","text":"بله؛ اسم آهنگ، نام خواننده یا حتی یک خط از ترانه را در چت ربات بنویس؛ موزیک‌یاب از چند کاتالوگ موازی — فارسی، خارجی و ریمیکس — جست‌وجو می‌کند و نتایج را با برچسب مدت‌زمان و کیفیت نشان می‌دهد. عبارت «آهنگ‌های» به‌همراه نام خواننده هم برترین‌های همان خواننده را می‌آورد."}}
 ]},
 {"@type":"BreadcrumbList","@id":"https://h095157497.github.io/blog/find-song-name-from-video/#crumb","itemListElement":[
 {"@type":"ListItem","position":1,"name":"خانه","item":"https://h095157497.github.io/"},
@@ -162,6 +175,70 @@ td{color:var(--mut)}
 /* tip box */
 .tip{position:relative;margin:1.6rem 0 0;border-radius:var(--r2);background:rgba(34,211,238,.07);padding:1.15rem 1.3rem;color:#d9f6fd;font-size:.96rem}
 .tip b{color:var(--c)}
+/* chat-simulation figures (CSS only, honest «شبیه‌سازی» tag) */
+.sim-fig{margin:2rem 0}
+.sim{--ez:cubic-bezier(.22,.61,.36,1);width:min(330px,100%);margin-inline:auto;padding:10px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(180deg,#0e0919,#070410);box-shadow:0 30px 70px -34px rgba(168,85,247,.5),inset 0 0 0 1px rgba(255,255,255,.04)}
+.sim-screen{border:1px solid rgba(255,255,255,.08);border-radius:20px;background:#04020a;overflow:hidden}
+.sim-top{display:flex;align-items:center;gap:8px;padding:10px 12px;border-bottom:1px solid var(--line);font-size:.78rem;font-weight:700;color:#cbc0e8}
+.sim-ava{width:20px;height:20px;border-radius:50%;flex:none;background:conic-gradient(from 200deg,#a855f7,#f472b6,#22d3ee,#a855f7)}
+.sim-on{margin-inline-start:auto;color:#a5f3fc;font-size:.68rem;font-weight:600;display:flex;align-items:center;gap:4px}
+.sim-on::before{content:"";width:5px;height:5px;border-radius:50%;background:#22d3ee;box-shadow:0 0 8px rgba(34,211,238,.9)}
+.sim-chat{display:flex;flex-direction:column;justify-content:flex-end;gap:8px;padding:13px;min-height:300px}
+.sim-bub{max-width:88%;padding:8px 12px;border-radius:14px;font-size:.82rem;line-height:1.85}
+.sim-bub.u{align-self:flex-end;background:linear-gradient(135deg,#9333ea,#a855f7);color:#fff;font-weight:700}
+.sim-bub.b{align-self:flex-start;background:#110b1f;border:1px solid var(--line);color:var(--mut)}
+.sim-typing{align-self:flex-start;display:flex;gap:4px;align-items:center;padding:11px 14px;border-radius:14px;background:#110b1f;border:1px solid var(--line);opacity:0}
+.sim-typing i{width:6px;height:6px;border-radius:50%;background:#a096c2;animation:sDot 1.1s ease-in-out infinite}
+.sim-typing i:nth-child(2){animation-delay:.15s}
+.sim-typing i:nth-child(3){animation-delay:.3s}
+.sim-file{display:flex;gap:10px;align-items:center;padding:10px 12px;border-radius:14px;background:#110b1f;border:1px solid var(--line)}
+.sim-file .fic{position:relative;width:38px;height:38px;border-radius:10px;flex:none;background:linear-gradient(135deg,#a855f7,#f472b6)}
+.sim-file .fic::after{content:"";position:absolute;inset:0;margin:auto;width:0;height:0;border-inline-start:11px solid #0d0518;border-block:7px solid transparent;translate:2px 0}
+.sim-file .cov{width:38px;height:38px;border-radius:10px;flex:none;background:conic-gradient(from 210deg,#a855f7,#f472b6,#22d3ee,#a855f7);box-shadow:inset 0 0 0 1px rgba(255,255,255,.18)}
+.sim-file .ftx{display:flex;flex-direction:column;gap:1px;min-width:0}
+.sim-file .ftx b{font-size:.82rem;color:#f3effc}
+.sim-file .ftx span{font-size:.72rem;color:#a096c2}
+.sim-kb{display:flex;gap:6px;flex-wrap:wrap}
+.sim-kb span{border:1px solid rgba(168,85,247,.55);background:rgba(168,85,247,.13);border-radius:10px;padding:5px 11px;font-size:.72rem;font-weight:700;color:#ecd8ff}
+.sim-kb span.g{border-color:rgba(34,197,94,.55);background:rgba(34,197,94,.12)}
+.sim-rows{display:flex;flex-direction:column;gap:6px}
+.sim-rows span{display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:#110b1f;border-radius:10px;padding:6px 10px;font-size:.74rem;font-weight:700;color:#ecd8ff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sim-rows span small{margin-inline-start:auto;color:#8d82b0;font-weight:600;font-size:.68rem}
+.sim-input{display:flex;align-items:center;gap:8px;padding:10px 12px;border-top:1px solid var(--line)}
+.sim-field{flex:1;border:1px solid var(--line);border-radius:99px;padding:6px 12px;font-size:.72rem;color:#8d82b0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sim-send{position:relative;width:26px;height:26px;border-radius:50%;flex:none;background:linear-gradient(135deg,#a855f7,#22d3ee)}
+.sim-send::after{content:"";position:absolute;inset:0;margin:auto;width:0;height:0;border-inline-start:9px solid #0d0518;border-block:6px solid transparent;translate:1px 0}
+.sim-fig figcaption{text-align:center;color:#8d82b0;font-size:.8rem;line-height:1.9;margin-top:.85rem}
+.sim-fig figcaption b{color:#cbc0e8}
+/* fig1 — 12s loop: لینک → ویدیو رسید → دکمه‌ها → تپ → «آهنگش پیدا شد» */
+.sim1 .e1{animation:f1a 12s var(--ez) infinite}
+.sim1 .e2{animation:f1b 12s var(--ez) infinite}
+.sim1 .e3{animation:f1c 12s var(--ez) infinite}
+.sim1 .e4{animation:f1d 12s var(--ez) infinite}
+.sim1 .e5{animation:f1e 12s var(--ez) infinite}
+.sim1 .e6{animation:f1f 12s var(--ez) infinite}
+.sim1 .e7{animation:f1g 12s var(--ez) infinite}
+.sim1 .e8{animation:f1h 12s var(--ez) infinite}
+.sim1 .e9{animation:f1i 12s var(--ez) infinite}
+@keyframes f1a{0%{opacity:0;transform:translateY(8px) scale(.97)}2%,88%{opacity:1;transform:none}93%,100%{opacity:0;transform:translateY(-6px)}}
+@keyframes f1b{0%,2%{opacity:0}4%,9%{opacity:1}11%,100%{opacity:0}}
+@keyframes f1c{0%,8%{opacity:0;transform:translateY(8px) scale(.97)}11%,88%{opacity:1;transform:none}93%,100%{opacity:0;transform:translateY(-6px)}}
+@keyframes f1d{0%,10%{opacity:0;transform:translateY(8px) scale(.97)}13%,88%{opacity:1;transform:none}93%,100%{opacity:0;transform:translateY(-6px)}}
+@keyframes f1e{0%,19%{opacity:0;transform:translateY(8px) scale(.97)}22%,88%{opacity:1;transform:none}93%,100%{opacity:0;transform:translateY(-6px)}}
+@keyframes f1f{0%,22%{opacity:0}24%,30%{opacity:1}32%,100%{opacity:0}}
+@keyframes f1g{0%,33%{opacity:0;transform:translateY(8px) scale(.97)}36%,88%{opacity:1;transform:none}93%,100%{opacity:0;transform:translateY(-6px)}}
+@keyframes f1h{0%,35%{opacity:0;transform:translateY(10px) scale(.97)}38%,88%{opacity:1;transform:none}93%,100%{opacity:0;transform:translateY(-6px)}}
+@keyframes f1i{0%,38%{opacity:0;transform:translateY(6px) scale(.97)}41%,88%{opacity:1;transform:none}93%,100%{opacity:0;transform:translateY(-6px)}}
+/* fig2 — 10s loop: اسم → نتایج → تحویل ۳۲۰ */
+.sim2 .e1{animation:f2a 10s var(--ez) infinite}
+.sim2 .e2{animation:f2b 10s var(--ez) infinite}
+.sim2 .e3{animation:f2c 10s var(--ez) infinite}
+.sim2 .e4{animation:f2d 10s var(--ez) infinite}
+@keyframes f2a{0%{opacity:0;transform:translateY(8px) scale(.97)}2%,88%{opacity:1;transform:none}93%,100%{opacity:0;transform:translateY(-6px)}}
+@keyframes f2b{0%,2%{opacity:0}4%,10%{opacity:1}12%,100%{opacity:0}}
+@keyframes f2c{0%,11%{opacity:0;transform:translateY(10px) scale(.97)}14%,88%{opacity:1;transform:none}93%,100%{opacity:0;transform:translateY(-6px)}}
+@keyframes f2d{0%,24%{opacity:0;transform:translateY(10px) scale(.97)}27%,88%{opacity:1;transform:none}93%,100%{opacity:0;transform:translateY(-6px)}}
+@keyframes sDot{0%,60%,100%{transform:none;opacity:.45}30%{transform:translateY(-3px);opacity:1}}
 /* faq */
 details{border:1px solid var(--line);border-radius:var(--r);background:var(--panel);padding:0 1.2rem;margin-bottom:.8rem}
 details summary{cursor:pointer;font-weight:800;padding:1rem 0;list-style:none}
@@ -223,15 +300,15 @@ footer.site a:hover{color:#fff}
     <section class="hero" aria-labelledby="h1">
       <span class="kicker"><i class="dot" aria-hidden="true"></i> راهنمای تشخیص آهنگ · ربات تلگرام <bdi dir="ltr">@InstaDownloadai</bdi></span>
       <h1 id="h1">اسم این آهنگ چیست؟ <span class="holo-text">پیدا کردن آهنگ از روی ویدیو</span> در تلگرام</h1>
-      <p class="lede">یک آهنگ گوشه‌ی ریلز چنگ می‌زند و تا آخر روز با تو می‌ماند — ولی اسمش را نمی‌دانی. در کامنت‌ها می‌گردی، یکی پرسیده «اسم این آهنگ چیست؟» و جوابی نیامده. خبر خوب اینکه لازم نیست جایی را بگردی: لینک یا فایل همان ویدیو را برای ربات تلگرامی <bdi dir="ltr">@InstaDownloadai</bdi> بفرست و «پیدا کردن آهنگ» را بزن؛ ربات ترانه را تشخیص می‌دهد و خود موزیک را هم در همان چت تحویلت می‌دهد. بدون نصب اپ، بدون ثبت‌نام و رایگان.</p>
+      <p class="lede">یک آهنگ گوشه‌ی ریلز چنگ می‌زند و تا آخر روز با تو می‌ماند — ولی اسمش را نمی‌دانی. در کامنت‌ها می‌گردی، یکی پرسیده «اسم این آهنگ چیست؟» و جوابی نیامده. لازم نیست جایی را بگردی: لینک همان ویدیو را برای ربات تلگرامی <bdi dir="ltr">@InstaDownloadai</bdi> بفرست و «پیدا کردن آهنگ» را بزن؛ ربات ترانه را تشخیص می‌دهد، اسم و نام خواننده را می‌گوید و خود موزیک را هم در همان چت تحویلت می‌دهد. بدون نصب اپ، بدون ثبت‌نام و رایگان.</p>
       <div class="ctas">
         <a class="btn btn-holo" href="https://t.me/InstaDownloadai?start=a10" target="_blank" rel="noopener">پیدا کردن اسم آهنگ با ربات</a>
         <a class="btn btn-ghost" href="#steps">آموزش گام‌به‌گام ↓</a>
       </div>
       <div class="chips" aria-label="ویژگی‌های کلیدی">
         <i>بدون نصب و بدون ثبت‌نام</i>
-        <i>تشخیص آهنگ از داخل ویدیو</i>
-        <i>موزیک تا ۳۲۰kbps</i>
+        <i>تشخیص آهنگ از روی لینک ویدیو</i>
+        <i>اسم + خودِ آهنگ، یک‌جا</i>
         <i>رایگان — حدود ۸۰ دانلود در روز</i>
       </div>
     </section>
@@ -242,10 +319,10 @@ footer.site a:hover{color:#fff}
     <section id="moment" class="prose" aria-labelledby="h-moment">
       <span class="sec-k">آنجا که همه‌گیر می‌شود</span>
       <h2 class="sec-h" id="h-moment">آن لحظه‌ی آشنا: «این آهنگ چیه؟»</h2>
-      <p>ریلزها را ورق می‌زنی و ناگهان یک تکه آهنگ از میان ویدیو بیرون می‌زند؛ ملودی به گوشت می‌نشیند، تار و پورت را تکان می‌دهد و بقیه‌ی روز همراهت است. اسمی در کار نیست: نه در کپشن نوشته شده، نه روی صفحه می‌آید. به کامنت‌ها سر می‌زنی و می‌بینی چند نفر دیگر هم همان را پرسیده‌اند و جوابی نگرفته‌اند. بعد کلماتی را که نصفه‌و‌نیمه از ترانه به یاد داری در گوگل تایپ می‌کنی و با صفحاتی روبه‌رو می‌شوی که ربطی به آهنگ ندارند. اگر هم تا حالا برایت پیش نیامده، همین امروز می‌آید — این لحظه آن‌قدر رایج است که برایش یک جمله‌ی همگانی ساخته‌اند: «اسم این آهنگ چیست؟»</p>
-      <p>پاسخ کوتاه: ویدیویی که آهنگ در آن پخش می‌شود — لینک یک ریلز، استوریِ یک اکانت عمومی یا فایلی که در گالری داری — را به ربات تلگرامی <bdi dir="ltr">@InstaDownloadai</bdi> بده و گزینه‌ی «پیدا کردن آهنگ» را بزن. ربات با موتور تشخیص آهنگ، قطعه را شناسایی می‌کند و همان ترانه را با بهترین کیفیت در چت می‌فرستد؛ یعنی هم اسم را می‌گیری و هم خود آهنگ را.</p>
-      <p>این همان کاری است که اپ‌های تشخیص موسیقی مثل شزام انجام می‌دهند: گوش سپردن به یک تکه‌ی مشخص از صدا و تطبیق‌دادنش با کاتالوگ موسیقی. تفاوت این‌جاست که همه‌چیز داخل تلگرام می‌افتد — اپ جداگانه‌ای نصب نمی‌کنی، حساب تازه‌ای نمی‌سازی و میکروفون را هم دور و بر خودت نمی‌چرانی؛ ویدیو خودش نماینده‌ی آهنگ است. ضمن اینکه این ربات فقط آهنگ نیست؛ دانلودر اینستاگرام، پینترست و تیک‌تاک هم هست و همه‌ی دانلودرها یک‌جا روی صفحه‌ی اصلی معرفی شده‌اند.</p>
-      <p>و یک حرف صادقانه پیش از هر ادعایی: هیچ موتور تشخیصی بی‌نقص نیست. نسخه‌های خیلی خاص یا فایل‌های پرنویز گاهی شناسایی نمی‌شوند. در ادامه خوانده‌ای که چطور شانس تشخیص را بالاتر ببری و اگر جواب نیامد چه راهی باقی می‌ماند.</p>
+      <p>ریلزها را ورق می‌زنی و ناگهان یک تکه آهنگ از میان ویدیو بیرون می‌زند؛ ملودی به گوشت می‌نشیند، تار و پورت را تکان می‌دهد و بقیه‌ی روز همراهت است. اسمی در کار نیست: نه در کپشن نوشته شده، نه روی صفحه می‌آید. به کامنت‌ها سر می‌زنی و می‌بینی چند نفر دیگر هم همان را پرسیده‌اند و جوابی نگرفته‌اند. بعد کلماتی را که نصفه‌و‌نیمه از ترانه به یاد داری در گوگل تایپ می‌کنی و با صفحاتی روبه‌رو می‌شوی که ربطی به آهنگ ندارند. این لحظه آن‌قدر رایج است که برایش یک جمله‌ی همگانی ساخته‌اند: «اسم این آهنگ چیست؟»</p>
+      <p>پاسخ کوتاه: لینک ویدیویی که آهنگ در آن پخش می‌شود — معمولاً همان ریلز یا پست ویدیویی اینستاگرام، ویدیوی تیک‌تاک یا پینِ پینترست — را به ربات تلگرامی <bdi dir="ltr">@InstaDownloadai</bdi> بده و گزینه‌ی «پیدا کردن آهنگ» را بزن. ربات اثر انگشت صدا را با کاتالوگ‌های موسیقی تطبیق می‌دهد، نام ترانه و خواننده را روی کارت می‌آورد و خود ترانه را هم با بهترین کیفیت در همان چت می‌فرستد؛ یعنی هم اسم را می‌گیری و هم خود آهنگ را.</p>
+      <p>این همان کاری است که اپ‌های تشخیص موسیقی مثل شزام انجام می‌دهند: گوش سپردن به یک تکه‌ی مشخص از صدا و تطبیق‌دادنش با کاتالوگ موسیقی. تفاوت این‌جاست که همه‌چیز داخل تلگرام می‌افتد — اپ جداگانه‌ای نصب نمی‌کنی، حساب تازه‌ای نمی‌سازی و میکروفون را هم دور و بر خودت نمی‌چرانی؛ خود ویدیو نماینده‌ی آهنگ است. مقایسه‌ی کامل و صادقانه‌ی این دو مسیر را پایین‌تر آورده‌ایم تا ببینی هر کدام کجا برنده است. ضمن اینکه این ربات فقط تشخیص آهنگ نیست؛ دانلودر اینستاگرام، پینترست و تیک‌تاک هم هست و همه‌ی قابلیت‌ها یک‌جا روی صفحه‌ی اصلی معرفی شده‌اند.</p>
+      <p>و یک حرف صادقانه پیش از هر ادعایی: هیچ موتور تشخیصی بی‌نقص نیست. نسخه‌های خیلی خاص یا ویدیوهای پرنویز گاهی شناسایی نمی‌شوند. خود ربات هم وقتی تشخیص دقیق نشود دست خالی نمی‌ماند — از کپشن خود ویدیو نتیجه‌های احتمالی می‌آورد. در ادامه خوانده‌ای که چطور شانس تشخیص را بالاتر ببری و اگر جواب نیامد چه راهی باقی می‌ماند.</p>
     </section>
 
     <div class="hr" aria-hidden="true"></div>
@@ -258,29 +335,29 @@ footer.site a:hover{color:#fff}
       <div class="sc-grid">
         <div class="sc">
           <span class="ico" aria-hidden="true">🎬</span>
-          <b>ریلز اینستاگرام</b>
+          <b>ریلز یا پست اینستاگرام</b>
           <p>لینک دارد؛ کپی می‌کنی، در چت ربات می‌فرستی و «پیدا کردن آهنگ» را می‌زنی.</p>
         </div>
         <div class="sc">
-          <span class="ico" aria-hidden="true">⏳</span>
-          <b>استوری اینستاگرام</b>
-          <p>لینک ندارد؛ یوزرنیم اکانت عمومی را می‌فرستی تا استوری‌ها باز شوند.</p>
+          <span class="ico" aria-hidden="true">📌</span>
+          <b>تیک‌تاک، پینترست یا ویمئو</b>
+          <p>همان کارت و همان دکمه؛ فقط لینکِ همان ویدیو را بفرست.</p>
         </div>
         <div class="sc">
-          <span class="ico" aria-hidden="true">📁</span>
-          <b>فایل ویدیو یا صدا</b>
-          <p>لینک آنلاین لازم نیست؛ خود فایل را در چت ربات آپلود می‌کنی.</p>
+          <span class="ico" aria-hidden="true">⏳</span>
+          <b>استوری یا فایلِ بی‌لینک</b>
+          <p>مسیر مستقیم ندارد؛ جایگزین‌های صادقانه‌اش را در همین بخش گفته‌ایم.</p>
         </div>
       </div>
 
-      <h3>۱) اسم آهنگی که در ریلز می‌شنوی</h3>
-      <p>بیشتر آهنگ‌هایی که گیر می‌افتند در ریلز پخش می‌شوند. روی دکمه‌ی «ارسال به» یا «⋯» زیر همان ریلز بزن و «کپی لینک» را انتخاب کن؛ بعد لینک را در چت ربات بفرست و «پیدا کردن آهنگ» را بزن تا ربات صدای ویدیو را بشناسد و اسم ترانه را به همراه خود آهنگ تحویلت بدهد. همین مسیر برای پست‌های ویدیویی اینستاگرام و ویدیوهای تیک‌تاک هم کار می‌کند.</p>
+      <h3>۱) اسم آهنگی که در ریلز یا پست ویدیویی می‌شنوی</h3>
+      <p>بیشتر آهنگ‌هایی که گیر می‌افتند در ریلز پخش می‌شوند. روی دکمه‌ی «ارسال به» یا «⋯» زیر همان ریلز بزن و «کپی لینک» را انتخاب کن؛ بعد لینک را در چت ربات بفرست. ویدیو با کیفیت اصلی تحویل می‌شود و زیرش کارت استودیو با دو دکمه می‌آید: «استخراج صدا» و «پیدا کردن آهنگ». دکمه‌ی دوم را بزن تا ربات صدای ویدیو را بشناسد و اسم ترانه و نام خواننده را به همراه خود آهنگ تحویلت بدهد. همین مسیر برای پست‌های ویدیویی اینستاگرام هم کار می‌کند و نکته‌ی مهمش این است که ویدیو لازم نیست همین حالا پخش شود؛ هر لحظه از شبانه‌روز، خودِ فایل شنیده می‌شود.</p>
 
-      <h3>۲) اسم آهنگی که در استوری می‌شنوی</h3>
-      <p>استوری برخلاف ریلز لینک ندارد؛ راهش یوزرنیم است. اگر استوری متعلق به یک اکانت عمومی است، یوزرنیم همان حساب را در چت ربات بفرست تا کارت پروفایل با استوری‌های عمومی باز شود؛ ویدیوی استوری موردنظر را انتخاب کن و «پیدا کردن آهنگ» را بزن. اگر استوری از یک اکانت خصوصی است، صادقانه بگوییم: دسترسی وجود ندارد و ربات هم عمداً از پیج خصوصی چیزی تحویل نمی‌دهد. یک میان‌بر هم هست: اگر همان آهنگ در یک ریلز یا پستِ عمومی هم استفاده شده باشد، کپی لینک همان ریلز مسیر کوتاه‌تری است. جزئیات ذخیره‌ی استوری و هایلایت را در <a href="/instagram/">راهنمای اینستاگرام ربات</a> بخوان.</p>
+      <h3>۲) اسم آهنگی که در تیک‌تاک، پینترست یا ویمئو می‌شنوی</h3>
+      <p>خیلی از ترانه‌ها و ریمیکس‌ها اول در تیک‌تاک باب می‌شوند و بعد به ریلز می‌رسند؛ خیلی‌ها هم اول زیر یک پینِ پینترست آن‌ها را می‌شنوند. ربات هر چهار منبع را می‌شناسد: لینک ویدیوی تیک‌تاک، پین پینترست یا ویدیوی ویمئو را بفرست تا همان ویدیو با همان کارت استودیو بیاید و «پیدا کردن آهنگ» همان‌جا باشد. برای آهنگ‌های ریمیکسی این مسیر حیاتی است، چون خودِ ربات در جست‌وجویش کاتالوگ‌های ریمیکس را هم می‌گردد؛ ولی در عین صداقت بگوییم: ریمیکس‌های کم‌شنیده و میکس‌های منتشرنشده معمولاً در هیچ دیتابیس تشخیصی ثبت نیستند و شانس شناسایی‌شان پایین است.</p>
 
-      <h3>۳) آهنگ گوشه‌ی ویدیویی که فقط فایلش را داری</h3>
-      <p>گاهی ویدیو هیچ‌جای آنلاین نیست: کلیپی که دوستت پیام کرده، ویدیویی که مدت‌ها پیش در گالری ذخیره کرده‌ای یا یک فایل صوتی از قرار و جلسه. برای این حالت نه لینک لازم است نه آدرس صفحه: فایل را در چت ربات بفرست و «پیدا کردن آهنگ» را بزن؛ ربات از داخل خود ویدیو صدای آهنگ را بررسی می‌کند و اگر بشناسد، اسم و خود ترانه را می‌آورد. اینجا همان جایی است که تفاوت «دیدن یک ویدیو» و «شناختن آهنگ داخلش» معنا پیدا می‌کند: فایل مال توست، ولی اطلاعات آهنگش نبود.</p>
+      <h3>۳) استوری، یا ویدیویی که فقط فایلش را داری</h3>
+      <p>اینجا جای یک جمله‌ی روراست است. استوری لینکِ پشتیبانی‌شده ندارد — اگر لینک استوری بفرستی، ربات خودش صادقانه جواب می‌دهد که استوری‌ها دیگر پشتیبانی نمی‌شوند و لینک ریلز یا پست بفرست. تشخیص از روی فایل داخل گالری هم انجام نمی‌شود؛ ورودی ربات «لینک» است یا «اسم». پیج خصوصی هم به هر حال از دسترس خارج است و ربات عمداً از آن چیزی تحویل نمی‌دهد. اما راهت بسته نیست؛ سه جایگزین واقعی داری: اول، همان آهنگ تقریباً همیشه در یک ریلز یا پست عمومی دیگری هم استفاده شده — لینک همان را بفرست. دوم، کپشن و کامنت‌های همان ویدیو را بگرد؛ خود ربات هم وقتی تشخیص دقیق نمی‌دهد سراغ کپشن می‌رود، یعنی همان‌جا معمولاً نشانی هست. سوم، هر چه از ترانه به یاد داری را در موزیک‌یاب تایپ کن — حتی یک خط از ترانه ورودی پذیرفتنی است. جزئیات ذخیره‌ی ویدیوهای عمومی را در <a href="/instagram/">راهنمای اینستاگرام ربات</a> بخوان.</p>
     </section>
 
     <div class="hr" aria-hidden="true"></div>
@@ -292,30 +369,99 @@ footer.site a:hover{color:#fff}
       <p>کل کار پنج قدم است و همه‌اش داخل تلگرام می‌ماند — نه سایتی باز می‌کنی، نه برنامه‌ای نصب می‌کنی:</p>
       <ol class="steps">
         <li>
-          <div><b>ربات را باز کن</b>
+          <div><b>لینک ویدیو را کپی کن</b>
+          <p>در اپ اینستاگرام روی «⋯» یا «ارسال به» بزن و «کپی لینک» را انتخاب کن؛ لینک ویدیوهای تیک‌تاک، پینترست و ویمئو هم پذیرفته می‌شود. در نسخه‌ی وب آدرس را از نوار مرورگر کپی کن.</p></div>
+        </li>
+        <li>
+          <div><b>ربات را در تلگرام باز کن</b>
           <p>دکمه‌ی زیر چت ربات را با پیام شروع باز می‌کند؛ روی Start بزن. نه لاگین می‌خواهد، نه شماره و نه هیچ دسترسی‌ای به اکانت اینستاگرامت.</p>
           <span class="lnk"><a class="btn btn-holo" href="https://t.me/InstaDownloadai?start=a10" target="_blank" rel="noopener">شروع ربات در تلگرام</a></span></div>
         </li>
         <li>
-          <div><b>ویدیو را معرفی کن</b>
-          <p>لینک ریلز، پست ویدیویی یا ویدیوی تیک‌تاک را Paste کن؛ یا اگر ویدیو آنلاین نیست، همان فایل ویدیو یا صدا را در چت بفرست. ربات خودش ورودی را تشخیص می‌دهد و دستور خاصی لازم نیست بنویسی.</p></div>
+          <div><b>لینک را در چت بفرست</b>
+          <p>لینک را Paste کن؛ ربات ویدیو را با کیفیت اصلی تحویل می‌دهد و زیرش کارت استودیو با دو دکمه‌ی «استخراج صدا» و «پیدا کردن آهنگ» می‌آید. دستور خاصی لازم نیست بنویسی.</p></div>
         </li>
         <li>
           <div><b>«پیدا کردن آهنگ» را بزن</b>
-          <p>ربات صدای ویدیو را با کاتالوگ موسیقی تطبیق می‌دهد؛ این مرحله معمولاً چند ثانیه بیشتر طول نمی‌کشد و بستگی به حجم و وضوح فایل دارد.</p></div>
+          <p>ربات اثر انگشت صدای ویدیو را با کاتالوگ‌های موسیقی تطبیق می‌دهد؛ چند ثانیه بعد نام ترانه و نام خواننده روی کارت می‌آید. اگر تشخیص دقیق نشد، ربات صادقانه از کپشن خود ویدیو نتیجه‌های احتمالی نشان می‌دهد.</p></div>
         </li>
         <li>
-          <div><b>اسم آهنگ را بگیر</b>
-          <p>نتیجه‌ی تشخیص را می‌بینی و طبق صفحه‌ی موزیک‌یاب، ربات خود ترانه‌ی شناسایی‌شده را هم با بهترین کیفیت می‌فرستد؛ دیگر لازم نیست واژه‌های حدسی را در گوگل تایپ کنی.</p></div>
-        </li>
-        <li>
-          <div><b>موزیک را ذخیره کن</b>
-          <p>فایل آهنگ همان‌جا در چت آماده است؛ ذخیره‌اش کن، به پلی‌لیست خودت اضافه کن و هر وقت خواستی گوش بده.</p></div>
+          <div><b>اسم را گرفتی؛ خود آهنگ را هم بگیر</b>
+          <p>روی دکمه‌ی تحویل با بهترین کیفیت بزن تا خود آهنگ از موزیک‌یاب در همان چت بیاید؛ فایل را با کاور و تاگ کامل (نام خواننده و آلبوم) ذخیره کن و هر وقت خواستی گوش بده.</p></div>
         </li>
       </ol>
 
-      <h3>حالا که اسمش را گرفتی، همان‌جا موزیکش را هم بگیر</h3>
-      <p>تشخیص آهنگ در این ربات به یک اسم خشک و بی‌صدا ختم نمی‌شود؛ شناسایی و تحویل، پشت سر هم اتفاق می‌افتد و خود آهنگ در همان چت می‌آید. و اگر روزی فقط اسم به دستت آورده بودی — مثلاً از کامنت‌ها یا یک جست‌وجوی دستی — همان اسم را در چت ربات بنویس: فارسی، خارجی یا ریمیکس. ربات از چند کاتالوگ موازی جست‌وجو می‌کند، چند نتیجه با مدت‌زمان و کیفیت نشان می‌دهد و آهنگ تا کیفیت ۳۲۰kbps با تاگ کامل (کاور، نام خواننده و آلبوم) تحویل داده می‌شود. همه‌ی این قابلیت‌ها در <a href="/music/">صفحه‌ی دانلود موزیک و موزیک‌یاب</a> هم توضیح داده شده است.</p>
+      <figure class="sim-fig">
+        <div class="sim sim1" role="img" aria-label="شبیه‌سازی چت ربات: کاربر لینک یک ریلز را می‌فرستد؛ ربات ویدیو را تحویل می‌دهد و زیرش دکمه‌های «استخراج صدا» و «پیدا کردن آهنگ» دیده می‌شود؛ کاربر «پیدا کردن آهنگ» را می‌زند، ربات نام آهنگ و نام خواننده را نشان می‌دهد و دکمه‌ی ارسال با بهترین کیفیت می‌گذارد.">
+          <div class="sim-screen">
+            <div class="sim-top"><span class="sim-ava" aria-hidden="true"></span><span>InstaDownloadai</span><span class="sim-on">آنلاین</span></div>
+            <div class="sim-chat">
+              <div class="sim-bub u e1">https://www.instagram.com/reel/…</div>
+              <div class="sim-typing e2"><i></i><i></i><i></i></div>
+              <div class="sim-bub b e3">ویدیوی ریلز رسید؛ کارت استودیو زیرش آماده است:</div>
+              <div class="sim-kb e4"><span>🎧 استخراج صدا</span><span>🎵 پیدا کردن آهنگ</span></div>
+              <div class="sim-bub u e5">پیدا کردن آهنگ</div>
+              <div class="sim-typing e6"><i></i><i></i><i></i></div>
+              <div class="sim-bub b e7">آهنگش پیدا شد:</div>
+              <div class="sim-file e8">
+                <span class="cov" aria-hidden="true"></span>
+                <span class="ftx"><b>🎯 دلتنگم</b><span>👤 اهام · تشخیص با اثر انگشت صدا</span></span>
+              </div>
+              <div class="sim-kb e9"><span class="g">🎵 بفرست با بهترین کیفیت</span></div>
+            </div>
+            <div class="sim-input"><span class="sim-field">پیام</span><span class="sim-send" aria-hidden="true"></span></div>
+          </div>
+        </div>
+        <figcaption><b>شبیه‌سازی</b> · بازسازی CSS از مسیر واقعی چت — نام آهنگ در این نمونه، نمونه است؛ دکمه‌ی «شروع ربات» در همین صفحه همین مسیر واقعی را باز می‌کند.</figcaption>
+      </figure>
+    </section>
+
+    <div class="hr" aria-hidden="true"></div>
+
+    <!-- ============ SHAZAM VS BOT ============ -->
+    <section id="shazam" class="prose" aria-labelledby="h-shazam">
+      <span class="sec-k">مقایسه</span>
+      <h2 class="sec-h" id="h-shazam">اپ تشخیص آهنگ یا ربات لینکی؟ مقایسه‌ی صادقانه</h2>
+      <p>شازام و اپ‌های هم‌خانواده‌اش سال‌هاست کار تشخیص را انجام می‌دهند و خوب هم انجام می‌دهند؛ سؤال این نیست که کدام «بهتر» است، سؤال این است که برای وضعیت تو کدام کوتاه‌تر است. تفاوت اصلی در ورودی است: اپ میکروفونی صدای همین لحظه را می‌شنود، ربات لینکی خودِ ویدیوی آنلاین را:</p>
+      <div class="tbl-wrap">
+        <table>
+          <caption>اپ میکروفونی (شازام و مانند آن) در برابر ربات لینکی تلگرام</caption>
+          <thead>
+            <tr><th scope="col">معیار</th><th scope="col">اپ میکروفونی</th><th scope="col">ربات لینکی تلگرام</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ورودی تشخیص</td>
+              <td>صدای زنده از میکروفون؛ آهنگ باید همین حالا پخش شود</td>
+              <td>لینک ویدیوی آنلاین؛ خود ویدیو نماینده‌ی صدا است</td>
+            </tr>
+            <tr>
+              <td>کار روی ویدیوی آماده</td>
+              <td>نه؛ باید ویدیو را جلوی میکروفون پخش کنی</td>
+              <td>بله؛ لینک را می‌فرستی و همان تشخیص داده می‌شود</td>
+            </tr>
+            <tr>
+              <td>نصب و دسترسی</td>
+              <td>نصب اپ، اجازه‌ی میکروفون، گاهی ثبت‌نام</td>
+              <td>فقط تلگرام؛ بدون نصب، بدون ثبت‌نام</td>
+            </tr>
+            <tr>
+              <td>خروجی</td>
+              <td>اسم آهنگ و صفحه‌ی شناسایی در اپ</td>
+              <td>اسم آهنگ + خودِ فایل موزیک در همان چت</td>
+            </tr>
+            <tr>
+              <td>هزینه</td>
+              <td>رایگان با محدودیت‌های خودش</td>
+              <td>رایگان — حدود ۸۰ دانلود در روز</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>اگر فقط ملودی در ذهنت مانده باشد</h3>
+      <p>یک تفاوت را هم بی‌تعارف بگوییم: اپ‌هایی مثل SoundHound حتی هام‌کردن ملودی را هم می‌فهمند؛ این توانایی را ربات ندارد. ورودی ربات لینک ویدیو است یا اسم — نه نغمه‌ای که در سرت چرخ می‌زند. پس قاعده‌ی انتخاب روشن است: صدای زنده‌ی همین لحظه یا نغمه‌ی حافظه‌ای، اپ میکروفونی؛ ویدیوی آنلاین که جلوی توست، یا چند کلمه که از ترانه به یاد داری، ربات — که هم اسم را می‌دهد و هم خود آهنگ را همان‌جا تحویل می‌دهد.</p>
+      <p class="tip"><b>خلاصه:</b> ویدیو جلوی چشمت است → لینکش را به ربات بده؛ آهنگ همین حالا جایی پخش می‌شود → اپ میکروفونی؛ فقط نغمه در ذهنت است → اپی که هام‌کردن را می‌فهمد.</p>
     </section>
 
     <div class="hr" aria-hidden="true"></div>
@@ -326,13 +472,49 @@ footer.site a:hover{color:#fff}
       <h2 class="sec-h" id="h-tips">پنج راه برای بالا بردن شانس تشخیص</h2>
       <p>تشخیص آهنگ روی «وضوح صدا» سوار است. چند عادت ساده احتمال جواب درست را به‌طور محسوس بالا می‌برد:</p>
       <ul class="tips">
-        <li><span><b>بخش مشخصی از آهنگ را بده:</b> تکه‌ای از وسط ترانه یا ملودی اصلی را انتخاب کن؛ چند ثانیه‌ی اولِ ویدیو ممکن است فقط افکت، گفتگو یا سکوت باشد و هیچ نشانی از خود موسیقی نداشته باشد.</span></li>
-        <li><span><b>فایل واضح‌تر انتخاب کن:</b> هرچه صدا تمیزتر باشد تطبیق دقیق‌تر است؛ صدایی که از بلندگو پخش و دوباره ضبط شده یا زیر گفتار و هیاهو دفن شده، شانس کمتری برای شناسایی دارد.</span></li>
-        <li><span><b>نه خیلی کوتاه، نه بی‌ربط:</b> یک برش چندثانیه‌ای از خود موسیقی معمولاً کافی است؛ تکه‌های یک‌ثانیه‌ای آن‌قدر کوچک‌اند که به تشخیص نمی‌رسند و ویدیوهای خیلی طولانی هم بخش بزرگشان را حرف و تصویر تشکیل می‌دهد.</span></li>
-        <li><span><b>اگر پیدا نشد، اسمی جست‌وجو کن:</b> هر چه از ترانه به یاد داری را در ربات بنویس؛ طبق صفحه‌ی موزیک‌یاب حتی یک خط از ترانه هم به‌عنوان ورودی جست‌وجو پذیرفته می‌شود و کاتالوگ‌های موازی — فارسی، خارجی و ریمیکس — بررسی می‌شوند.</span></li>
-        <li><span><b>با املای متفاوت دوباره امتحان کن:</b> برای نسخه‌های خیلی خاص گاهی نتیجه خالی می‌ماند؛ یک بار دیگر با املای متفاوت یا نام خواننده جست‌وجو کن تا به نتیجه برسی.</span></li>
+        <li><span><b>ویدیویی بفرست که آهنگ در آن واضح است:</b> هرچه صدا تمیزتر و جلوتر باشد تطبیق دقیق‌تر می‌شود؛ ویدیویی که آهنگش زیر گفتگو، هیاهو یا نویز دفن شده شانس کمتری برای شناسایی دارد.</span></li>
+        <li><span><b>اگر یک ویدیو جواب نداد، ویدیوی دیگری از همان آهنگ امتحان کن:</b> نسخه‌ی استودیویی، پست خود خواننده یا یک لایو با صدای تمیز می‌تواند همان آهنگ را با کیفیت بهتری جلوی موتور تشخیص بگذارد؛ خود ربات هم بعد از شکست، همین را پیشنهاد می‌کند.</span></li>
+        <li><span><b>نسخه‌ی اصلی را ترجیح بده:</b> نسخه‌ی معمولی آهنگ در دیتابیس‌های تشخیص ثبت‌شده‌تر است؛ اسلو و اسپیدآپ‌های خیلی کم‌شنیده و میکس‌های منتشرنشده معمولاً هیچ‌جا ثبت نیستند و شانس شناخته‌شدنشان پایین است.</span></li>
+        <li><span><b>کپشن را جدی بگیر:</b> وقتی تشخیص دقیق نمی‌شود، خود ربات نتیجه‌ها را از کپشن همان ویدیو می‌آورد — چون سازندگان ویدیو معمولاً اسم آهنگ را همان نوشته‌اند. تو هم می‌توانی همان اسم را دستی در موزیک‌یاب بنویسی.</span></li>
+        <li><span><b>هر چه یادت هست را بنویس و با املای متفاوت دوباره امتحان کن:</b> یک خط از ترانه، نام خواننده یا ترکیبشان را در موزیک‌یاب تایپ کن؛ اگر نتیجه دقیق نبود، یک بار با املای دیگر یا نام انگلیسی/فارسیِ همان ترانه جست‌وجو کن تا به نتیجه برسی.</span></li>
       </ul>
       <p class="tip"><b>نکته:</b> تشخیص آهنگ روی محتوایی کار می‌کند که خودت به آن دسترسی داری؛ پیج خصوصی از دسترس ربات خارج است. موزیکِ دریافتی را برای گوش‌دادن شخصی نگه دار — نشر دوباره‌ی آثار هنری بدون اجازه‌ی سازنده منصفانه نیست.</p>
+    </section>
+
+    <div class="hr" aria-hidden="true"></div>
+
+    <!-- ============ BRIDGE TO DOWNLOAD ============ -->
+    <section id="get" class="prose" aria-labelledby="h-get">
+      <span class="sec-k">از اسم تا فایل</span>
+      <h2 class="sec-h" id="h-get">اسمش را گرفتی؟ همان‌جا موزیکش را هم بگیر</h2>
+      <p>تشخیص آهنگ در این ربات به یک اسم خشک و بی‌صدا ختم نمی‌شود؛ کارت نتیجه خودش دکمه‌ی تحویل دارد و خود آهنگ در همان چت می‌آید. و اگر روزی فقط اسم به دستت آورده بودی — مثلاً از کامنت‌ها یا کپشن — همان اسم را در چت ربات بنویس: فارسی، خارجی یا ریمیکس. ربات از چند کاتالوگ موازی جست‌وجو می‌کند، چند نتیجه با برچسب مدت‌زمان و کیفیت نشان می‌دهد و آهنگ تا کیفیت ۳۲۰kbps با تاگ کامل (کاور، نام خواننده و آلبوم) تحویل داده می‌شود؛ کیفیت هر نتیجه هم روی کارتش نوشته شده تا انتخابت چشم‌بسته نباشد. همه‌ی این قابلیت‌ها در <a href="/music/">صفحه‌ی دانلود موزیک و موزیک‌یاب</a> هم توضیح داده شده است.</p>
+      <p>یک مرز صادقانه: سقف ۳۲۰kbps مال موزیک‌یاب است — یعنی وقتی آهنگ از کاتالوگ می‌آید. دکمه‌ی «استخراج صدا» کار دیگری می‌کند: همان صدای خود ویدیو را می‌دهد و هیچ‌وقت از کیفیت منبع بیشتر نمی‌شود. برای پلی‌لیست موسیقی، موزیک‌یاب؛ برای صدای خاصِ همان ویدیو (گفتگو، میکس، ویس) استخراج صدا. راهنمای کامل فایل صوتی را در <a href="/blog/instagram-to-mp3/">مقاله‌ی تبدیل ویدیو اینستاگرام به MP3</a> خوانده می‌شود.</p>
+
+      <figure class="sim-fig">
+        <div class="sim sim2" role="img" aria-label="شبیه‌سازی چت ربات: کاربر نام آهنگ را در چت می‌نویسد؛ ربات چند نتیجه شماره‌دار با نشان نوع می‌دهد و نسخه‌ی انتخابی را با کیفیت ۳۲۰ کیلوبیت، کاور و تاگ کامل در همان چت تحویل می‌دهد.">
+          <div class="sim-screen">
+            <div class="sim-top"><span class="sim-ava" aria-hidden="true"></span><span>InstaDownloadai</span><span class="sim-on">آنلاین</span></div>
+            <div class="sim-chat">
+              <div class="sim-bub u e1">دلتنگم اهام</div>
+              <div class="sim-typing e2"><i></i><i></i><i></i></div>
+              <div class="sim-rows e3">
+                <span>🔵 ۱. دلتنگم · اهام<small>۳:۱۲</small></span>
+                <span>🟢 ۲. دلتنگم Slowed · ریمیکس<small>۳:۴۰</small></span>
+                <span>🔵 ۳. دلتنگم (لایو)<small>۴:۰۵</small></span>
+              </div>
+              <div class="sim-file e4">
+                <span class="cov" aria-hidden="true"></span>
+                <span class="ftx"><b>دلتنگم · اهام</b><span>۳۲۰kbps · کاور و تاگ کامل</span></span>
+              </div>
+            </div>
+            <div class="sim-input"><span class="sim-field">پیام</span><span class="sim-send" aria-hidden="true"></span></div>
+          </div>
+        </div>
+        <figcaption><b>شبیه‌سازی</b> · جست‌وجوی موزیک‌یاب از چند کاتالوگ موازی؛ نشان آبی = نسخه‌ی اصلی، نشان سبز = ریمیکس. برچسب مدت‌زمان و کیفیت واقعی است.</figcaption>
+      </figure>
+
+      <h3>جست‌وجوی هوشمندتر در موزیک‌یاب</h3>
+      <p>سه ترفند که نتیجه را دقیق‌تر می‌کند: اول، عبارت «آهنگ‌های» به‌همراه نام خواننده — ربات برترین‌های همان خواننده را یک‌جا می‌آورد و از میان‌شان همان آهنگ را انتخاب می‌کنی. دوم، یک خط از ترانه کافی است؛ لازم نیست کل اسم را دقیق بدانی. سوم، نتیجه‌ی اول لزوماً نسخه‌ی کامل نیست — ربات نتیجه‌ها را بر اساس ارتباط و مدت‌زمان مرتب می‌کند تا ریمیکس‌های شصت‌ثانیه‌ای جای نسخه‌ی اصلی را نگیرند؛ به برچسب مدت‌زمان نگاه کن و بعد تحویل بگیر.</p>
     </section>
 
     <div class="hr" aria-hidden="true"></div>
@@ -344,7 +526,7 @@ footer.site a:hover{color:#fff}
       <p>قبل از باز کردن تلگرام، یک نگاه به این جدول بینداز تا ورودی درست را آماده کنی:</p>
       <div class="tbl-wrap">
         <table>
-          <caption>نقشه‌ی ورودی‌های تشخیص آهنگ در ربات تلگرام</caption>
+          <caption>نقشه‌ی ورودی‌های تشخیص و جست‌وجوی آهنگ در ربات تلگرام</caption>
           <thead>
             <tr><th scope="col">وضعیت تو</th><th scope="col">چه چیزی بفرستی</th><th scope="col">چه تحویل می‌گیری</th></tr>
           </thead>
@@ -355,24 +537,29 @@ footer.site a:hover{color:#fff}
               <td>اسم آهنگ + خود ترانه در چت</td>
             </tr>
             <tr>
-              <td>استوری یک اکانت عمومی را می‌بینی</td>
-              <td>یوزرنیم آن حساب، بعد انتخاب ویدیوی استوری</td>
-              <td>همان مسیر تشخیص روی ویدیوی استوری</td>
-            </tr>
-            <tr>
-              <td>فقط فایل ویدیو یا صدا داری</td>
-              <td>خود فایل، آپلودشده در چت</td>
-              <td>تشخیص آهنگ بدون نیاز به لینک</td>
+              <td>ویدیوی تیک‌تاک، پینترست یا ویمئو را می‌بینی</td>
+              <td>لینک همان ویدیو</td>
+              <td>همان کارت استودیو و همان دکمه‌ی تشخیص</td>
             </tr>
             <tr>
               <td>اسمش را تقریباً می‌دانی</td>
-              <td>اسم آهنگ، خواننده یا خطی از ترانه در موزیک‌یاب</td>
+              <td>اسم آهنگ، خواننده یا خطی از ترانه</td>
               <td>نتایج چندگانه با مدت‌زمان و کیفیت</td>
+            </tr>
+            <tr>
+              <td>کارهای یک خواننده را می‌خواهی</td>
+              <td>عبارت «آهنگ‌های» + نام خواننده</td>
+              <td>برترین‌های همان خواننده یک‌جا</td>
+            </tr>
+            <tr>
+              <td>استوری یا فایل گالری</td>
+              <td>مسیر مستقیم ندارد</td>
+              <td>جایگزین: لینک ریلزِ هم‌آهنگ، یا تایپ چیزی که یادت هست</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <p style="margin-top:1.2rem">این جدول فقط بخش موزیک‌یاب ربات را نشان می‌دهد؛ فهرست کامل قابلیت‌ها و مقایسه‌ی صادقانه‌اش با اپ‌های دانلود و سایت‌های پرتبلیغ را در <a href="/promo/a10/">صفحه‌ی معرفی InstaDownloadai</a> خوانده می‌شود.</p>
+      <p style="margin-top:1.2rem">این جدول فقط بخش تشخیص و موزیک‌یاب ربات را نشان می‌دهد؛ فهرست کامل قابلیت‌ها و مقایسه‌ی صادقانه‌اش با اپ‌های دانلود و سایت‌های پرتبلیغ را در <a href="/promo/a10/">صفحه‌ی معرفی InstaDownloadai</a> خوانده می‌شود.</p>
     </section>
 
     <div class="hr" aria-hidden="true"></div>
@@ -383,23 +570,31 @@ footer.site a:hover{color:#fff}
       <h2 class="sec-h" id="h-faq">سؤال‌هایی که درباره‌ی «اسم این آهنگ چیست» زیاد پرسیده می‌شود</h2>
       <details>
         <summary>چطور با ربات اسم آهنگی را که نمی‌دانم پیدا کنم؟</summary>
-        <p>لینک یا فایل ویدیویی که آهنگ در آن پخش می‌شود را برای ربات بفرست و گزینه‌ی «پیدا کردن آهنگ» را بزن؛ ربات با موتور تشخیص، ترانه را شناسایی می‌کند و همان آهنگ را با بهترین کیفیت در چت می‌فرستد.</p>
+        <p>لینک ویدیویی که آهنگ در آن پخش می‌شود — ریلز یا پست اینستاگرام، ویدیوی تیک‌تاک، پین پینترست یا ویمئو — را در چت ربات بفرست؛ زیر ویدیوی دریافتی «پیدا کردن آهنگ» را بزن. ربات اثر انگشت صدا را با کاتالوگ‌های موسیقی تطبیق می‌دهد و نام ترانه و نام خواننده را می‌گوید.</p>
       </details>
       <details>
         <summary>آهنگ استوری هم تشخیص داده می‌شود؟</summary>
-        <p>استوری لینک ندارد؛ یوزرنیم حساب عمومی را در چت ربات بفرست تا استوری‌های عمومی‌اش باز شود و ویدیوی استوری را برای تشخیص بفرست. استوری اکانت خصوصی قابل دسترسی نیست و ربات از پیج خصوصی چیزی تحویل نمی‌دهد.</p>
+        <p>استوری دیگر مسیر پشتیبانی‌شده‌ی ربات نیست؛ لینک استوری را نمی‌گیرد و خودش هم صادقانه همین را می‌گوید. اگر همان آهنگ در یک ریلز یا پست عمومی هم استفاده شده، لینک همان را بفرست؛ استوری اکانت خصوصی هم به هر حال از دسترس خارج است و ربات از پیج خصوصی چیزی تحویل نمی‌دهد.</p>
       </details>
       <details>
-        <summary>فقط فایل ویدیو یا صدا دارم؛ باز هم جواب می‌دهد؟</summary>
-        <p>بله؛ برای وقتی که ویدیو لینک آنلاین ندارد، فایل ویدیو یا صدا را در چت ربات بفرست و «پیدا کردن آهنگ» را بزن؛ ربات از داخل خود ویدیو صدای آهنگ را بررسی و شناسایی می‌کند.</p>
+        <summary>فایل ویدیوی داخل گالری را هم می‌شناسد؟</summary>
+        <p>تشخیص از روی لینک انجام می‌شود، نه از فایل داخل گالری؛ برای فایل محلی مسیر مستقیمی وجود ندارد. اگر همان ویدیو در اینستاگرام، تیک‌تاک یا پینترست آنلاین است لینکش را بفرست؛ وگرنه هر چه از ترانه به یاد داری را در موزیک‌یاب بنویس تا از کاتالوگ‌ها پیدایش کند.</p>
       </details>
       <details>
         <summary>چرا گاهی آهنگ پیدا نمی‌شود؟</summary>
-        <p>هیچ موتور تشخیصی بی‌نقص نیست؛ برای نسخه‌های خیلی خاص یا فایل‌های کم‌کیفیت و پرنویز گاهی نتیجه خالی می‌ماند. فایل واضح‌تر با یک تکه‌ی مشخص از آهنگ بفرست؛ اگر باز هم نشد، هر چه از ترانه به یاد داری را در موزیک‌یاب بنویس یا با املای متفاوت و نام خواننده دوباره امتحان کن.</p>
+        <p>هیچ موتور تشخیصی بی‌نقص نیست؛ نسخه‌های خیلی خاص یا فایل‌های کم‌کیفیت و پرنویز گاهی نتیجه نمی‌دهند. وقتی تشخیص دقیق نشد، ربات از کپشن خود ویدیو نتیجه‌های احتمالی می‌آورد؛ اگر آن هم جواب نداد، هر چه از ترانه به یاد داری را در موزیک‌یاب بنویس یا با املای متفاوت و نام خواننده دوباره امتحان کن.</p>
+      </details>
+      <details>
+        <summary>فرق این ربات با شازام چیست؟</summary>
+        <p>شازام صدای زنده‌ی محیط را از میکروفون می‌شنود و اسم را می‌دهد؛ ربات از روی لینک ویدیو کار می‌کند، اپ جداگانه نمی‌خواهد و در همان چت خودِ فایل آهنگ را هم تحویل می‌دهد. برای ویدیویی که جلوی توست راه کوتاه‌تر ربات است و برای صدای زنده‌ی همین لحظه، اپ میکروفونی گزینه‌ی طبیعی‌تری است.</p>
       </details>
       <details>
         <summary>تشخیص و دانلود آهنگ رایگان است؟</summary>
-        <p>بله؛ مثل بقیه‌ی قابلیت‌ها رایگان است (حدود ۸۰ دانلود در روز برای هر کاربر) — بدون اشتراک و بدون ثبت‌نام؛ آهنگ‌ها تا کیفیت ۳۲۰kbps با تاگ کامل (کاور، نام خواننده و آلبوم) تحویل داده می‌شوند.</p>
+        <p>بله؛ مثل بقیه‌ی قابلیت‌ها رایگان است (حدود ۸۰ دانلود در روز برای هر کاربر) — بدون اشتراک و بدون ثبت‌نام؛ آهنگ‌های موزیک‌یاب تا کیفیت ۳۲۰kbps با تاگ کامل (کاور، نام خواننده و آلبوم) تحویل داده می‌شوند.</p>
+      </details>
+      <details>
+        <summary>اسم آهنگ را می‌دانم؛ خودش را هم می‌توانم بگیرم؟</summary>
+        <p>بله؛ اسم آهنگ، نام خواننده یا حتی یک خط از ترانه را در چت ربات بنویس؛ موزیک‌یاب از چند کاتالوگ موازی — فارسی، خارجی و ریمیکس — جست‌وجو می‌کند و نتایج را با برچسب مدت‌زمان و کیفیت نشان می‌دهد. عبارت «آهنگ‌های» به‌همراه نام خواننده هم برترین‌های همان خواننده را می‌آورد.</p>
       </details>
     </section>
 
@@ -409,7 +604,7 @@ footer.site a:hover{color:#fff}
     <section class="cta-band holo-b" aria-labelledby="h-cta">
       <span class="sec-k">شروع کن</span>
       <h2 id="h-cta">آهنگ بعدی را همین حالا شناسایی کن</h2>
-      <p>ویدیویی که آهنگش در ذهنت مانده همین حالا جلوی چشمت است؟ لینکش را کپی کن یا فایلش را بردار و برای ربات بفرست — اسم آهنگ و خود موزیک، هر دو در همان چت تحویلت می‌شود.</p>
+      <p>ویدیویی که آهنگش در ذهنت مانده همین حالا جلوی چشمت است؟ لینکش را کپی کن و برای ربات بفرست — اسم آهنگ و خود موزیک، هر دو در همان چت تحویلت می‌شود.</p>
       <a class="btn btn-holo" href="https://t.me/InstaDownloadai?start=a10" target="_blank" rel="noopener">پیدا کردن آهنگ با ربات تلگرام</a>
     </section>
 

@@ -10,6 +10,7 @@
   /* progress hairline */
   var pb = document.querySelector(".prog");
   function setP(){
+    if (!pb) return; /* BUG-08: pages without .prog must not throw */
     var h = document.documentElement;
     var max = h.scrollHeight - h.clientHeight;
     pb.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0).toFixed(2) + "%";
